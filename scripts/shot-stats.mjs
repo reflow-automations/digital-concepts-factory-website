@@ -20,16 +20,16 @@ const page = await ctx.newPage();
 await page.goto(BASE+"/", { waitUntil:"load" });
 // scroll naar begin van stats-sectie (eerste paneel)
 const secTop = await page.evaluate(() => {
-  const el = document.querySelector("section.bg-ink");
+  const el = document.querySelector("section.bg-ink-soft");
   return window.scrollY + el.getBoundingClientRect().top;
 });
-const secH = await page.evaluate(() => document.querySelector("section.bg-ink").offsetHeight);
+const secH = await page.evaluate(() => document.querySelector("section.bg-ink-soft").offsetHeight);
 const total = secH - 900;
-await page.evaluate((y)=>window.scrollTo({top:y,behavior:"instant"}), secTop + 0.1*total);
+await page.evaluate(()=>{const el=[...document.querySelectorAll("h2")].find(h=>/Vijf domeinen|Five domains/.test(h.textContent||"")); el.scrollIntoView({block:"start"});});
 await page.waitForTimeout(900);
-await page.screenshot({ path: `${OUT}/stats-panel1.png` });
-// klik op vakje 3 (Besparing op aanbestedingskosten)
-await page.click('button:has-text("Besparing op aanbestedingskosten")');
+await page.screenshot({ path: `${OUT}/pillars.png` });
+// klik-test: terug naar vakje 1 via de knop
+await page.click('button:has-text("Besparing door personeelsbehoud")');
 await page.waitForTimeout(1600);
-await page.screenshot({ path: `${OUT}/stats-na-klik-3.png` });
+await page.screenshot({ path: `${OUT}/stats-na-klik-1.png` });
 await browser.close(); stop(); console.log("OK");

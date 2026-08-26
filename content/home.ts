@@ -35,7 +35,11 @@ export const home = {
         {
           summary:
             "Een betaalbare digitale oplossing die kortdurend verzuim direct aanpakt. Snel te implementeren, eenvoudig in gebruik en gericht op resultaat.",
-          bullets: ["Kortdurend verzuim", "€4.5K, €7K p/p p/j", "Direct toepasbaar"],
+          bullets: [
+            "Kortdurend verzuim",
+            "€4.500 - €7.000 p/p per jaar besparing",
+            "Eenvoudige implementatie",
+          ],
         },
         {
           summary:
@@ -57,34 +61,34 @@ export const home = {
       items: [
         {
           navLabel: "Besparing door personeelsbehoud",
-          label: "Minimale besparing per behouden medewerker",
+          label: "Talent behouden loont",
           detail:
-            "Vervangingskosten bedragen 40% tot 200% van het bruto jaarsalaris. Bij modaal inkomen (€48.000) ligt de ondergrens al op €19.200 per medewerker.",
+            "De vervanging van één medewerker kost een organisatie al snel 40% tot 200% van het bruto jaarsalaris. Bij een modaal jaarsalaris van €48.000 levert het behouden van één medewerker daarmee al een besparing vanaf €19.200 op.",
           source: "Gallup · Randstad",
           prefix: "€",
         },
         {
           navLabel: "Besparing door minder ziekteverzuim",
-          label: "Verzuimkosten per medewerker per jaar",
+          label: "Ziekteverzuim kost meer dan u denkt",
           detail:
-            "Gemiddelde kosten van ziekteverzuim in Nederland, exclusief de indirecte gevolgen voor productiviteit, teams en continuïteit.",
+            "Ziekteverzuim kost een organisatie gemiddeld €4.500 tot €7.000 per medewerker per jaar. En daar blijft het niet bij. Productiviteitsverlies, extra werkdruk en verstoringen in de bedrijfsvoering maken de werkelijke kosten vaak nog aanzienlijk hoger.",
           source: "TNO · ArboNed",
           prefix: "€",
         },
         {
           navLabel: "Besparing op aanbestedingskosten",
-          label: "Reductie aanbestedingskosten",
+          label: "Grip op het aanbestedingsproces",
           detail:
-            "Met onze digitale innovatie voor (Europees) aanbesteden kunnen interne kosten en doorlooptijden met de helft worden teruggebracht.",
+            "Meer overzicht, minder handmatig werk en kortere doorlooptijden. Met als resultaat tot 50% lagere aanbestedingskosten.",
           source: "DCF onderzoek",
           word: "tot",
           suffix: "%",
         },
         {
           navLabel: "Maandelijks bereik DOOH-netwerk",
-          label: "Bereik DOOH-netwerk per maand",
+          label: "Bereik talent op grote schaal",
           detail:
-            "Afhankelijk van locaties en campagne-opzet bereiken onze DOOH-schermen 250.000 tot 2 miljoen kandidaten per maand, vooral in de Randstad.",
+            "Met onze DOOH-netwerken bereiken werkgevers maandelijks 250.000 tot 2 miljoen kandidaten op strategische locaties in de Randstad. Slimme online retargeting versterkt die zichtbaarheid en zorgt ervoor dat werkgevers langer op het netvlies van talent blijven.",
           source: "DCF netwerk",
           suffix: " mln+",
         },
@@ -165,7 +169,11 @@ export const home = {
         {
           summary:
             "An affordable digital solution that tackles short-term absence head-on. Quick to implement, easy to use and focused on results.",
-          bullets: ["Short-term absence", "€4.5K, €7K p/p p/y", "Immediately applicable"],
+          bullets: [
+            "Short-term absence",
+            "€4,500 - €7,000 p/p per year saving",
+            "Simple implementation",
+          ],
         },
         {
           summary:
@@ -187,34 +195,34 @@ export const home = {
       items: [
         {
           navLabel: "Savings through staff retention",
-          label: "Minimum saving per retained employee",
+          label: "Retaining talent pays off",
           detail:
-            "Replacement costs range from 40% to 200% of gross annual salary. At an average income (€48,000), the lower bound already sits at €19,200 per employee.",
+            "Replacing a single employee quickly costs an organisation 40% to 200% of gross annual salary. At an average annual salary of €48,000, retaining just one employee already saves €19,200 or more.",
           source: "Gallup · Randstad",
           prefix: "€",
         },
         {
           navLabel: "Savings through less absenteeism",
-          label: "Absence costs per employee per year",
+          label: "Absenteeism costs more than you think",
           detail:
-            "Average cost of absenteeism in the Netherlands, excluding the indirect impact on productivity, teams and continuity.",
+            "Absenteeism costs an organisation an average of €4,500 to €7,000 per employee per year. And it does not stop there. Lost productivity, extra workload and disruption to operations often make the real costs considerably higher.",
           source: "TNO · ArboNed",
           prefix: "€",
         },
         {
           navLabel: "Savings on tendering costs",
-          label: "Reduction in tendering costs",
+          label: "Control over the tendering process",
           detail:
-            "With our digital innovation for (European) tendering, internal costs and lead times can be cut in half.",
+            "More overview, less manual work and shorter lead times. With up to 50% lower tendering costs as the result.",
           source: "DCF research",
           word: "up to",
           suffix: "%",
         },
         {
           navLabel: "Monthly DOOH network reach",
-          label: "DOOH network reach per month",
+          label: "Reach talent at scale",
           detail:
-            "Depending on locations and campaign setup, our DOOH screens reach 250,000 to 2 million candidates per month, mainly in the Randstad region.",
+            "With our DOOH networks, employers reach 250,000 to 2 million candidates a month at strategic locations across the Randstad. Smart online retargeting reinforces that visibility and keeps employers on talent's radar for longer.",
           source: "DCF network",
           suffix: " M+",
         },

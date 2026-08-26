@@ -18,7 +18,7 @@ import Accent from "@/components/Accent";
 import { useLang, usePick } from "@/lib/i18n/provider";
 import { home } from "@/content/home";
 
-type StatMarker = "bar" | "arc" | "dots" | "wave";
+type StatMarker = "bar" | "arc" | "dots" | "none";
 
 interface Stat {
   label: string;
@@ -48,7 +48,9 @@ const STAT_STRUCT: Pick<
   "marker" | "value" | "secondValue" | "thousands" | "separator"
 >[] = [
   { marker: "bar", value: 19200, thousands: true },
-  { marker: "wave", value: 4500, secondValue: 7000, thousands: true, separator: "—" },
+  // marker "none": de klant vroeg om de blauwe golflijn hier te verwijderen
+  // (revisieronde 2026-08, notitie bij "02. Besparing door minder ziekteverzuim").
+  { marker: "none", value: 4500, secondValue: 7000, thousands: true, separator: "—" },
   { marker: "arc", value: 50 },
   { marker: "dots", value: 2 },
 ];
@@ -91,16 +93,11 @@ function MarkerDots() {
     </svg>
   );
 }
-function MarkerWave() {
-  return (
-    <svg width="104" height="60" viewBox="0 0 80 44" aria-hidden>
-      <path d="M0 36 Q10 36 14 24 T28 12 T42 6 T56 14 T70 30 T80 36" stroke="#2A82AC" strokeWidth="2" fill="none" strokeLinecap="round" />
-      <circle cx="42" cy="6" r="3" fill="#2A82AC" />
-    </svg>
-  );
-}
 function renderMarker(m: StatMarker) {
-  return m === "bar" ? <MarkerBar /> : m === "arc" ? <MarkerArc /> : m === "dots" ? <MarkerDots /> : <MarkerWave />;
+  if (m === "bar") return <MarkerBar />;
+  if (m === "arc") return <MarkerArc />;
+  if (m === "dots") return <MarkerDots />;
+  return null;
 }
 
 // Inline count-up that animates when `trigger` increments.
@@ -233,7 +230,9 @@ export default function StatBlockStoryline() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-ink text-paper h-[540vh] lg:h-[320vh]"
+      // bg-ink-soft i.p.v. bg-ink: de klant vond het espresso-bruin te donker
+      // voor de kleine letters (revisieronde 2026-08).
+      className="relative bg-ink-soft text-paper h-[540vh] lg:h-[320vh]"
     >
       <div className="sticky top-0 h-screen overflow-hidden">
         {/* Grid backdrop */}
@@ -254,7 +253,7 @@ export default function StatBlockStoryline() {
             <ChapterMark
               number="03"
               label={t.chapter}
-              className="text-paper/50 mb-6"
+              className="text-paper/65 mb-6"
             />
             <h2 className="display-section text-[clamp(1.85rem,3.5vw,3rem)] text-paper">
               <Accent
@@ -285,10 +284,10 @@ export default function StatBlockStoryline() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                       <div className="lg:col-span-8">
                         <div className="flex items-baseline gap-4 mb-6">
-                          <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/45">
+                          <span className="font-mono text-[11.5px] uppercase tracking-[0.14em] text-paper/60">
                             {String(i + 1).padStart(2, "0")} / {String(STATS.length).padStart(2, "0")}
                           </span>
-                          <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/40">
+                          <span className="font-mono text-[11.5px] uppercase tracking-[0.14em] text-paper/60">
                             {s.source}
                           </span>
                         </div>
@@ -300,13 +299,15 @@ export default function StatBlockStoryline() {
                           >
                             <StatValue stat={s} trigger={triggers[i]} />
                           </div>
-                          <div className="shrink-0 pb-3">{renderMarker(s.marker)}</div>
+                          {renderMarker(s.marker) && (
+                            <div className="shrink-0 pb-3">{renderMarker(s.marker)}</div>
+                          )}
                         </div>
 
-                        <div className="text-paper text-[clamp(1rem,1.4vw,1.25rem)] font-medium tracking-tight mb-4 max-w-2xl">
+                        <div className="text-paper text-[clamp(1.15rem,1.6vw,1.45rem)] font-medium tracking-tight mb-4 max-w-2xl">
                           {s.label}
                         </div>
-                        <p className="text-paper/65 text-[15px] leading-[1.6] max-w-2xl">
+                        <p className="text-paper/80 text-[16.5px] leading-[1.65] max-w-2xl">
                           {s.detail}
                         </p>
                       </div>
@@ -322,18 +323,18 @@ export default function StatBlockStoryline() {
                                 aria-current={j === activeIdx ? "true" : undefined}
                                 className={`w-full text-left flex items-baseline gap-3 border px-4 py-3 rounded-sm transition-colors duration-300 cursor-pointer ${
                                   j === activeIdx
-                                    ? "border-cobalt-bright/70 bg-paper/[0.06] text-paper"
-                                    : "border-paper/15 text-paper/55 hover:text-paper hover:border-paper/40"
+                                    ? "border-cobalt-bright/70 bg-paper/[0.08] text-paper"
+                                    : "border-paper/25 text-paper/75 hover:text-paper hover:border-paper/50"
                                 }`}
                               >
                                 <span
-                                  className={`font-mono text-[10px] shrink-0 ${
-                                    j === activeIdx ? "text-cobalt-bright" : "text-paper/40"
+                                  className={`font-mono text-[11px] shrink-0 ${
+                                    j === activeIdx ? "text-cobalt-bright" : "text-paper/55"
                                   }`}
                                 >
                                   {String(j + 1).padStart(2, "0")}
                                 </span>
-                                <span className="text-[12.5px] leading-snug tracking-tight">
+                                <span className="text-[13.5px] leading-snug tracking-tight">
                                   {p.navLabel}
                                 </span>
                               </button>
