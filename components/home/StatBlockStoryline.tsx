@@ -22,6 +22,8 @@ type StatMarker = "bar" | "arc" | "dots" | "wave";
 
 interface Stat {
   label: string;
+  /** Short label for the clickable panel navigation (client-specified wording). */
+  navLabel: string;
   detail: string;
   source: string;
   marker: StatMarker;
@@ -39,13 +41,15 @@ interface Stat {
 // Visual / numeric structure, language-neutral. Text (label, detail, source)
 // plus the symbol fields (prefix/suffix/word) come from the translated content
 // and are merged in by index inside the component.
+// Order matches the client-specified sequence (2026-08 revision, punt 10):
+// 01 personeelsbehoud, 02 ziekteverzuim, 03 aanbesteden, 04 DOOH-bereik.
 const STAT_STRUCT: Pick<
   Stat,
   "marker" | "value" | "secondValue" | "thousands" | "separator"
 >[] = [
   { marker: "bar", value: 19200, thousands: true },
-  { marker: "arc", value: 50 },
   { marker: "wave", value: 4500, secondValue: 7000, thousands: true, separator: "—" },
+  { marker: "arc", value: 50 },
   { marker: "dots", value: 2 },
 ];
 
@@ -199,6 +203,21 @@ export default function StatBlockStoryline() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Scroll the window so panel `j` becomes the active one. The section is
+  // progress-driven (sticky + scroll), so we target the middle of panel j's
+  // scroll range for a stable landing point.
+  const jumpTo = (j: number) => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const top = window.scrollY + el.getBoundingClientRect().top;
+    const total = el.offsetHeight - window.innerHeight;
+    if (total <= 0) return;
+    window.scrollTo({
+      top: top + ((j + 0.5) / STAT_STRUCT.length) * total,
+      behavior: "smooth",
+    });
+  };
+
   // When activeIdx changes (and section is in view), increment trigger.
   // This ensures the first panel's count-up fires when the user actually
   // scrolls into the section, not on initial page load.
@@ -292,23 +311,32 @@ export default function StatBlockStoryline() {
                         </p>
                       </div>
 
-                      {/* Panel navigation rail */}
+                      {/* Panel navigation, clickable boxes (client request punt 10) */}
                       <div className="lg:col-span-3 lg:col-start-10 hidden lg:block">
-                        <ol className="space-y-3">
+                        <ol className="space-y-2.5">
                           {STATS.map((p, j) => (
-                            <li key={p.label} className="flex items-center gap-3">
-                              <span
-                                className={`h-px transition-all duration-500 ${
-                                  j === activeIdx ? "w-10 bg-cobalt-bright" : "w-4 bg-paper/20"
-                                }`}
-                              />
-                              <span
-                                className={`font-mono text-[10px] uppercase tracking-[0.14em] transition-colors ${
-                                  j === activeIdx ? "text-paper" : "text-paper/40"
+                            <li key={p.navLabel}>
+                              <button
+                                type="button"
+                                onClick={() => jumpTo(j)}
+                                aria-current={j === activeIdx ? "true" : undefined}
+                                className={`w-full text-left flex items-baseline gap-3 border px-4 py-3 rounded-sm transition-colors duration-300 cursor-pointer ${
+                                  j === activeIdx
+                                    ? "border-cobalt-bright/70 bg-paper/[0.06] text-paper"
+                                    : "border-paper/15 text-paper/55 hover:text-paper hover:border-paper/40"
                                 }`}
                               >
-                                {String(j + 1).padStart(2, "0")} · {p.label.length > 30 ? p.label.slice(0, 28) + "…" : p.label}
-                              </span>
+                                <span
+                                  className={`font-mono text-[10px] shrink-0 ${
+                                    j === activeIdx ? "text-cobalt-bright" : "text-paper/40"
+                                  }`}
+                                >
+                                  {String(j + 1).padStart(2, "0")}
+                                </span>
+                                <span className="text-[12.5px] leading-snug tracking-tight">
+                                  {p.navLabel}
+                                </span>
+                              </button>
                             </li>
                           ))}
                         </ol>

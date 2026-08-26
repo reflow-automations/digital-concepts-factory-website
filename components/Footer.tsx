@@ -75,9 +75,12 @@ export default function Footer() {
           <div>
             <p className="eyebrow text-paper/40 mb-4">{t.colOffice}</p>
             <address className="not-italic text-paper/80 leading-relaxed">
-              {t.office[0]}
-              <br />
-              {t.office[1]}
+              {t.office.map((line, i) => (
+                <span key={line}>
+                  {i > 0 && <br />}
+                  {line}
+                </span>
+              ))}
             </address>
           </div>
 

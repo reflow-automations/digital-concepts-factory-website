@@ -58,9 +58,11 @@ export default function Hero() {
               />
             </h1>
 
-            <p className="text-text text-[17px] lg:text-[18px] leading-[1.55] max-w-xl mb-10">
-              {t.lead}
-            </p>
+            <div className="text-text text-[17px] lg:text-[18px] leading-[1.55] max-w-xl mb-10 space-y-4">
+              {t.lead.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
 
             <div className="flex flex-wrap gap-3">
               <Link

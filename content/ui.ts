@@ -51,16 +51,20 @@ export const ui = {
     header: { menu: "Menu" },
     footer: {
       eyebrow: "De brug",
-      tagline:
-        "De brug tussen traditionele organisaties en de digitale toekomst",
-      taglineAccent: "digitale toekomst",
+      tagline: "De Digitale Brug tussen vraagstuk en oplossing",
+      taglineAccent: "Digitale Brug",
       intro:
-        "Wilt u ontdekken hoe digitale innovatie uw organisatie kan helpen groeien? Neem contact met ons op voor een vrijblijvend gesprek.",
+        "Benieuwd waar digitale innovatie binnen uw organisatie het verschil kan maken? We denken graag met u mee.",
       colInnovations: "Innovaties",
       colCompany: "Organisatie",
       colOffice: "Kantoor",
       colContact: "Contact",
-      office: ["Rotterdam Centraal", "Rotterdam — Nederland"],
+      office: [
+        "Digital Concepts Factory",
+        "Stationsplein 45",
+        "3013 AK Rotterdam",
+        "Nederland",
+      ],
       rights: "© 2026 Digital Concepts Factory B.V.",
       privacy: "Privacy",
       disclaimer: "Disclaimer",
@@ -76,16 +80,20 @@ export const ui = {
     header: { menu: "Menu" },
     footer: {
       eyebrow: "The bridge",
-      tagline:
-        "The bridge between traditional organisations and the digital future",
-      taglineAccent: "digital future",
+      tagline: "The Digital Bridge between challenge and solution",
+      taglineAccent: "Digital Bridge",
       intro:
-        "Want to discover how digital innovation can help your organisation grow? Get in touch for a no-obligation conversation.",
+        "Curious where digital innovation can make the difference in your organisation? We are happy to think along with you.",
       colInnovations: "Innovations",
       colCompany: "Company",
       colOffice: "Office",
       colContact: "Contact",
-      office: ["Rotterdam Centraal", "Rotterdam — Netherlands"],
+      office: [
+        "Digital Concepts Factory",
+        "Stationsplein 45",
+        "3013 AK Rotterdam",
+        "The Netherlands",
+      ],
       rights: "© 2026 Digital Concepts Factory B.V.",
       privacy: "Privacy",
       disclaimer: "Disclaimer",

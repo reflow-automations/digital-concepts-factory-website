@@ -7,7 +7,12 @@ export const home = {
       eyebrow: "Digitale innovatie · HR · Inkoop · Marketing",
       h1: "Grip op groei begint met digitale innovatie",
       h1Accent: "digitale innovatie",
-      lead: "Digital Concepts Factory ontwikkelt innovatieve technologie waarmee organisaties hun grootste uitdagingen doelgericht aanpakken, van talent vinden en behouden tot inkoop slimmer organiseren en marketing onderscheidend inzetten.",
+      lead: [
+        "Digital Concepts Factory ontwikkelt digitale innovaties waarmee organisaties hun grootste uitdagingen binnen Human Resource Management (HR), Inkoop en Marketing slimmer en doelgerichter aanpakken.",
+        "We helpen organisaties om sneller talent te vinden, medewerkers langer te behouden, ziekteverzuim terug te dringen, inkoopprocessen slimmer te organiseren en marketing meer impact te geven.",
+        "Onze oplossingen zijn praktisch toepasbaar en gericht op concreet resultaat: lagere kosten, meer rendement en duurzame groei.",
+        "Digitale innovatie is geen luxe meer, maar een noodzaak om niet stil te blijven staan.",
+      ],
       ctaSecondary: "Bekijk innovaties",
     },
     pillars: {
@@ -15,31 +20,31 @@ export const home = {
       heading: "Vijf domeinen, één vaste belofte",
       headingAccent: "vaste belofte",
       intro:
-        "Innovaties die organisaties praktisch helpen, geen losse tools of tijdelijke oplossingen, maar digitale verbeteringen met duurzame impact op groei, continuïteit en rendement.",
+        "Onze digitale innovaties pakken herkenbare organisatievraagstukken aan en dragen direct bij aan groei, continuïteit en rendement.",
       items: [
         {
           summary:
-            "Werkgevers op het netvlies van talent, online én offline zichtbaar via DOOH-netwerken en slimme retargeting.",
+            "Werkgevers blijvend op het netvlies bij talent. Offline via DOOH-netwerken en online via slimme retargeting.",
           bullets: ["Employer Branding", "DOOH-campagnes", "Retargeting"],
         },
         {
           summary:
-            "Persoonlijke arbeidsvoorwaarden binnen heldere kaders. Minder verloop, lagere vervangingskosten, sterkere binding.",
+            "Meer ruimte voor persoonlijke arbeidsvoorwaarden, zonder de grip te verliezen. Sterkere binding, minder verloop en lagere vervangingskosten.",
           bullets: ["Maatwerk", "€19.200 p/p besparing", "Schaalbaar"],
         },
         {
           summary:
-            "Een betaalbare digitale oplossing die medewerkers gemotiveerd houdt, gerichter, lichter en direct uitvoerbaar.",
+            "Een betaalbare digitale oplossing die kortdurend verzuim direct aanpakt. Snel te implementeren, eenvoudig in gebruik en gericht op resultaat.",
           bullets: ["Kortdurend verzuim", "€4.5K, €7K p/p p/j", "Direct toepasbaar"],
         },
         {
           summary:
-            "Aanbestedingen en contractmanagement overzichtelijker, transparanter en goedkoper, tot 50% kostenreductie.",
-          bullets: ["(Europees) aanbesteden", "Contractmanagement", "Tot 50% besparing"],
+            "Meer overzicht en grip op aanbestedingen en contractmanagement, met aantoonbare besparingen tot 50%.",
+          bullets: ["(Europees) aanbesteden", "Contractmanagement", "Besparingen tot 50%"],
         },
         {
           summary:
-            "Geen campagnes voor zichtbaarheid alleen, maar concepten die online en offline samenbrengen voor maximale impact.",
+            "Campagnes die niet alleen zichtbaar zijn, maar ook iets in beweging zetten. Online én offline, voor meer bereik, herkenning en impact.",
           bullets: ["Onderscheidende concepten", "Online + offline", "Resultaatgericht"],
         },
       ],
@@ -51,6 +56,7 @@ export const home = {
       calcLink: "Bereken uw besparingspotentieel",
       items: [
         {
+          navLabel: "Besparing door personeelsbehoud",
           label: "Minimale besparing per behouden medewerker",
           detail:
             "Vervangingskosten bedragen 40% tot 200% van het bruto jaarsalaris. Bij modaal inkomen (€48.000) ligt de ondergrens al op €19.200 per medewerker.",
@@ -58,6 +64,15 @@ export const home = {
           prefix: "€",
         },
         {
+          navLabel: "Besparing door minder ziekteverzuim",
+          label: "Verzuimkosten per medewerker per jaar",
+          detail:
+            "Gemiddelde kosten van ziekteverzuim in Nederland, exclusief de indirecte gevolgen voor productiviteit, teams en continuïteit.",
+          source: "TNO · ArboNed",
+          prefix: "€",
+        },
+        {
+          navLabel: "Besparing op aanbestedingskosten",
           label: "Reductie aanbestedingskosten",
           detail:
             "Met onze digitale innovatie voor (Europees) aanbesteden kunnen interne kosten en doorlooptijden met de helft worden teruggebracht.",
@@ -66,13 +81,7 @@ export const home = {
           suffix: "%",
         },
         {
-          label: "Verzuimkosten per medewerker per jaar",
-          detail:
-            "Gemiddelde kosten van ziekteverzuim in Nederland, exclusief de indirecte gevolgen voor productiviteit, teams en continuïteit.",
-          source: "TNO · ArboNed",
-          prefix: "€",
-        },
-        {
+          navLabel: "Maandelijks bereik DOOH-netwerk",
           label: "Bereik DOOH-netwerk per maand",
           detail:
             "Afhankelijk van locaties en campagne-opzet bereiken onze DOOH-schermen 250.000 tot 2 miljoen kandidaten per maand, vooral in de Randstad.",
@@ -83,23 +92,22 @@ export const home = {
     },
     manifesto: {
       chapter: "Onze overtuiging",
-      heading:
-        "De brug tussen traditionele organisaties en de digitale toekomst",
-      headingAccent: "traditionele organisaties",
+      heading: "De Digitale Brug tussen vraagstuk en oplossing",
+      headingAccent: "Digitale Brug",
       intro:
-        "Degelijk waar het moet, vernieuwend waar het kan. Drie principes die aan elke opdracht ten grondslag liggen.",
+        "Iedere organisatie staat voor uitdagingen die vragen om nieuwe manieren van denken en werken. Met onze digitale innovaties slaan we de brug tussen concrete organisatievraagstukken en praktische oplossingen die organisaties slimmer, sterker en toekomstbestendiger maken.",
       points: [
         {
           title: "Eerst begrijpen, dan bouwen",
-          text: "Achter iedere organisatie zit een eigen verhaal. Wij nemen de tijd om klanten goed te leren kennen, voordat we ook maar een regel code schrijven.",
+          text: "Achter iedere organisatie zit een eigen verhaal. Daarom nemen we eerst de tijd om de organisatie, het vraagstuk en de ambitie goed te begrijpen. Pas daarna beginnen we met ontwikkelen.",
         },
         {
           title: "Praktisch en betaalbaar",
-          text: "Innovatie moet werken in de dagelijkse praktijk, niet alleen indrukwekkend zijn op papier. Daarom blijven onze oplossingen toegankelijk en uitvoerbaar.",
+          text: "Innovatie moet vooral werken in de dagelijkse praktijk. Daarom ontwikkelen we oplossingen die slim, toegankelijk en praktisch toepasbaar zijn.",
         },
         {
-          title: "Resultaat is altijd het einddoel",
-          text: "Meer grip. Minder kosten. Sterkere positionering. Betere processen. Concrete uitkomsten waaraan onze klanten ons mogen afrekenen.",
+          title: "Uiteindelijk telt het resultaat",
+          text: "Meer overzicht, meer grip, lagere kosten en slimmere processen. Onze innovaties zijn gericht op wat uiteindelijk telt: groei, continuïteit en rendement.",
         },
       ],
     },
@@ -119,7 +127,7 @@ export const home = {
     },
     finalCta: {
       heading:
-        "Wilt u ontdekken hoe digitale innovatie uw organisatie kan helpen groeien?",
+        "Staat uw organisatie voor een uitdaging? Ontdek welke digitale innovatie het verschil kan maken.",
       headingAccent: "uw organisatie",
     },
   },
@@ -129,7 +137,12 @@ export const home = {
       eyebrow: "Digital innovation · HR · Procurement · Marketing",
       h1: "Control over growth starts with digital innovation",
       h1Accent: "digital innovation",
-      lead: "Digital Concepts Factory builds innovative technology that helps organisations tackle their biggest challenges head-on, from finding and retaining talent to organising procurement more intelligently and deploying marketing that sets them apart.",
+      lead: [
+        "Digital Concepts Factory develops digital innovations that help organisations tackle their biggest challenges in Human Resource Management (HR), Procurement and Marketing in a smarter, more focused way.",
+        "We help organisations find talent faster, retain employees longer, reduce absenteeism, organise procurement processes more intelligently and give marketing more impact.",
+        "Our solutions are practical to apply and focused on concrete results: lower costs, higher returns and sustainable growth.",
+        "Digital innovation is no longer a luxury, but a necessity to keep moving forward.",
+      ],
       ctaSecondary: "Explore innovations",
     },
     pillars: {
@@ -137,31 +150,31 @@ export const home = {
       heading: "Five domains, one firm promise",
       headingAccent: "firm promise",
       intro:
-        "Innovations that help organisations in practice. Not isolated tools or temporary fixes, but digital improvements with lasting impact on growth, continuity and return.",
+        "Our digital innovations tackle recognisable organisational challenges and contribute directly to growth, continuity and return.",
       items: [
         {
           summary:
-            "Employers on talent's radar, visible online and offline through DOOH networks and smart retargeting.",
+            "Employers lastingly on talent's radar. Offline through DOOH networks and online through smart retargeting.",
           bullets: ["Employer branding", "DOOH campaigns", "Retargeting"],
         },
         {
           summary:
-            "Personalised employment terms within clear frameworks. Less turnover, lower replacement costs, stronger commitment.",
+            "More room for personalised employment terms, without losing control. Stronger commitment, less turnover and lower replacement costs.",
           bullets: ["Tailored", "€19,200 p/p saving", "Scalable"],
         },
         {
           summary:
-            "An affordable digital solution that keeps employees motivated. More targeted, lighter and ready to apply right away.",
+            "An affordable digital solution that tackles short-term absence head-on. Quick to implement, easy to use and focused on results.",
           bullets: ["Short-term absence", "€4.5K, €7K p/p p/y", "Immediately applicable"],
         },
         {
           summary:
-            "Tendering and contract management made clearer, more transparent and more affordable, with up to 50% cost reduction.",
-          bullets: ["(European) tendering", "Contract management", "Up to 50% saving"],
+            "More overview and control over tendering and contract management, with proven savings of up to 50%.",
+          bullets: ["(European) tendering", "Contract management", "Savings up to 50%"],
         },
         {
           summary:
-            "Not campaigns for visibility alone, but concepts that bring online and offline together for maximum impact.",
+            "Campaigns that are not just visible, but set things in motion. Online and offline, for more reach, recognition and impact.",
           bullets: ["Distinctive concepts", "Online + offline", "Results-driven"],
         },
       ],
@@ -173,6 +186,7 @@ export const home = {
       calcLink: "Calculate your savings potential",
       items: [
         {
+          navLabel: "Savings through staff retention",
           label: "Minimum saving per retained employee",
           detail:
             "Replacement costs range from 40% to 200% of gross annual salary. At an average income (€48,000), the lower bound already sits at €19,200 per employee.",
@@ -180,6 +194,15 @@ export const home = {
           prefix: "€",
         },
         {
+          navLabel: "Savings through less absenteeism",
+          label: "Absence costs per employee per year",
+          detail:
+            "Average cost of absenteeism in the Netherlands, excluding the indirect impact on productivity, teams and continuity.",
+          source: "TNO · ArboNed",
+          prefix: "€",
+        },
+        {
+          navLabel: "Savings on tendering costs",
           label: "Reduction in tendering costs",
           detail:
             "With our digital innovation for (European) tendering, internal costs and lead times can be cut in half.",
@@ -188,13 +211,7 @@ export const home = {
           suffix: "%",
         },
         {
-          label: "Absence costs per employee per year",
-          detail:
-            "Average cost of absenteeism in the Netherlands, excluding the indirect impact on productivity, teams and continuity.",
-          source: "TNO · ArboNed",
-          prefix: "€",
-        },
-        {
+          navLabel: "Monthly DOOH network reach",
           label: "DOOH network reach per month",
           detail:
             "Depending on locations and campaign setup, our DOOH screens reach 250,000 to 2 million candidates per month, mainly in the Randstad region.",
@@ -205,23 +222,22 @@ export const home = {
     },
     manifesto: {
       chapter: "What we believe",
-      heading:
-        "The bridge between traditional organisations and the digital future",
-      headingAccent: "traditional organisations",
+      heading: "The Digital Bridge between challenge and solution",
+      headingAccent: "Digital Bridge",
       intro:
-        "Solid where it must be, innovative where it can be. Three principles that underpin every assignment.",
+        "Every organisation faces challenges that call for new ways of thinking and working. With our digital innovations we bridge concrete organisational challenges and practical solutions that make organisations smarter, stronger and more future-proof.",
       points: [
         {
           title: "Understand first, then build",
-          text: "Behind every organisation is a story of its own. We take the time to get to know our clients well, before we write a single line of code.",
+          text: "Behind every organisation is a story of its own. That is why we first take the time to properly understand the organisation, the challenge and the ambition. Only then do we start developing.",
         },
         {
           title: "Practical and affordable",
-          text: "Innovation has to work in daily practice, not just look impressive on paper. That is why our solutions stay accessible and workable.",
+          text: "Above all, innovation has to work in daily practice. That is why we develop solutions that are smart, accessible and practical to apply.",
         },
         {
-          title: "Results are always the goal",
-          text: "More control. Lower costs. Stronger positioning. Better processes. Concrete outcomes our clients can hold us to.",
+          title: "In the end, results are what count",
+          text: "More overview, more control, lower costs and smarter processes. Our innovations focus on what ultimately counts: growth, continuity and return.",
         },
       ],
     },
@@ -241,7 +257,7 @@ export const home = {
     },
     finalCta: {
       heading:
-        "Want to discover how digital innovation can help your organisation grow?",
+        "Is your organisation facing a challenge? Discover which digital innovation can make the difference.",
       headingAccent: "your organisation",
     },
   },
