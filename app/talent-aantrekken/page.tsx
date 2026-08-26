@@ -9,7 +9,7 @@ import SubpagesNav from "@/components/SubpagesNav";
 import Accent from "@/components/Accent";
 import Faq from "@/components/Faq";
 import JsonLd from "@/components/JsonLd";
-import { usePick } from "@/lib/i18n/provider";
+import { useLang, usePick } from "@/lib/i18n/provider";
 import { cta } from "@/content/ui";
 import { talentAantrekken } from "@/content/talentAantrekken";
 import { talentAantrekkenFaq } from "@/content/faq";
@@ -20,6 +20,7 @@ export default function TalentAantrekkenPage() {
   const ctaLong = usePick(cta.long);
   const ctaShort = usePick(cta.short);
   const faq = usePick(talentAantrekkenFaq);
+  const lang = useLang();
 
   return (
     <>
@@ -49,7 +50,8 @@ export default function TalentAantrekkenPage() {
           <Reveal>
             <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
               <Image
-                src="/photos/talent-aantrekken-hero-v2.png"
+                key={lang}
+                src={lang === "nl" ? "/photos/talent-aantrekken-hero-nl.png" : "/photos/talent-aantrekken-hero-en.png"}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover"
@@ -80,7 +82,12 @@ export default function TalentAantrekkenPage() {
                 </Reveal>
               ))}
               <Reveal delay={220}>
-                <p className="font-medium text-ink">{t.intro.paragraphStrong}</p>
+                <p className="font-semibold text-ink mb-2">{t.intro.paragraphStrongHeading}</p>
+                <div className="space-y-3">
+                  {t.intro.paragraphStrong.map((para) => (
+                    <p key={para} className="font-medium text-ink">{para}</p>
+                  ))}
+                </div>
               </Reveal>
               <Reveal delay={280}>
                 <CTA href="/contact" variant="underline">
@@ -151,7 +158,8 @@ export default function TalentAantrekkenPage() {
         <Reveal>
           <div className="relative aspect-[21/9] lg:aspect-[24/8] w-full overflow-hidden bg-ink">
             <Image
-              src="/photos/talent-aantrekken-secondary.png"
+              key={lang}
+              src={lang === "nl" ? "/photos/talent-aantrekken-secondary-nl.png" : "/photos/talent-aantrekken-secondary-en.png"}
               alt={t.secondaryImageAlt}
               fill
               className="object-cover"
@@ -172,7 +180,7 @@ export default function TalentAantrekkenPage() {
                 label={t.dooh.chapter}
                 className="text-muted mb-8"
               />
-              <h2 className="display-section text-[clamp(1.85rem,3vw,2.75rem)] text-ink">
+              <h2 className="display-section text-[clamp(1.85rem,3vw,2.75rem)] text-ink whitespace-pre-line">
                 {t.dooh.heading}
               </h2>
             </Reveal>
@@ -225,7 +233,7 @@ export default function TalentAantrekkenPage() {
       />
       <Faq items={faq} />
 
-      <SubpagesNav chapter="03" items={t.subpages} />
+      <SubpagesNav chapter="03" heading={t.subpagesHeading} items={t.subpages} />
 
       {/* CLOSING CTA */}
       <section className="py-20 lg:py-28">

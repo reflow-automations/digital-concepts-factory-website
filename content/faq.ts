@@ -16,45 +16,45 @@ export const talentAantrekkenFaq: FaqSet = {
   nl: [
     {
       q: "Hoe helpt Digital Concepts Factory bij het aantrekken van talent?",
-      a: "Wij brengen werkgevers op het juiste moment in beeld bij de juiste kandidaten, online en offline. Met employer branding-campagnes, Digital Out of Home en slimme retargeting bereiken organisaties talent daar waar het zich bevindt, met meer herkenning en sterkere conversie.",
+      a: "Wij brengen werkgevers op het juiste moment in beeld bij de juiste kandidaten, online en offline. Met Employer Branding-campagnes, Digital Out of Home en slimme retargeting bereiken organisaties talent op de juiste plekken en momenten. Zo ontstaat meer herkenning én sterkere conversie.",
     },
     {
       q: "Wat is Digital Out of Home (DOOH) en waarom werkt het voor werving?",
-      a: "DOOH zijn digitale schermen op drukbezochte locaties waar uw doelgroep dagelijks komt. Het werkt omdat bewegend beeld aantoonbaar opvalt: onderzoek laat zien dat 83 procent van de mensen DOOH-reclame opmerkt. Zo laat u missie, visie en cultuur zien en valt u op buiten de online massa.",
+      a: "Onderzoek laat zien dat 83 procent van de mensen DOOH-reclame opmerkt. Met bewegend beeld brengt u bovendien uw missie, visie en cultuur tot leven en valt uw organisatie op buiten de online massa.",
     },
     {
       q: "Hoe verhoudt offline branding zich tot online conversie?",
-      a: "Branding vindt offline plaats, conversie online. Wij maken werkgevers zichtbaar via DOOH op locaties waar de doelgroep komt en benaderen diezelfde mensen daarna opnieuw online via slimme retargeting op de smartphone. Zo combineert u bereik met meetbare opvolging.",
+      a: "Branding vindt offline plaats, conversie online. Wij maken werkgevers zichtbaar via DOOH op locaties waar de doelgroep komt en bereiken diezelfde doelgroep vervolgens opnieuw op de smartphone via slimme retargeting. Zo verbinden we offline zichtbaarheid met meetbare online conversie.",
     },
     {
       q: "Hoeveel kandidaten kunt u met DOOH bereiken?",
-      a: "Afhankelijk van locaties en campagne-opzet loopt het bereik van ongeveer 250.000 tot 2 miljoen kandidaten per maand, vooral in de Randstad. De gemiddelde bezoektijd op deze locaties is twee uur per week, wat de kans vergroot dat uw boodschap wordt opgemerkt en onthouden.",
+      a: "Afhankelijk van de locaties en campagne-opzet kan het bereik oplopen van ongeveer 250.000 tot 2 miljoen kandidaten per maand, vooral in de Randstad. Bovendien brengen kandidaten gemiddeld één tot twee uur per week door op deze locaties, waardoor de kans groter is dat uw boodschap wordt opgemerkt en onthouden.",
     },
     {
       q: "Voor welke organisaties is deze aanpak geschikt?",
-      a: "Voor werkgevers die in een krappe arbeidsmarkt onderscheidend willen zijn en moeite hebben om op te vallen tussen vacaturebanken en social media. De aanpak is bedoeld voor grote organisaties en (semi-)overheden die structureel de juiste mensen willen bereiken.",
+      a: "Deze aanpak is geschikt voor werkgevers die zich in een krappe arbeidsmarkt willen onderscheiden en talent ook buiten vacaturebanken en social media willen bereiken. Vooral grote organisaties en (semi-)overheden die structureel de juiste mensen willen bereiken, profiteren van deze aanpak.",
     },
   ],
   en: [
     {
       q: "How does Digital Concepts Factory help attract talent?",
-      a: "We put employers in front of the right candidates at the right moment, online and offline. With employer branding campaigns, Digital Out of Home and smart retargeting, organisations reach talent where it actually is, with more recognition and stronger conversion.",
+      a: "We put employers in front of the right candidates at the right moment, online and offline. With Employer Branding campaigns, Digital Out of Home and smart retargeting, organisations reach talent at the right places and moments. That builds more recognition and stronger conversion.",
     },
     {
       q: "What is Digital Out of Home (DOOH) and why does it work for recruitment?",
-      a: "DOOH means digital screens at busy locations your audience passes every day. It works because moving images demonstrably stand out: research shows 83 percent of people notice DOOH advertising. It lets you show mission, vision and culture and stand out beyond the online crowd.",
+      a: "Research shows that 83 percent of people notice DOOH advertising. With moving images you also bring your mission, vision and culture to life and stand out beyond the online crowd.",
     },
     {
       q: "How does offline branding relate to online conversion?",
-      a: "Branding happens offline, conversion online. We make employers visible through DOOH where their audience goes, then approach those same people again online through smart retargeting on their smartphone. That combines reach with measurable follow-up.",
+      a: "Branding happens offline, conversion online. We make employers visible through DOOH at locations the audience visits, then reach that same audience again on their smartphone through smart retargeting. That connects offline visibility with measurable online conversion.",
     },
     {
       q: "How many candidates can you reach with DOOH?",
-      a: "Depending on locations and campaign setup, reach runs from roughly 250,000 to 2 million candidates per month, mainly in the Randstad region. Average dwell time at these locations is two hours a week, increasing the chance your message is noticed and remembered.",
+      a: "Depending on the locations and campaign setup, reach can run from roughly 250,000 to 2 million candidates per month, mainly in the Randstad region. Candidates also spend on average one to two hours a week at these locations, increasing the chance your message is noticed and remembered.",
     },
     {
       q: "Which organisations is this approach suitable for?",
-      a: "For employers who want to stand out in a tight labour market and struggle to be noticed between job boards and social media. The approach is aimed at large organisations and (semi-)public bodies that want to reach the right people structurally.",
+      a: "This approach suits employers who want to stand out in a tight labour market and want to reach talent beyond job boards and social media too. Large organisations and (semi-)public bodies that want to reach the right people structurally benefit especially from this approach.",
     },
   ],
 };

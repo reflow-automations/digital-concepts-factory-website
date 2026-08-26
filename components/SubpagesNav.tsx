@@ -9,12 +9,14 @@ import { ui } from "@/content/ui";
 interface SubpagesNavProps {
   chapter: string;       // e.g. "II"
   label?: string;        // overrides the default "Verdieping" / "Further reading"
+  heading?: string;      // overrides the default "Lees verder over dit onderwerp"
   items: { no: string; title: string; summary: string; href: string }[];
 }
 
 export default function SubpagesNav({
   chapter,
   label,
+  heading,
   items,
 }: SubpagesNavProps) {
   const t = ui[useLang()].subpagesNav;
@@ -28,7 +30,7 @@ export default function SubpagesNav({
             className="text-muted mb-8"
           />
           <h2 className="display-section text-[clamp(1.75rem,2.75vw,2.5rem)] text-ink mb-14 max-w-3xl">
-            {t.heading}
+            {heading ?? t.heading}
           </h2>
         </Reveal>
 

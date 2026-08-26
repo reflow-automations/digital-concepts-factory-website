@@ -134,7 +134,7 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
               <span className="opacity-40">/</span>
               <span>{p.chapter} · {p.label}</span>
             </div>
-            <h1 className="display-hero text-ink text-[clamp(2.5rem,6vw,5.5rem)] max-w-5xl">
+            <h1 className="display-hero text-ink text-[clamp(2.5rem,6vw,5.5rem)] max-w-5xl whitespace-pre-line">
               {renderAccented(p.h1, p.h1Accent)}
             </h1>
           </Reveal>
