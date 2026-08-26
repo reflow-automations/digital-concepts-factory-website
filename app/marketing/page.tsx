@@ -9,7 +9,7 @@ import SubpagesNav from "@/components/SubpagesNav";
 import Accent from "@/components/Accent";
 import Faq from "@/components/Faq";
 import JsonLd from "@/components/JsonLd";
-import { usePick } from "@/lib/i18n/provider";
+import { useLang, usePick } from "@/lib/i18n/provider";
 import { cta } from "@/content/ui";
 import { marketing } from "@/content/marketing";
 import { marketingFaq } from "@/content/faq";
@@ -19,6 +19,7 @@ export default function MarketingPage() {
   const t = usePick(marketing);
   const ctaLong = usePick(cta.long);
   const faq = usePick(marketingFaq);
+  const lang = useLang();
 
   return (
     <>
@@ -48,7 +49,8 @@ export default function MarketingPage() {
           <Reveal>
             <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
               <Image
-                src="/photos/marketing-hero-v2.png"
+                key={lang}
+                src={lang === "nl" ? "/photos/marketing-hero-nl.png" : "/photos/marketing-hero-en.png"}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover"
@@ -148,7 +150,8 @@ export default function MarketingPage() {
         <Reveal>
           <div className="relative aspect-[21/9] lg:aspect-[24/8] w-full overflow-hidden bg-ink">
             <Image
-              src="/photos/marketing-secondary.png"
+              key={lang}
+              src={lang === "nl" ? "/photos/marketing-sectie-nl.png" : "/photos/marketing-sectie-en.png"}
               alt={t.resultBlock.imageAlt}
               fill
               className="object-cover"
@@ -214,7 +217,7 @@ export default function MarketingPage() {
       />
       <Faq items={faq} />
 
-      <SubpagesNav chapter="03" items={t.subpages} />
+      <SubpagesNav chapter="03" heading={t.subpagesHeading} items={t.subpages} />
 
       {/* CLOSING CTA */}
       <section className="py-20 lg:py-28">

@@ -19,6 +19,7 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import ChapterMark from "@/components/ChapterMark";
 import CTA from "@/components/CTA";
+import ListIntro from "@/components/ListIntro";
 
 export type SubpageSection =
   | {
@@ -104,6 +105,34 @@ function renderAccented(text: string, accent?: string) {
   );
 }
 
+/**
+ * Rendert een alinea en zet daarbij `[[label|/pad]]`-markeringen om in een
+ * echte link. Gebruikt zodat de klant in de content zelf kan aangeven welk
+ * woord moet doorlinken (revisieronde 2026-08, punt 59: "Zorg dat achter het
+ * woord 'interactieve calculator' een doorlink komt").
+ */
+function renderParagraph(text: string) {
+  const parts = text.split(/(\[\[[^\]]+\]\])/g);
+  if (parts.length === 1) return <>{text}</>;
+  return (
+    <>
+      {parts.map((part, i) => {
+        const m = part.match(/^\[\[([^|\]]+)\|([^\]]+)\]\]$/);
+        if (!m) return <span key={i}>{part}</span>;
+        return (
+          <Link
+            key={i}
+            href={m[2]}
+            className="text-cobalt hover:text-cobalt-bright underline underline-offset-2 transition-colors"
+          >
+            {m[1]}
+          </Link>
+        );
+      })}
+    </>
+  );
+}
+
 function renderAccentedSection(text: string, accent?: string) {
   if (!accent) return <>{text}</>;
   const idx = text.indexOf(accent);
@@ -176,7 +205,7 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
             <div className="lg:col-span-6 lg:col-start-7 space-y-5 text-text text-[16px] leading-[1.65]">
               {p.intro.paragraphs.map((para, i) => (
                 <Reveal key={i} delay={100 + i * 60}>
-                  <p>{para}</p>
+                  <p>{renderParagraph(para)}</p>
                 </Reveal>
               ))}
               {p.intro.sourceNote && (
@@ -214,7 +243,7 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
                   <div className="lg:col-span-6 lg:col-start-7 space-y-5 text-text text-[16px] leading-[1.65]">
                     {s.paragraphs.map((para, j) => (
                       <Reveal key={j} delay={100 + j * 60}>
-                        <p>{para}</p>
+                        <p>{renderParagraph(para)}</p>
                       </Reveal>
                     ))}
                     {s.sourceNote && (
@@ -269,8 +298,8 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
                   </Reveal>
                   {s.intro && (
                     <div className="lg:col-span-5 flex items-end">
-                      <Reveal delay={120}>
-                        <p className="text-text text-[15px] leading-[1.6]">{s.intro}</p>
+                      <Reveal delay={120} className="w-full">
+                        <ListIntro>{s.intro}</ListIntro>
                       </Reveal>
                     </div>
                   )}

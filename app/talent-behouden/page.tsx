@@ -10,7 +10,9 @@ import SubpagesNav from "@/components/SubpagesNav";
 import Accent from "@/components/Accent";
 import Faq from "@/components/Faq";
 import JsonLd from "@/components/JsonLd";
-import { usePick } from "@/lib/i18n/provider";
+import { useLang, usePick } from "@/lib/i18n/provider";
+import ListIntro from "@/components/ListIntro";
+import ReadMore from "@/components/ReadMore";
 import { cta } from "@/content/ui";
 import { talentBehouden } from "@/content/talentBehouden";
 import { talentBehoudenFaq } from "@/content/faq";
@@ -20,6 +22,7 @@ export default function TalentBehoudenPage() {
   const t = usePick(talentBehouden);
   const ctaLong = usePick(cta.long);
   const faq = usePick(talentBehoudenFaq);
+  const lang = useLang();
 
   return (
     <>
@@ -49,7 +52,8 @@ export default function TalentBehoudenPage() {
           <Reveal>
             <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
               <Image
-                src="/photos/talent-behouden-celebration.png"
+                key={lang}
+                src={lang === "nl" ? "/photos/talent-behouden-hero-nl.png" : "/photos/talent-behouden-hero-en.png"}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover"
@@ -81,9 +85,12 @@ export default function TalentBehoudenPage() {
                 </Reveal>
               ))}
               <Reveal delay={220}>
-                <p className="text-[12px] text-muted pt-4 border-t border-mist">
-                  {t.intro.source}
-                </p>
+                <ReadMore
+                  label={t.intro.readMore.label}
+                  labelOpen={t.intro.readMore.labelOpen}
+                  blocks={t.intro.readMore.blocks}
+                  closing={t.intro.readMore.closing}
+                />
               </Reveal>
             </div>
           </div>
@@ -144,6 +151,18 @@ export default function TalentBehoudenPage() {
               <CTA href="/contact" variant="primary">
                 {t.innovation.cta}
               </CTA>
+
+              {/* Banner onder het tekstblok links (revisieronde 2026-08, punt 40) */}
+              <div className="mt-10 relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-ink">
+                <Image
+                  key={lang}
+                  src={lang === "nl" ? "/photos/talent-behouden-innovatie-banner-nl.png" : "/photos/talent-behouden-innovatie-banner-en.png"}
+                  alt={t.innovation.bannerAlt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
+              </div>
             </Reveal>
 
             <div className="lg:col-span-6 lg:col-start-7 space-y-8 text-[16px] leading-[1.65] text-text">
@@ -178,10 +197,8 @@ export default function TalentBehoudenPage() {
               </h2>
             </Reveal>
             <div className="lg:col-span-5 flex items-end">
-              <Reveal delay={120}>
-                <p className="text-text text-[15px] leading-[1.6]">
-                  {t.costs.intro}
-                </p>
+              <Reveal delay={120} className="w-full">
+                <ListIntro>{t.costs.intro}</ListIntro>
               </Reveal>
             </div>
           </div>
@@ -319,7 +336,7 @@ export default function TalentBehoudenPage() {
       />
       <Faq items={faq} />
 
-      <SubpagesNav chapter="04" items={t.subpages} />
+      <SubpagesNav chapter="04" heading={t.subpagesHeading} items={t.subpages} />
 
       {/* CLOSING CTA */}
       <section className="py-20 lg:py-28">

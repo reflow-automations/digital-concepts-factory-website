@@ -21,7 +21,7 @@ const LABELS = {
     totalLabel: "Totaal per jaar, uw situatie",
     employee: "medewerker",
     employees: "medewerkers",
-    savingLabel: "Besparingspotentieel met DCF",
+    savingLabel: "Besparingspotentieel met onze innovatie",
     savingNote: "Bij voorkomen van 50% van vrijwillig vertrek",
     roles: [
       { value: "frontline" as Functietype, label: "Frontline", pct: 0.4, hint: "40% vuistregel" },
@@ -44,7 +44,7 @@ const LABELS = {
     totalLabel: "Total per year, your situation",
     employee: "employee",
     employees: "employees",
-    savingLabel: "Savings potential with DCF",
+    savingLabel: "Savings potential with our innovation",
     savingNote: "By preventing 50% of voluntary departures",
     roles: [
       { value: "frontline" as Functietype, label: "Frontline", pct: 0.4, hint: "40% rule of thumb" },

@@ -7,7 +7,7 @@ import ChapterMark from "@/components/ChapterMark";
 import SubpagesNav from "@/components/SubpagesNav";
 import Accent from "@/components/Accent";
 import JsonLd from "@/components/JsonLd";
-import { usePick } from "@/lib/i18n/provider";
+import { useLang, usePick } from "@/lib/i18n/provider";
 import { cta } from "@/content/ui";
 import { overOns } from "@/content/overOns";
 import { breadcrumbFor } from "@/lib/seo/schema";
@@ -15,6 +15,7 @@ import { breadcrumbFor } from "@/lib/seo/schema";
 export default function OverOnsPage() {
   const t = usePick(overOns);
   const ctaLong = usePick(cta.long);
+  const lang = useLang();
 
   return (
     <>
@@ -45,7 +46,8 @@ export default function OverOnsPage() {
           <Reveal>
             <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
               <Image
-                src="/photos/over-ons-hero.png"
+                key={lang}
+                src={lang === "nl" ? "/photos/over-ons-hero-nl.png" : "/photos/over-ons-hero-en.png"}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover"
@@ -76,6 +78,25 @@ export default function OverOnsPage() {
                   <p>{para}</p>
                 </Reveal>
               ))}
+              {t.introExtra.map((para, i) => (
+                <Reveal key={`extra-${i}`} delay={220 + i * 60}>
+                  <p>{para}</p>
+                </Reveal>
+              ))}
+
+              {/* Banner onder het tekstblok (revisieronde 2026-08, punt 132) */}
+              <Reveal delay={340}>
+                <div className="mt-4 relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-ink">
+                  <Image
+                    key={lang}
+                    src={lang === "nl" ? "/photos/over-ons-banner1-nl.png" : "/photos/over-ons-banner1-en.png"}
+                    alt={t.hero.imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </div>
+              </Reveal>
             </div>
           </div>
         </div>
@@ -180,7 +201,7 @@ export default function OverOnsPage() {
         </div>
       </section>
 
-      <SubpagesNav chapter="03" items={t.subpages} />
+      <SubpagesNav chapter="03" heading={t.subpagesHeading} items={t.subpages} />
 
       {/* CLOSING CTA */}
       <section className="py-20 lg:py-28">

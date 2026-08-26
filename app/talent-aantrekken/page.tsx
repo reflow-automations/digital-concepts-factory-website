@@ -8,6 +8,7 @@ import CTA from "@/components/CTA";
 import SubpagesNav from "@/components/SubpagesNav";
 import Accent from "@/components/Accent";
 import Faq from "@/components/Faq";
+import ListIntro from "@/components/ListIntro";
 import JsonLd from "@/components/JsonLd";
 import { useLang, usePick } from "@/lib/i18n/provider";
 import { cta } from "@/content/ui";
@@ -185,10 +186,8 @@ export default function TalentAantrekkenPage() {
               </h2>
             </Reveal>
             <div className="lg:col-span-5 flex items-end">
-              <Reveal delay={120}>
-                <p className="text-text text-[15px] leading-[1.6]">
-                  {t.dooh.intro}
-                </p>
+              <Reveal delay={120} className="w-full">
+                <ListIntro>{t.dooh.intro}</ListIntro>
               </Reveal>
             </div>
           </div>

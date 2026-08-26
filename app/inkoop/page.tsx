@@ -8,7 +8,7 @@ import CTA from "@/components/CTA";
 import Accent from "@/components/Accent";
 import Faq from "@/components/Faq";
 import JsonLd from "@/components/JsonLd";
-import { usePick } from "@/lib/i18n/provider";
+import { useLang, usePick } from "@/lib/i18n/provider";
 import { cta } from "@/content/ui";
 import { inkoop } from "@/content/inkoop";
 import { inkoopFaq } from "@/content/faq";
@@ -18,6 +18,7 @@ export default function InkoopPage() {
   const t = usePick(inkoop);
   const ctaLong = usePick(cta.long);
   const faq = usePick(inkoopFaq);
+  const lang = useLang();
 
   return (
     <>
@@ -47,7 +48,8 @@ export default function InkoopPage() {
           <Reveal>
             <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden bg-ink">
               <Image
-                src="/photos/inkoop-meeting.png"
+                key={lang}
+                src={lang === "nl" ? "/photos/inkoop-hero-nl.png" : "/photos/inkoop-hero-en.png"}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover duotone-blue"
@@ -127,6 +129,19 @@ export default function InkoopPage() {
                   </li>
                 ))}
               </ul>
+
+              {/* Extra blok op verzoek van de klant (revisieronde 2026-08, punt 89c) */}
+              <div className="mt-10 border-l-2 border-cobalt-bright bg-paper/[0.06] px-6 py-6 rounded-sm">
+                <h3 className="display-section text-[clamp(1.05rem,1.4vw,1.25rem)] text-paper mb-3">
+                  {t.extraBlock.heading}
+                </h3>
+                <div className="space-y-3 text-paper/80 text-[14.5px] leading-[1.6]">
+                  {t.extraBlock.paragraphs.map((para) => (
+                    <p key={para}>{para}</p>
+                  ))}
+                </div>
+                <p className="text-[12px] text-paper/50 mt-4">{t.extraBlock.source}</p>
+              </div>
             </Reveal>
           </div>
         </div>
@@ -179,7 +194,8 @@ export default function InkoopPage() {
             <Reveal className="lg:col-span-7">
               <div className="photo-treatment aspect-[16/10] relative overflow-hidden bg-ink">
                 <Image
-                  src="/photos/inkoop-aanbesteden.png"
+                  key={lang}
+                  src={lang === "nl" ? "/photos/inkoop-banner2-nl.png" : "/photos/inkoop-banner2-en.png"}
                   alt={t.secondarySection.imageAlt}
                   fill
                   className="object-cover duotone-blue"

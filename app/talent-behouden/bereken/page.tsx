@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import ChapterMark from "@/components/ChapterMark";
@@ -83,6 +84,19 @@ export default function Page() {
             <p className="text-[12px] text-muted mt-14 pt-6 border-t border-mist">
               {t.calculator.source}
             </p>
+          </Reveal>
+
+          {/* Banner onder de calculator (revisieronde 2026-08, punt 65) */}
+          <Reveal delay={180}>
+            <div className="mt-12 relative aspect-[16/9] lg:aspect-[21/9] w-full overflow-hidden rounded-2xl bg-ink">
+              <Image
+                src={t.bannerSrc}
+                alt={t.bannerAlt}
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
           </Reveal>
         </div>
       </section>

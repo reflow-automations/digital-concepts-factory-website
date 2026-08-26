@@ -63,45 +63,45 @@ export const talentBehoudenFaq: FaqSet = {
   nl: [
     {
       q: "Hoe maakt DCF maatwerk in arbeidsvoorwaarden betaalbaar en schaalbaar?",
-      a: "Wij draaien het uitgangspunt om: niet de werkgever bepaalt welke extra's worden aangeboden, maar de medewerker kiest zelf wat waardevol is, binnen duidelijke kaders. Met onze digitale oplossing kan dat zonder complexiteit en zonder oncontroleerbare kosten, ook per individuele medewerker.",
+      a: "Wij draaien het uitgangspunt om: niet de werkgever bepaalt welke extra's worden aangeboden, maar medewerkers kiezen zelf wat voor hen waardevol is, binnen duidelijke kaders. Onze digitale oplossing maakt persoonlijk maatwerk schaalbaar en betaalbaar, terwijl de organisatie grip houdt op kosten en uitvoering.",
     },
     {
       q: "Hoeveel kan een organisatie besparen door talent te behouden?",
-      a: "Bij een bruto modaal jaarinkomen van 48.000 euro en een minimale vervangingsimpact van 40 procent bespaart u vanaf 19.200 euro per voorkomen vertrek. Voor managers en specialisten loopt dit bedrag fors verder op, tot 200 procent van het jaarsalaris.",
+      a: "Bij een modaal bruto jaarinkomen van €48.000 en vervangingskosten vanaf 40% van het bruto jaarsalaris kan het behouden van één medewerker al €19.200 aan potentiële kosten besparen. Bij managers en specialisten kunnen de vervangingskosten aanzienlijk hoger liggen en in sommige gevallen oplopen tot 200% van het bruto jaarsalaris.",
     },
     {
       q: "Waaruit bestaan vervangingskosten precies?",
-      a: "Uit veel meer dan alleen werving en selectie. Denk aan onboarding, inwerktijd, lagere productiviteit, extra belasting van collega's en verlies van kennis en relaties. Samen lopen deze kosten op van 40 tot 200 procent van het bruto jaarsalaris, afhankelijk van de functie.",
+      a: "Vervangingskosten bestaan uit veel meer dan alleen werving en selectie. Denk aan onboarding, inwerktijd, tijdelijk lagere productiviteit, extra werkdruk voor collega's en verlies van kennis en relaties. Afhankelijk van de functie kunnen deze kosten oplopen van 40% tot 200% van het bruto jaarsalaris.",
     },
     {
       q: "Houdt de organisatie nog grip als medewerkers zelf kiezen?",
-      a: "Ja. Medewerkers kiezen binnen duidelijke en beheersbare kaders die u als organisatie vooraf vaststelt. Zo combineert u meer vrijheid en motivatie voor medewerkers met flexibiliteit, controle en kostenbeheersing voor de organisatie.",
+      a: "Ja. Medewerkers kiezen binnen duidelijke en beheersbare kaders die de organisatie vooraf vaststelt. Zo krijgen medewerkers meer keuzevrijheid en betrokkenheid, terwijl de organisatie grip houdt op kosten en uitvoering.",
     },
     {
       q: "Voor wie is deze oplossing geschikt?",
-      a: "Voor organisaties die talent langer willen behouden en merken dat een standaard arbeidsvoorwaardenpakket niet meer past bij een diverse generatie medewerkers. De oplossing is ontwikkeld om toegankelijk en betaalbaar te zijn voor iedere organisatie.",
+      a: "Voor organisaties die talent langer willen behouden en medewerkers meer keuzevrijheid willen bieden dan standaard arbeidsvoorwaarden mogelijk maken. Onze oplossing maakt persoonlijk maatwerk toegankelijk, betaalbaar en praktisch uitvoerbaar.",
     },
   ],
   en: [
     {
       q: "How does DCF make tailored employment terms affordable and scalable?",
-      a: "We flip the starting point: the employer no longer decides which extras are offered, the employee chooses what is valuable to them, within clear frameworks. Our digital solution makes this possible without complexity and without uncontrollable costs, even per individual employee.",
+      a: "We flip the starting point: the employer no longer decides which extras are offered, employees choose what is valuable to them, within clear frameworks. Our digital solution makes personal tailoring scalable and affordable, while the organisation keeps control over costs and delivery.",
     },
     {
       q: "How much can an organisation save by retaining talent?",
-      a: "With an average gross annual income of 48,000 euros and a minimum replacement impact of 40 percent, you save from 19,200 euros per avoided departure. For managers and specialists this rises considerably, up to 200 percent of the annual salary.",
+      a: "At an average gross annual income of €48,000 and replacement costs from 40% of gross annual salary, retaining a single employee can already save €19,200 in potential costs. For managers and specialists, replacement costs can be considerably higher and in some cases run up to 200% of gross annual salary.",
     },
     {
       q: "What exactly do replacement costs consist of?",
-      a: "Far more than just recruitment and selection. Think of onboarding, ramp-up time, lower productivity, extra strain on colleagues and loss of knowledge and relationships. Together these run from 40 to 200 percent of gross annual salary, depending on the role.",
+      a: "Replacement costs consist of far more than just recruitment and selection. Think of onboarding, ramp-up time, temporarily lower productivity, extra workload for colleagues and loss of knowledge and relationships. Depending on the role, these costs can run from 40% to 200% of gross annual salary.",
     },
     {
       q: "Does the organisation keep control if employees choose for themselves?",
-      a: "Yes. Employees choose within clear and manageable frameworks that you set in advance. That combines more freedom and motivation for employees with flexibility, control and cost management for the organisation.",
+      a: "Yes. Employees choose within clear and manageable frameworks that the organisation sets in advance. That gives employees more freedom of choice and engagement, while the organisation keeps control over costs and delivery.",
     },
     {
       q: "Who is this solution suitable for?",
-      a: "For organisations that want to retain talent longer and find that a standard benefits package no longer fits a diverse generation of employees. The solution is designed to be accessible and affordable for every organisation.",
+      a: "For organisations that want to retain talent longer and want to offer employees more freedom of choice than standard employment terms allow. Our solution makes personal tailoring accessible, affordable and practical to deliver.",
     },
   ],
 };
@@ -110,29 +110,29 @@ export const ziekteverzuimFaq: FaqSet = {
   nl: [
     {
       q: "Hoe helpt DCF om ziekteverzuim terug te dringen?",
-      a: "Met een betaalbare digitale oplossing die medewerkers gemotiveerd houdt om zich niet onnodig ziek te melden, zonder ingewikkelde trajecten of hoge drempels. Minder onnodige ziekmeldingen betekent direct meer grip op kosten, meer rust in teams en meer continuïteit.",
+      a: "DCF helpt organisaties met een betaalbare digitale oplossing die medewerkers stimuleert om zich niet onnodig ziek te melden, zonder ingewikkelde trajecten of hoge drempels. Minder onnodige ziekmeldingen betekent meer grip op kosten, meer rust in teams en meer continuïteit.",
     },
     {
       q: "Wat kost ziekteverzuim gemiddeld per medewerker?",
-      a: "In Nederland liggen de gemiddelde kosten tussen 4.500 en 7.000 euro per medewerker per jaar, afhankelijk van sector, functie en verzuimduur. In 2023 ging het in totaal om 8,3 miljard euro aan loondoorbetalingskosten over verzuimde werkdagen.",
+      a: "In Nederland liggen de gemiddelde kosten van ziekteverzuim tussen €4.500 en €7.000 per medewerker per jaar, afhankelijk van sector, functie en verzuimduur. In 2023 bedroegen alleen al de loondoorbetalingskosten over verzuimde werkdagen €8,3 miljard.",
     },
     {
       q: "Werkt de oplossing ook bij kortdurend verzuim?",
-      a: "Juist kortdurend verzuim is voor veel werkgevers een doorn in het oog, omdat het onverwacht komt en roosters verstoort. Onze oplossing richt zich op het positief beïnvloeden van gedrag, zodat onnodige kortdurende ziekmeldingen afnemen.",
+      a: "Juist kortdurend verzuim heeft veel impact, omdat het vaak onverwacht komt en direct druk zet op roosters, bezetting en collega's. Onze oplossing stimuleert positief gedrag en helpt zo onnodige kortdurende ziekmeldingen terug te dringen.",
     },
     {
       q: "Is de oplossing betaalbaar voor mijn organisatie?",
-      a: "Ja. De kracht zit in de combinatie van betaalbaarheid, toegankelijkheid en praktische toepasbaarheid. De oplossing is haalbaar voor grote organisaties én voor werkgevers die op zoek zijn naar iets dat financieel verantwoord is.",
+      a: "Ja. De kracht zit in de combinatie van betaalbaarheid, toegankelijkheid en praktische toepasbaarheid. Daardoor is de oplossing haalbaar voor zowel grote als kleinere organisaties, zonder hoge kosten of complexe implementatietrajecten.",
     },
     {
       q: "Voor wie is deze aanpak geschikt?",
-      a: "Voor werkgevers die ziekteverzuim structureel willen verlagen en meer grip willen op de kosten en continuïteit die daarmee samenhangen. De aanpak is bedoeld als praktische, laagdrempelige aanvulling op uw bestaande verzuimbeleid.",
+      a: "Voor werkgevers die ziekteverzuim structureel willen verlagen en meer grip zoeken op kosten, bezetting en continuïteit. De aanpak is een praktische, laagdrempelige aanvulling op uw bestaande verzuimbeleid.",
     },
   ],
   en: [
     {
       q: "How does DCF help reduce sick leave?",
-      a: "With an affordable digital solution that keeps employees motivated not to call in sick unnecessarily, without complex programmes or high barriers. Fewer unnecessary sick-day calls means immediate control over costs, calmer teams and greater continuity.",
+      a: "DCF helps organisations with an affordable digital solution that encourages employees not to call in sick unnecessarily, without complex programmes or high barriers. Fewer unnecessary sick-day calls means more control over costs, calmer teams and greater continuity.",
     },
     {
       q: "What does sick leave cost on average per employee?",
@@ -157,29 +157,29 @@ export const inkoopFaq: FaqSet = {
   nl: [
     {
       q: "Hoeveel kan DCF besparen op aanbestedingstrajecten?",
-      a: "Doordat onze innovatie structuur, overzicht en procesbeheersing toevoegt, brengen organisaties de interne kosten en doorlooptijden van aanbestedingen tot 50 procent terug. De winst zit vooral in minder handmatig uitzoek- en afstemmingswerk en minder kans op fouten.",
+      a: "Door meer structuur, overzicht en procesbeheersing aan te brengen, kunnen organisaties de interne kosten en doorlooptijden van aanbestedingstrajecten met tot 50% verlagen. De besparing ontstaat vooral door minder handmatig uitzoek- en afstemmingswerk, efficiëntere processtappen en minder fouten en herstelwerk.",
     },
     {
       q: "Werkt dit ook voor Europese aanbestedingen?",
-      a: "Ja. Juist bij Europese aanbestedingen, die vragen om structuur, specialistische kennis en capaciteit, voegt onze oplossing waarde toe. Het hele traject wordt overzichtelijker, transparanter en aantoonbaar controleerbaar.",
+      a: "Ja. Juist bij Europese aanbestedingen zijn structuur, specialistische kennis en voldoende capaciteit essentieel. Onze oplossing brengt informatie en processtappen centraal samen, waardoor het hele traject overzichtelijker, transparanter en beter controleerbaar wordt.",
     },
     {
       q: "Wat is contractmanagement en waarom is het belangrijk?",
-      a: "Contractmanagement is het bewaken van afspraken, prestaties, termijnen en verplichtingen nadat een contract is gesloten. Zonder grip lopen contracten stilzwijgend door, worden verlengmomenten gemist en ontstaan onnodige kosten. Met centraal inzicht voorkomt u dat.",
+      a: "Contractmanagement is het actief bewaken van afspraken, prestaties, termijnen en verplichtingen nadat een contract is gesloten. Zonder goed overzicht kunnen verlengmomenten worden gemist, afspraken uit beeld raken en onnodige kosten ontstaan. Door contractinformatie centraal beschikbaar te maken en belangrijke momenten tijdig te signaleren, wordt contractmanagement overzichtelijker en beter beheersbaar.",
     },
     {
       q: "Waar zitten de echte kosten van aanbesteden?",
-      a: "Niet alleen in externe ondersteuning, maar vooral in de interne organisatie: het opstellen van stukken, juridische controle, planning, beoordeling, motivering en dossiervorming. Daardoor kosten aanbestedingen vaak meer dan vooraf wordt ingeschat.",
+      a: "Niet alleen in externe ondersteuning, maar juist ook in de interne organisatie. Het opstellen en beoordelen van stukken, juridische toetsing, interne afstemming, planning, motivering en dossiervorming vragen veel tijd en capaciteit. Daardoor kosten aanbestedingstrajecten intern vaak meer tijd en geld dan vooraf wordt ingeschat.",
     },
     {
       q: "Is dit alleen voor grote organisaties?",
-      a: "Nee. Onze oplossing is ontwikkeld om betaalbaar en toegankelijk te zijn voor iedere organisatie. Professioneel en efficiënter aanbesteden is daarmee geen privilege van grote partijen met grote budgetten.",
+      a: "Nee. Onze oplossing is ontwikkeld om professioneel aanbesteden toegankelijk en betaalbaar te maken voor organisaties van verschillende omvang. Zo is efficiënt en gestructureerd aanbesteden niet alleen weggelegd voor grote organisaties met ruime budgetten.",
     },
   ],
   en: [
     {
       q: "How much can DCF save on tendering processes?",
-      a: "By adding structure, oversight and process control, organisations reduce the internal costs and lead times of tenders by up to 50 percent. The gain lies mainly in less manual searching and coordination and a lower risk of mistakes.",
+      a: "By adding more structure, oversight and process control, organisations can reduce the internal costs and lead times of tendering processes by up to 50%. The saving comes mainly from less manual searching and coordination, more efficient process steps and fewer mistakes and less rework.",
     },
     {
       q: "Does this also work for European tenders?",
@@ -204,23 +204,23 @@ export const marketingFaq: FaqSet = {
   nl: [
     {
       q: "Wat maakt de marketingaanpak van DCF anders?",
-      a: "Wij ontwikkelen geen voorspelbare standaardcampagnes, maar verrassende, slimme en onderscheidende concepten die doelgroepen echt in beweging krijgen. Wie impact wil maken, moet durven afwijken van de gebaande paden.",
+      a: "Wij ontwikkelen geen voorspelbare standaardcampagnes, maar marketingconcepten die opvallen, verrassen en doelgroepen in beweging krijgen. Daarbij combineren we creativiteit met slimme online en offline mogelijkheden om niet alleen zichtbaar te zijn, maar daadwerkelijk resultaat te behalen.",
     },
     {
       q: "Wat bedoelt DCF met online én offline marketing?",
-      a: "Doelgroepen leven niet alleen op hun scherm, maar ook in steden, op locaties en onderweg. Waar veel partijen zich vooral op online richten, zit de echte kracht vaak in de combinatie van beide: meer bereik, meer herkenning en meer onderscheidend vermogen.",
+      a: "Doelgroepen leven niet alleen op hun scherm, maar ook in steden, op locaties en onderweg. Waar veel partijen zich vooral op online richten, geloven wij juist in de kracht van de combinatie. Online én offline versterken elkaar en zorgen samen voor meer bereik, meer herkenning en meer impact.",
     },
     {
       q: "Doet DCF alleen het concept of ook de uitvoering?",
-      a: "Beide. Onze kracht zit niet alleen in het bedenken van onderscheidende ideeën, maar ook in het realiseren ervan. Wij ondersteunen van strategie en conceptontwikkeling tot uitvoering, opvolging en evaluatie.",
+      a: "Beide. Onze kracht zit niet alleen in het ontwikkelen van onderscheidende marketingconcepten, maar ook in het daadwerkelijk realiseren ervan. Wij begeleiden het hele traject: van strategie en conceptontwikkeling tot uitvoering, optimalisatie en evaluatie.",
     },
     {
       q: "Voor wie is deze marketingaanpak geschikt?",
-      a: "Voor organisaties die opvallen lastig vinden in een markt waarin iedereen zichtbaar wil zijn, en die marketing zoeken die past bij hun merk, ambitie en markt in plaats van een standaardformat.",
+      a: "Voor organisaties die zich willen onderscheiden in een markt waarin iedereen zichtbaar wil zijn. En die zoeken naar marketing die past bij hun merk, ambities en doelgroep, in plaats van een standaardaanpak.",
     },
     {
       q: "Hoe meet u of de marketing iets oplevert?",
-      a: "Marketing draait uiteindelijk om resultaat: meer zichtbaarheid, een sterker merk en meer klanten. Wij ontwikkelen geen campagnes om alleen maar aanwezig te zijn, maar concepten die organisaties aantoonbaar vooruithelpen, met opvolging en evaluatie.",
+      a: "Marketing draait uiteindelijk om resultaat: meer zichtbaarheid, een sterker merk en meer klanten. Daarom ontwikkelen wij geen campagnes om alleen zichtbaar te zijn, maar concepten die gericht zijn op aantoonbaar resultaat. We volgen de resultaten, sturen waar nodig bij en maken inzichtelijk wat een campagne daadwerkelijk oplevert.",
     },
   ],
   en: [

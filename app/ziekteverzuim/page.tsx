@@ -10,7 +10,8 @@ import SubpagesNav from "@/components/SubpagesNav";
 import Accent from "@/components/Accent";
 import Faq from "@/components/Faq";
 import JsonLd from "@/components/JsonLd";
-import { usePick } from "@/lib/i18n/provider";
+import { useLang, usePick } from "@/lib/i18n/provider";
+import ListIntro from "@/components/ListIntro";
 import { cta } from "@/content/ui";
 import { ziekteverzuim } from "@/content/ziekteverzuim";
 import { ziekteverzuimFaq } from "@/content/faq";
@@ -20,6 +21,7 @@ export default function ZiekteverzuimPage() {
   const t = usePick(ziekteverzuim);
   const ctaLong = usePick(cta.long);
   const faq = usePick(ziekteverzuimFaq);
+  const lang = useLang();
 
   return (
     <>
@@ -49,7 +51,8 @@ export default function ZiekteverzuimPage() {
           <Reveal>
             <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
               <Image
-                src="/photos/ziekteverzuim-hero.png"
+                key={lang}
+                src={lang === "nl" ? "/photos/ziekteverzuim-hero-nl.png" : "/photos/ziekteverzuim-hero-en.png"}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover"
@@ -151,6 +154,18 @@ export default function ZiekteverzuimPage() {
               <CTA href="/contact" variant="primary">
                 {t.innovation.cta}
               </CTA>
+
+              {/* Banner onder het tekstblok links (revisieronde 2026-08, punt 71) */}
+              <div className="mt-10 relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-ink">
+                <Image
+                  key={lang}
+                  src={lang === "nl" ? "/photos/ziekteverzuim-innovatie-banner-nl.png" : "/photos/ziekteverzuim-innovatie-banner-en.png"}
+                  alt={t.innovation.bannerAlt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
+              </div>
             </Reveal>
 
             <div className="lg:col-span-6 lg:col-start-7 space-y-8 text-[16px] leading-[1.65] text-text">
@@ -181,7 +196,8 @@ export default function ZiekteverzuimPage() {
         <Reveal>
           <div className="relative aspect-[21/9] lg:aspect-[24/8] w-full overflow-hidden bg-ink">
             <Image
-              src="/photos/ziekteverzuim-secondary.png"
+              key={lang}
+              src={lang === "nl" ? "/photos/ziekteverzuim-gevolgen-banner-nl.png" : "/photos/ziekteverzuim-gevolgen-banner-en.png"}
               alt={t.secondaryImageAlt}
               fill
               className="object-cover"
@@ -207,10 +223,8 @@ export default function ZiekteverzuimPage() {
               </h2>
             </Reveal>
             <div className="lg:col-span-5 flex items-end">
-              <Reveal delay={120}>
-                <p className="text-text text-[15px] leading-[1.6]">
-                  {t.consequences.intro}
-                </p>
+              <Reveal delay={120} className="w-full">
+                <ListIntro>{t.consequences.intro}</ListIntro>
               </Reveal>
             </div>
           </div>
@@ -276,7 +290,7 @@ export default function ZiekteverzuimPage() {
       />
       <Faq items={faq} />
 
-      <SubpagesNav chapter="03" items={t.subpages} />
+      <SubpagesNav chapter="03" heading={t.subpagesHeading} items={t.subpages} />
 
       {/* CLOSING CTA */}
       <section className="py-20 lg:py-28">
