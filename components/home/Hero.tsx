@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePick } from "@/lib/i18n/provider";
+import { useLang, usePick } from "@/lib/i18n/provider";
 import { cta } from "@/content/ui";
 import { home } from "@/content/home";
 import Accent from "@/components/Accent";
@@ -10,6 +10,7 @@ import Accent from "@/components/Accent";
 export default function Hero() {
   const t = usePick(home).hero;
   const ctaLong = usePick(cta.long);
+  const lang = useLang();
   return (
     <section className="relative pt-16 pb-28 lg:pt-20 lg:pb-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-20">
@@ -33,14 +34,15 @@ export default function Hero() {
               }}
             />
 
-            {/* Photo frame */}
-            <div className="relative aspect-[5/6] w-full overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28),0_8px_24px_-12px_rgba(21,95,125,0.18)] ring-1 ring-ink/5">
+            {/* Photo frame — 2:3 matches the client-supplied portrait banners
+                (per-language variant, revisieronde 2026-08 punt 1) */}
+            <div className="relative aspect-[2/3] w-full overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28),0_8px_24px_-12px_rgba(21,95,125,0.18)] ring-1 ring-ink/5">
               <Image
-                src="/photos/home-hero.png"
+                key={lang}
+                src={lang === "nl" ? "/photos/home-hero-nl.png" : "/photos/home-hero-en.png"}
                 alt={t.h1}
                 fill
                 className="object-cover"
-                style={{ objectPosition: "75% 50%" }}
                 priority
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
