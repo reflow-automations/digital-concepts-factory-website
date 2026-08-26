@@ -195,7 +195,7 @@ export default function InkoopPage() {
               <div className="photo-treatment aspect-[16/10] relative overflow-hidden bg-ink">
                 <Image
                   key={lang}
-                  src={lang === "nl" ? "/photos/inkoop-banner2-nl.png" : "/photos/inkoop-banner2-en.png"}
+                  src={lang === "nl" ? "/photos/inkoop-secondary-nl.png" : "/photos/inkoop-secondary-en.png"}
                   alt={t.secondarySection.imageAlt}
                   fill
                   className="object-cover duotone-blue"
