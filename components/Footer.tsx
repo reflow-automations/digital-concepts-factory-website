@@ -51,7 +51,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-paper/80">
               {PILLAR_LINKS.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="hover:text-paper">
+                  <Link href={item.href} className="tap-safe hover:text-paper">
                     {item.label[lang]}
                   </Link>
                 </li>
@@ -64,7 +64,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-paper/80">
               {FOOTER_COMPANY_LINKS.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="hover:text-paper">
+                  <Link href={item.href} className="tap-safe hover:text-paper">
                     {item.label[lang]}
                   </Link>
                 </li>
@@ -90,7 +90,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:info@digitalconceptsfactory.nl"
-                  className="hover:text-paper break-all"
+                  className="tap-safe hover:text-paper break-all"
                 >
                   info@digitalconceptsfactory.nl
                 </a>
@@ -101,20 +101,22 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-paper/15 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] font-mono uppercase tracking-[0.14em] text-paper/40">
           <div>{t.rights}</div>
-          <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-paper">
+          {/* flex-wrap: op smalle schermen paste deze rij niet en duwde hij de hele
+              pagina breder dan de viewport (revisieronde 2026-08). */}
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <Link href="/privacy" className="tap-safe hover:text-paper">
               {t.privacy}
             </Link>
-            <Link href="/disclaimer" className="hover:text-paper">
+            <Link href="/disclaimer" className="tap-safe hover:text-paper">
               {t.disclaimer}
             </Link>
-            <Link href="/algemene-voorwaarden" className="hover:text-paper">
+            <Link href="/algemene-voorwaarden" className="tap-safe hover:text-paper">
               {t.terms}
             </Link>
             <button
               type="button"
               onClick={openCookieSettings}
-              className="uppercase tracking-[0.14em] hover:text-paper"
+              className="tap-safe uppercase tracking-[0.14em] hover:text-paper"
             >
               {t.cookiePrefs}
             </button>

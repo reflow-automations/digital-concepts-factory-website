@@ -53,6 +53,12 @@
 /* Reset & base ---------------------------------------------- */
 html { scroll-behavior: smooth; }
 
+/* Vangnet tegen horizontale overflow op mobiel. Een enkel te breed element
+   maakte anders de hele layout-viewport breder dan het scherm, waardoor er
+   rechts een lege strook verscheen en `position: fixed`-elementen (de
+   chatbubbel) buiten beeld vielen. (revisieronde 2026-08) */
+html, body { overflow-x: clip; }
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -186,4 +192,33 @@ body {
   outline: 2px solid var(--cobalt);
   outline-offset: 3px;
   border-radius: 2px;
+}
+
+/* Tapdoelen op mobiel ---------------------------------------------------
+   Kleine links en knoppen (taalwissel, footer-links, kruimelpad, tekst-CTA's)
+   waren 16 tot 21 CSS-pixels hoog. WCAG 2.2 (2.5.8) vraagt minimaal 24x24.
+   Deze helper vergroot alleen het AANRAAKGEBIED via een onzichtbaar vlak
+   eroverheen, zodat de layout en het uiterlijk onveranderd blijven.
+   (revisieronde 2026-08, mobiele controle) */
+.tap-safe {
+  position: relative;
+}
+.tap-safe::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 44px;
+  transform: translateY(-50%);
+  min-width: 44px;
+}
+/* Bij knoppen die smaller zijn dan 44px (NL / EN) ook zijwaarts uitbreiden. */
+.tap-safe-sm::after {
+  left: -12px;
+  right: -12px;
+}
+/* Alleen op aanraakschermen: op desktop hoeft het klikvlak niet vergroot. */
+@media (hover: hover) and (pointer: fine) {
+  .tap-safe::after { display: none; }
 }

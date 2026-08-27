@@ -362,7 +362,7 @@ export default function StatBlockStoryline() {
               </div>
               <Link
                 href="/talent-behouden#bereken"
-                className="group inline-flex items-center gap-3 text-[13px] tracking-tight text-paper hover:text-cobalt-bright transition-colors shrink-0"
+                className="tap-safe group inline-flex items-center gap-3 text-[13px] tracking-tight text-paper hover:text-cobalt-bright transition-colors shrink-0"
               >
                 <span className="link-underline">{t.calcLink}</span>
                 <svg width="14" height="14" viewBox="0 0 14 14" className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>

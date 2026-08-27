@@ -27,7 +27,9 @@ export default function Hero() {
             {/* Soft halo behind the image, subtle cobalt atmosphere */}
             <div
               aria-hidden
-              className="absolute -inset-8 lg:-inset-12 -z-10 opacity-60"
+              // Op mobiel niet zijwaarts uitlopen: de kolom is daar al
+              // schermbreed, en de gloed stak 8px buiten beeld.
+              className="absolute inset-x-0 -inset-y-8 sm:-inset-8 lg:-inset-12 -z-10 opacity-60"
               style={{
                 background:
                   "radial-gradient(60% 50% at 50% 50%, rgba(21,95,125,0.10), transparent 70%)",

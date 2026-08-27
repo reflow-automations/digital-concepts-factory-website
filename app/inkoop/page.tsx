@@ -177,7 +177,7 @@ export default function InkoopPage() {
                   <p className="text-text/80 text-[15px] leading-[1.6] mb-8">
                     {s.summary}
                   </p>
-                  <div className="font-mono text-[10px] uppercase tracking-[0.14em] text-cobalt opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-cobalt opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {t.depthChapter.readMore}
                   </div>
                 </Link>

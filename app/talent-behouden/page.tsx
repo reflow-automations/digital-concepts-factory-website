@@ -121,7 +121,7 @@ export default function TalentBehoudenPage() {
             <p className="text-paper/80 text-[clamp(1.05rem,1.5vw,1.35rem)] max-w-3xl mx-auto leading-[1.5]">
               {t.bigNumber.detail}
             </p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/45 mt-10">
+            <p className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-paper/45 mt-10">
               {t.bigNumber.source}
             </p>
           </Reveal>
@@ -278,16 +278,16 @@ export default function TalentBehoudenPage() {
               <table className="w-full">
                 <thead className="bg-paper-deep">
                   <tr>
-                    <th className="text-left p-5 font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
+                    <th className="text-left p-5 font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-muted">
                       {t.table.colSalary}
                     </th>
-                    <th className="text-left p-5 font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
+                    <th className="text-left p-5 font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-muted">
                       {t.table.colLow}
                     </th>
-                    <th className="text-left p-5 font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
+                    <th className="text-left p-5 font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-muted">
                       {t.table.colMid}
                     </th>
-                    <th className="text-left p-5 font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
+                    <th className="text-left p-5 font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-muted">
                       {t.table.colHigh}
                     </th>
                   </tr>

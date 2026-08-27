@@ -185,7 +185,7 @@ export default function OverOnsPage() {
             {t.team.roles.map((role, i) => (
               <Reveal key={role.role} delay={i * 80}>
                 <div className="bg-ink p-10 h-full hover:bg-antraciet transition-colors duration-300">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/40 mb-8">
+                  <p className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-paper/40 mb-8">
                     {String(i + 1).padStart(2, "0")}
                   </p>
                   <h3 className="display-section text-paper text-[clamp(1.4rem,1.8vw,1.85rem)] mb-5">

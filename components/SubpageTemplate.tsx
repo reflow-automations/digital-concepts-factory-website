@@ -156,7 +156,7 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
             <div className="flex items-center gap-3 mb-6 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
               <Link
                 href={p.parentHref}
-                className="text-cobalt hover:underline"
+                className="tap-safe text-cobalt hover:underline"
               >
                 {p.parentChapter} · {p.parentLabel}
               </Link>
@@ -362,7 +362,7 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
                     {s.detail}
                   </p>
                   {s.sourceNote && (
-                    <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/45 mt-10">
+                    <p className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-paper/45 mt-10">
                       {s.sourceNote}
                     </p>
                   )}

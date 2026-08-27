@@ -73,7 +73,8 @@ export default function Header() {
           <LangToggle />
           <button
             onClick={() => setOpen((v) => !v)}
-            className="p-2 -mr-2"
+            // 44x44 tikvlak: de knop was 40x31 en dat is krap op een telefoon.
+            className="-mr-2 flex h-11 w-11 flex-col items-end justify-center"
             aria-label={t.header.menu}
           >
             <div className="w-6 h-[1px] bg-ink mb-1.5" />

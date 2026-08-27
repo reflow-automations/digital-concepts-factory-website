@@ -131,7 +131,7 @@ export default function ContactPage() {
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
-                      <label htmlFor="f-name" className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
+                      <label htmlFor="f-name" className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
                         {t.form.name}
                       </label>
                       <input
@@ -144,7 +144,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="f-org" className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
+                      <label htmlFor="f-org" className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
                         {t.form.organisation}
                       </label>
                       <input
@@ -159,7 +159,7 @@ export default function ContactPage() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
-                      <label htmlFor="f-email" className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
+                      <label htmlFor="f-email" className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
                         {t.form.email}
                       </label>
                       <input
@@ -172,7 +172,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="f-phone" className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
+                      <label htmlFor="f-phone" className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
                         {t.form.phone}
                       </label>
                       <input
@@ -186,7 +186,7 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
+                    <label className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
                       {t.form.topicsLabel}
                     </label>
                     <div className="flex flex-wrap gap-2 mb-5">
@@ -211,7 +211,7 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label htmlFor="f-msg" className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
+                    <label htmlFor="f-msg" className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-muted block mb-3">
                       {t.form.messageLabel}
                     </label>
                     <textarea
@@ -330,7 +330,7 @@ export default function ContactPage() {
                   </p>
                   <a
                     href="mailto:info@digitalconceptsfactory.nl"
-                    className="block text-[clamp(1.05rem,1.4vw,1.25rem)] text-ink hover:text-cobalt transition-colors leading-tight"
+                    className="tap-safe block text-[clamp(1.05rem,1.4vw,1.25rem)] text-ink hover:text-cobalt transition-colors leading-tight"
                   >
                     info@digitalconceptsfactory.nl
                   </a>

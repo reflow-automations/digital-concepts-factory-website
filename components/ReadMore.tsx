@@ -43,7 +43,7 @@ export default function ReadMore({
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-controls={panelId}
-        className="group inline-flex items-center gap-3 text-[14px] tracking-tight text-cobalt hover:text-cobalt-bright transition-colors cursor-pointer"
+        className="tap-safe group inline-flex items-center gap-3 text-[14px] tracking-tight text-cobalt hover:text-cobalt-bright transition-colors cursor-pointer"
       >
         <span className="link-underline">{open ? labelOpen : label}</span>
         <svg

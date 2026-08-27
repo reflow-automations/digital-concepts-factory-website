@@ -120,7 +120,7 @@ export default function PillarCard({
         {summary}
       </p>
 
-      <ul className="relative flex flex-wrap gap-x-5 gap-y-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted">
+      <ul className="relative flex flex-wrap gap-x-5 gap-y-2 font-mono text-[11px] md:text-[10px] uppercase tracking-[0.12em] text-muted">
         {bullets.map((b) => (
           <li key={b} className="flex items-center gap-2">
             <span className="w-1 h-1 bg-cobalt" />

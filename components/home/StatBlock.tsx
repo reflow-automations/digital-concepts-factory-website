@@ -185,10 +185,10 @@ export default function StatBlock() {
             <Reveal key={s.label} delay={i * 80}>
               <div className="bg-ink p-10 lg:p-12 h-full flex flex-col group hover:bg-antraciet transition-colors duration-300">
                 <div className="flex items-center justify-between mb-10">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/50">
+                  <span className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-paper/50">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/40">
+                  <span className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-paper/40">
                     {s.source}
                   </span>
                 </div>

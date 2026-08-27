@@ -24,7 +24,7 @@ export default function DemoPlaceholder({
         />
 
         <div className="border-t border-b border-mist py-16 mb-12">
-          <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-cobalt mb-6">
+          <p className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-cobalt mb-6">
             In dit demo niet uitgewerkt
           </p>
           <h1 className="display-hero text-[clamp(2rem,5vw,4rem)] text-ink max-w-3xl">

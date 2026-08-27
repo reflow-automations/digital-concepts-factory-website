@@ -106,7 +106,7 @@ export default function Calculator() {
             onChange={(e) => setSalary(Number(e.target.value))}
             className="w-full accent-cobalt"
           />
-          <div className="flex justify-between mt-2 text-[10px] font-mono uppercase tracking-[0.14em] text-muted">
+          <div className="flex justify-between mt-2 text-[11px] md:text-[10px] font-mono uppercase tracking-[0.14em] text-muted">
             <span>{L.salaryMin}</span>
             <span>{L.salaryMid}</span>
             <span>{L.salaryMax}</span>
@@ -173,7 +173,7 @@ export default function Calculator() {
             onChange={(e) => setVertrekkers(Number(e.target.value))}
             className="w-full accent-cobalt"
           />
-          <div className="flex justify-between mt-2 text-[10px] font-mono uppercase tracking-[0.14em] text-muted">
+          <div className="flex justify-between mt-2 text-[11px] md:text-[10px] font-mono uppercase tracking-[0.14em] text-muted">
             <span>1</span>
             <span>25</span>
             <span>50</span>
@@ -188,7 +188,7 @@ export default function Calculator() {
       {/* RIGHT, output */}
       <div className="lg:col-span-5 bg-ink text-paper p-8 lg:p-10 flex flex-col justify-between rounded-3xl shadow-[0_28px_60px_-20px_rgba(45,31,20,0.32)]">
         <div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/45 mb-3">
+          <p className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-paper/45 mb-3">
             {L.perPerson}
           </p>
           <div className="display-numeric text-paper text-[clamp(2rem,4vw,3.25rem)] mb-1 leading-none">
@@ -200,7 +200,7 @@ export default function Calculator() {
 
           <div className="h-px bg-paper/15 mb-8" />
 
-          <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/45 mb-3">
+          <p className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-paper/45 mb-3">
             {L.totalLabel}
           </p>
           <div className="display-numeric text-paper text-[clamp(2.5rem,5vw,4rem)] mb-1 leading-none">
@@ -212,7 +212,7 @@ export default function Calculator() {
         </div>
 
         <div className="mt-10 pt-8 border-t border-cobalt/30">
-          <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-cobalt-bright mb-3">
+          <p className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-cobalt-bright mb-3">
             {L.savingLabel}
           </p>
           <div className="display-numeric text-cobalt-bright text-[clamp(2rem,4vw,3.25rem)] mb-2 leading-none">

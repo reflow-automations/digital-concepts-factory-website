@@ -124,7 +124,7 @@ export default function ZiekteverzuimPage() {
               <strong className="text-paper">{t.bigNumber.detailStrong}</strong>
               {t.bigNumber.detailPost}
             </p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/45 mt-10">
+            <p className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-paper/45 mt-10">
               {t.bigNumber.source}
             </p>
           </Reveal>

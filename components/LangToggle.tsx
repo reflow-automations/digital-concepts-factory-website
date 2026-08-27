@@ -40,7 +40,7 @@ export default function LangToggle({
             type="button"
             onClick={() => setLang(item.code)}
             aria-pressed={lang === item.code}
-            className={`transition-colors duration-200 ${
+            className={`tap-safe tap-safe-sm transition-colors duration-200 ${
               lang === item.code ? active : idle
             }`}
           >

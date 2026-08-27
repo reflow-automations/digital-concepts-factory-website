@@ -57,7 +57,7 @@ export default function CTA({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center gap-2 text-[13px] tracking-tight text-ink hover:text-cobalt transition-colors ${className}`}
+      className={`tap-safe group inline-flex items-center gap-2 text-[13px] tracking-tight text-ink hover:text-cobalt transition-colors ${className}`}
     >
       <span className="link-underline">{children}</span>
       <svg width="12" height="12" viewBox="0 0 14 14" className="transition-transform duration-500 group-hover:translate-x-1" aria-hidden>

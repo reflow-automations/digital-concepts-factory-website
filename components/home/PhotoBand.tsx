@@ -19,10 +19,10 @@ export default function PhotoBand() {
 
           {/* Caption */}
           <div className="absolute left-6 lg:left-20 bottom-6 lg:bottom-8 right-6 flex items-end justify-between gap-6">
-            <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/85">
+            <p className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-paper/85">
               HR · Inkoop · Marketing, versterken met digitale innovatie
             </p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/50 hidden md:block">
+            <p className="font-mono text-[11px] md:text-[10px] uppercase tracking-[0.14em] text-paper/50 hidden md:block">
               Rotterdam, 2026
             </p>
           </div>
