@@ -60,6 +60,7 @@ export default function TalentBehoudenPage() {
                 style={{ objectPosition: "center 35%" }}
                 sizes="100vw"
                 priority
+                quality={90}
               />
             </div>
           </Reveal>
@@ -161,6 +162,7 @@ export default function TalentBehoudenPage() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
+                  quality={90}
                 />
               </div>
             </Reveal>

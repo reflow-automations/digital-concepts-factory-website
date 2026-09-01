@@ -54,6 +54,7 @@ export default function OverOnsPage() {
                 style={{ objectPosition: "78% center" }}
                 sizes="100vw"
                 priority
+                quality={90}
               />
             </div>
           </Reveal>
@@ -94,6 +95,7 @@ export default function OverOnsPage() {
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"
+                    quality={90}
                   />
                 </div>
               </Reveal>

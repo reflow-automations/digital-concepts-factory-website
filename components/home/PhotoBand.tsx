@@ -13,6 +13,7 @@ export default function PhotoBand() {
             className="object-cover object-center"
             priority={false}
             sizes="100vw"
+            quality={90}
           />
           {/* Bottom gradient for caption legibility */}
           <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-ink/70 to-transparent pointer-events-none" />

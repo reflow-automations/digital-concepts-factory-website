@@ -54,6 +54,7 @@ export default function InkoopPage() {
                 fill
                 className="object-cover duotone-blue"
                 priority
+                quality={90}
               />
             </div>
           </Reveal>
@@ -199,6 +200,7 @@ export default function InkoopPage() {
                   alt={t.secondarySection.imageAlt}
                   fill
                   className="object-cover duotone-blue"
+                  quality={90}
                 />
               </div>
             </Reveal>

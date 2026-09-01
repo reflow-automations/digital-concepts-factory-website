@@ -95,6 +95,7 @@ export default function Page() {
                 fill
                 className="object-cover"
                 sizes="100vw"
+                quality={90}
               />
             </div>
           </Reveal>

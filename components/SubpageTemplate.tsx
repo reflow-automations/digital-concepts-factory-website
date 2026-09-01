@@ -183,6 +183,7 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
                   className="object-cover"
                   sizes="100vw"
                   priority
+                  quality={90}
                 />
               </div>
             </Reveal>
@@ -437,7 +438,9 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
             <section key={key} className="py-0">
               <Reveal>
                 <div className="relative aspect-[21/9] lg:aspect-[24/8] w-full overflow-hidden bg-ink">
-                  <Image src={s.src} alt={s.alt} fill className="object-cover" sizes="100vw" />
+                  <Image src={s.src} alt={s.alt} fill className="object-cover" sizes="100vw"
+  quality={90}
+/>
                   <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/40 to-transparent pointer-events-none" />
                 </div>
               </Reveal>

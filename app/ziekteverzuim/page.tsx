@@ -58,6 +58,7 @@ export default function ZiekteverzuimPage() {
                 className="object-cover"
                 sizes="100vw"
                 priority
+                quality={90}
               />
             </div>
           </Reveal>
@@ -164,6 +165,7 @@ export default function ZiekteverzuimPage() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
+                  quality={90}
                 />
               </div>
             </Reveal>
@@ -202,6 +204,7 @@ export default function ZiekteverzuimPage() {
               fill
               className="object-cover"
               sizes="100vw"
+              quality={90}
             />
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/40 to-transparent pointer-events-none" />
           </div>

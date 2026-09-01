@@ -38,6 +38,7 @@ export default function Header() {
             height={36}
             className="shrink-0"
             priority
+            quality={90}
           />
           <div className="font-sans text-[14px] font-medium tracking-tight text-ink">
             Digital Concepts Factory
