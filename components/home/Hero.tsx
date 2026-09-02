@@ -23,6 +23,11 @@ export default function Hero() {
           <span>{t.eyebrow}</span>
         </div>
 
+        {/* Mobiel: kop, foto, knoppen, tekst. De tekstkolom is daar `contents`,
+            zodat kop, tekst en knoppen los in het grid staan en apart geordend
+            kunnen worden. Vanaf lg is het weer foto links, tekst rechts. Aanleiding:
+            op een telefoon begon de pagina met vier alinea's en stond de foto pas
+            op 981px, onder de vouw (2026-09-02). */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           {/* Left, photo, refined treatment */}
           <div className="lg:col-span-5 order-2 lg:order-1 relative">
@@ -56,8 +61,8 @@ export default function Hero() {
           </div>
 
           {/* Right, headline + lead + CTAs */}
-          <div className="lg:col-span-7 order-1 lg:order-2">
-            <h1 className="display-hero text-ink mb-10 text-[clamp(2.5rem,6vw,5.75rem)]">
+          <div className="contents lg:block lg:col-span-7 lg:order-2">
+            <h1 className="display-hero text-ink order-1 lg:order-none mb-0 lg:mb-10 text-[clamp(2.5rem,6vw,5.75rem)]">
               <Accent
                 text={t.h1}
                 accent={t.h1Accent}
@@ -65,13 +70,13 @@ export default function Hero() {
               />
             </h1>
 
-            <div className="text-text text-[17px] lg:text-[18px] leading-[1.55] max-w-xl mb-10 space-y-4">
+            <div className="order-4 lg:order-none text-text text-[17px] lg:text-[18px] leading-[1.55] max-w-xl mb-0 lg:mb-10 space-y-4">
               {t.lead.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="order-3 lg:order-none flex flex-wrap gap-3">
               <Link
                 href="/contact"
                 className="group inline-flex items-center gap-3 px-6 py-3.5 bg-cobalt text-paper text-[13px] tracking-tight hover:bg-cobalt-bright transition-colors duration-300 rounded-full"
