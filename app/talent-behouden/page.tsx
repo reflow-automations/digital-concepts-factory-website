@@ -14,6 +14,7 @@ import { useLang, usePick } from "@/lib/i18n/provider";
 import ListIntro from "@/components/ListIntro";
 import ReadMore from "@/components/ReadMore";
 import { cta } from "@/content/ui";
+import { photoAspect } from "@/lib/photoRatio";
 import { talentBehouden } from "@/content/talentBehouden";
 import { talentBehoudenFaq } from "@/content/faq";
 import { serviceSchemaFor, faqSchema, breadcrumbFor } from "@/lib/seo/schema";
@@ -23,6 +24,8 @@ export default function TalentBehoudenPage() {
   const ctaLong = usePick(cta.long);
   const faq = usePick(talentBehoudenFaq);
   const lang = useLang();
+  const innovatieSrc = lang === "nl" ? "/photos/talent-behouden-innovatie-banner-nl.png" : "/photos/talent-behouden-innovatie-banner-en.png";
+  const heroSrc = lang === "nl" ? "/photos/talent-behouden-hero-nl.png" : "/photos/talent-behouden-hero-en.png";
 
   return (
     <>
@@ -50,14 +53,13 @@ export default function TalentBehoudenPage() {
       <section className="relative pb-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <Reveal>
-            <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
+            <div className="photo-treatment relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]" style={{ aspectRatio: photoAspect(heroSrc) }}>
               <Image
                 key={lang}
-                src={lang === "nl" ? "/photos/talent-behouden-hero-nl.png" : "/photos/talent-behouden-hero-en.png"}
+                src={heroSrc}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover"
-                style={{ objectPosition: "center 35%" }}
                 sizes="100vw"
                 priority
                 quality={90}
@@ -154,10 +156,10 @@ export default function TalentBehoudenPage() {
               </CTA>
 
               {/* Banner onder het tekstblok links (revisieronde 2026-08, punt 40) */}
-              <div className="mt-10 relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-ink">
+              <div className="mt-10 relative w-full overflow-hidden rounded-2xl bg-ink" style={{ aspectRatio: photoAspect(innovatieSrc) }}>
                 <Image
                   key={lang}
-                  src={lang === "nl" ? "/photos/talent-behouden-innovatie-banner-nl.png" : "/photos/talent-behouden-innovatie-banner-en.png"}
+                  src={innovatieSrc}
                   alt={t.innovation.bannerAlt}
                   fill
                   className="object-cover"

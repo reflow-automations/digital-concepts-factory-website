@@ -20,6 +20,7 @@ import Reveal from "@/components/Reveal";
 import ChapterMark from "@/components/ChapterMark";
 import CTA from "@/components/CTA";
 import ListIntro from "@/components/ListIntro";
+import { photoAspect } from "@/lib/photoRatio";
 
 export type SubpageSection =
   | {
@@ -175,7 +176,9 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
         <section className="relative pb-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-20">
             <Reveal>
-              <div className="aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
+              {/* Het kader neemt de verhouding van de foto over, zodat er nooit iets
+                  wordt bijgesneden, op geen enkel scherm (2026-09-02). Zie lib/photoRatio.ts. */}
+              <div className="relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]" style={{ aspectRatio: photoAspect(p.heroImage.src) }}>
                 <Image
                   src={p.heroImage.src}
                   alt={p.heroImage.alt}
@@ -437,7 +440,7 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
           return (
             <section key={key} className="py-0">
               <Reveal>
-                <div className="relative aspect-[21/9] lg:aspect-[24/8] w-full overflow-hidden bg-ink">
+                <div className="relative w-full overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(s.src) }}>
                   <Image src={s.src} alt={s.alt} fill className="object-cover" sizes="100vw"
   quality={90}
 />

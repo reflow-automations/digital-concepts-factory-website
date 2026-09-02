@@ -14,6 +14,7 @@ import { useLang, usePick } from "@/lib/i18n/provider";
 import ListIntro from "@/components/ListIntro";
 import { cta } from "@/content/ui";
 import { ziekteverzuim } from "@/content/ziekteverzuim";
+import { photoAspect } from "@/lib/photoRatio";
 import { ziekteverzuimFaq } from "@/content/faq";
 import { serviceSchemaFor, faqSchema, breadcrumbFor } from "@/lib/seo/schema";
 
@@ -22,6 +23,9 @@ export default function ZiekteverzuimPage() {
   const ctaLong = usePick(cta.long);
   const faq = usePick(ziekteverzuimFaq);
   const lang = useLang();
+  const gevolgenSrc = lang === "nl" ? "/photos/ziekteverzuim-gevolgen-banner-nl.png" : "/photos/ziekteverzuim-gevolgen-banner-en.png";
+  const innovatieSrc = lang === "nl" ? "/photos/ziekteverzuim-innovatie-banner-nl.png" : "/photos/ziekteverzuim-innovatie-banner-en.png";
+  const heroSrc = lang === "nl" ? "/photos/ziekteverzuim-hero-nl.png" : "/photos/ziekteverzuim-hero-en.png";
 
   return (
     <>
@@ -49,10 +53,10 @@ export default function ZiekteverzuimPage() {
       <section className="relative pb-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <Reveal>
-            <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
+            <div className="photo-treatment relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]" style={{ aspectRatio: photoAspect(heroSrc) }}>
               <Image
                 key={lang}
-                src={lang === "nl" ? "/photos/ziekteverzuim-hero-nl.png" : "/photos/ziekteverzuim-hero-en.png"}
+                src={heroSrc}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover"
@@ -157,10 +161,10 @@ export default function ZiekteverzuimPage() {
               </CTA>
 
               {/* Banner onder het tekstblok links (revisieronde 2026-08, punt 71) */}
-              <div className="mt-10 relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-ink">
+              <div className="mt-10 relative w-full overflow-hidden rounded-2xl bg-ink" style={{ aspectRatio: photoAspect(innovatieSrc) }}>
                 <Image
                   key={lang}
-                  src={lang === "nl" ? "/photos/ziekteverzuim-innovatie-banner-nl.png" : "/photos/ziekteverzuim-innovatie-banner-en.png"}
+                  src={innovatieSrc}
                   alt={t.innovation.bannerAlt}
                   fill
                   className="object-cover"
@@ -196,10 +200,10 @@ export default function ZiekteverzuimPage() {
       {/* SECONDARY IMAGE BAND */}
       <section className="py-0">
         <Reveal>
-          <div className="relative aspect-[21/9] lg:aspect-[24/8] w-full overflow-hidden bg-ink">
+          <div className="relative w-full overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(gevolgenSrc) }}>
             <Image
               key={lang}
-              src={lang === "nl" ? "/photos/ziekteverzuim-gevolgen-banner-nl.png" : "/photos/ziekteverzuim-gevolgen-banner-en.png"}
+              src={gevolgenSrc}
               alt={t.secondaryImageAlt}
               fill
               className="object-cover"

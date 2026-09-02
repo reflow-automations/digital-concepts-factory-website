@@ -14,12 +14,15 @@ import { cta } from "@/content/ui";
 import { marketing } from "@/content/marketing";
 import { marketingFaq } from "@/content/faq";
 import { serviceSchemaFor, faqSchema, breadcrumbFor } from "@/lib/seo/schema";
+import { photoAspect } from "@/lib/photoRatio";
 
 export default function MarketingPage() {
   const t = usePick(marketing);
   const ctaLong = usePick(cta.long);
   const faq = usePick(marketingFaq);
   const lang = useLang();
+  const sectieSrc = lang === "nl" ? "/photos/marketing-sectie-nl.png" : "/photos/marketing-sectie-en.png";
+  const heroSrc = lang === "nl" ? "/photos/marketing-hero-nl.png" : "/photos/marketing-hero-en.png";
 
   return (
     <>
@@ -47,10 +50,10 @@ export default function MarketingPage() {
       <section className="relative pb-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <Reveal>
-            <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
+            <div className="photo-treatment relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]" style={{ aspectRatio: photoAspect(heroSrc) }}>
               <Image
                 key={lang}
-                src={lang === "nl" ? "/photos/marketing-hero-nl.png" : "/photos/marketing-hero-en.png"}
+                src={heroSrc}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover"
@@ -149,10 +152,10 @@ export default function MarketingPage() {
       {/* SECONDARY IMAGE BAND */}
       <section className="py-0">
         <Reveal>
-          <div className="relative aspect-[21/9] lg:aspect-[24/8] w-full overflow-hidden bg-ink">
+          <div className="relative w-full overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(sectieSrc) }}>
             <Image
               key={lang}
-              src={lang === "nl" ? "/photos/marketing-sectie-nl.png" : "/photos/marketing-sectie-en.png"}
+              src={sectieSrc}
               alt={t.resultBlock.imageAlt}
               fill
               className="object-cover"

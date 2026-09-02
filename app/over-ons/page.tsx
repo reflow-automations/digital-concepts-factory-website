@@ -11,11 +11,14 @@ import { useLang, usePick } from "@/lib/i18n/provider";
 import { cta } from "@/content/ui";
 import { overOns } from "@/content/overOns";
 import { breadcrumbFor } from "@/lib/seo/schema";
+import { photoAspect } from "@/lib/photoRatio";
 
 export default function OverOnsPage() {
   const t = usePick(overOns);
   const ctaLong = usePick(cta.long);
   const lang = useLang();
+  const banner1Src = lang === "nl" ? "/photos/over-ons-banner1-nl.png" : "/photos/over-ons-banner1-en.png";
+  const heroSrc = lang === "nl" ? "/photos/over-ons-hero-nl.png" : "/photos/over-ons-hero-en.png";
 
   return (
     <>
@@ -44,14 +47,13 @@ export default function OverOnsPage() {
       <section className="relative pb-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <Reveal>
-            <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
+            <div className="photo-treatment relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]" style={{ aspectRatio: photoAspect(heroSrc) }}>
               <Image
                 key={lang}
-                src={lang === "nl" ? "/photos/over-ons-hero-nl.png" : "/photos/over-ons-hero-en.png"}
+                src={heroSrc}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover"
-                style={{ objectPosition: "78% center" }}
                 sizes="100vw"
                 priority
                 quality={90}
@@ -87,10 +89,10 @@ export default function OverOnsPage() {
 
               {/* Banner onder het tekstblok (revisieronde 2026-08, punt 132) */}
               <Reveal delay={340}>
-                <div className="mt-4 relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-ink">
+                <div className="mt-4 relative w-full overflow-hidden rounded-2xl bg-ink" style={{ aspectRatio: photoAspect(banner1Src) }}>
                   <Image
                     key={lang}
-                    src={lang === "nl" ? "/photos/over-ons-banner1-nl.png" : "/photos/over-ons-banner1-en.png"}
+                    src={banner1Src}
                     alt={t.hero.imageAlt}
                     fill
                     className="object-cover"

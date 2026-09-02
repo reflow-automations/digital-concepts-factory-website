@@ -14,6 +14,7 @@ import { useLang, usePick } from "@/lib/i18n/provider";
 import { cta } from "@/content/ui";
 import { talentAantrekken } from "@/content/talentAantrekken";
 import { talentAantrekkenFaq } from "@/content/faq";
+import { photoAspect } from "@/lib/photoRatio";
 import { serviceSchemaFor, faqSchema, breadcrumbFor } from "@/lib/seo/schema";
 
 export default function TalentAantrekkenPage() {
@@ -22,6 +23,8 @@ export default function TalentAantrekkenPage() {
   const ctaShort = usePick(cta.short);
   const faq = usePick(talentAantrekkenFaq);
   const lang = useLang();
+  const secondarySrc = lang === "nl" ? "/photos/talent-aantrekken-secondary-nl.png" : "/photos/talent-aantrekken-secondary-en.png";
+  const heroSrc = lang === "nl" ? "/photos/talent-aantrekken-hero-nl.png" : "/photos/talent-aantrekken-hero-en.png";
 
   return (
     <>
@@ -49,10 +52,10 @@ export default function TalentAantrekkenPage() {
       <section className="relative pb-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <Reveal>
-            <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]">
+            <div className="photo-treatment relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]" style={{ aspectRatio: photoAspect(heroSrc) }}>
               <Image
                 key={lang}
-                src={lang === "nl" ? "/photos/talent-aantrekken-hero-nl.png" : "/photos/talent-aantrekken-hero-en.png"}
+                src={heroSrc}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover"
@@ -158,10 +161,10 @@ export default function TalentAantrekkenPage() {
       {/* SECONDARY IMAGE, full-width band */}
       <section className="py-0">
         <Reveal>
-          <div className="relative aspect-[21/9] lg:aspect-[24/8] w-full overflow-hidden bg-ink">
+          <div className="relative w-full overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(secondarySrc) }}>
             <Image
               key={lang}
-              src={lang === "nl" ? "/photos/talent-aantrekken-secondary-nl.png" : "/photos/talent-aantrekken-secondary-en.png"}
+              src={secondarySrc}
               alt={t.secondaryImageAlt}
               fill
               className="object-cover"

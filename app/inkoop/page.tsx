@@ -13,12 +13,15 @@ import { cta } from "@/content/ui";
 import { inkoop } from "@/content/inkoop";
 import { inkoopFaq } from "@/content/faq";
 import { serviceSchemaFor, faqSchema, breadcrumbFor } from "@/lib/seo/schema";
+import { photoAspect } from "@/lib/photoRatio";
 
 export default function InkoopPage() {
   const t = usePick(inkoop);
   const ctaLong = usePick(cta.long);
   const faq = usePick(inkoopFaq);
   const lang = useLang();
+  const secondarySrc = lang === "nl" ? "/photos/inkoop-secondary-nl.png" : "/photos/inkoop-secondary-en.png";
+  const heroSrc = lang === "nl" ? "/photos/inkoop-hero-nl.png" : "/photos/inkoop-hero-en.png";
 
   return (
     <>
@@ -46,10 +49,10 @@ export default function InkoopPage() {
       <section className="relative -mt-4 mb-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <Reveal>
-            <div className="photo-treatment aspect-[16/9] lg:aspect-[7/3] relative overflow-hidden bg-ink">
+            <div className="photo-treatment relative overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(heroSrc) }}>
               <Image
                 key={lang}
-                src={lang === "nl" ? "/photos/inkoop-hero-nl.png" : "/photos/inkoop-hero-en.png"}
+                src={heroSrc}
                 alt={t.hero.imageAlt}
                 fill
                 className="object-cover duotone-blue"
@@ -193,10 +196,10 @@ export default function InkoopPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <Reveal className="lg:col-span-7">
-              <div className="photo-treatment aspect-[16/10] relative overflow-hidden bg-ink">
+              <div className="photo-treatment relative overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(secondarySrc) }}>
                 <Image
                   key={lang}
-                  src={lang === "nl" ? "/photos/inkoop-secondary-nl.png" : "/photos/inkoop-secondary-en.png"}
+                  src={secondarySrc}
                   alt={t.secondarySection.imageAlt}
                   fill
                   className="object-cover duotone-blue"

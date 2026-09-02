@@ -8,6 +8,7 @@ import Calculator from "@/components/Calculator";
 import CTA from "@/components/CTA";
 import { usePick } from "@/lib/i18n/provider";
 import { talentBehoudenBereken } from "@/content/talentBehouden";
+import { photoAspect } from "@/lib/photoRatio";
 
 export default function Page() {
   const t = usePick(talentBehoudenBereken);
@@ -88,7 +89,7 @@ export default function Page() {
 
           {/* Banner onder de calculator (revisieronde 2026-08, punt 65) */}
           <Reveal delay={180}>
-            <div className="mt-12 relative aspect-[16/9] lg:aspect-[21/9] w-full overflow-hidden rounded-2xl bg-ink">
+            <div className="mt-12 relative w-full overflow-hidden rounded-2xl bg-ink" style={{ aspectRatio: photoAspect(t.bannerSrc) }}>
               <Image
                 src={t.bannerSrc}
                 alt={t.bannerAlt}

@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
+import { photoAspect } from "@/lib/photoRatio";
+
+const src = "/photos/home-domains.png";
 
 export default function PhotoBand() {
   return (
     <section className="relative py-0">
       <Reveal>
-        <div className="relative w-full aspect-[21/9] lg:aspect-[24/8] overflow-hidden bg-ink">
+        <div className="relative w-full overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(src) }}>
           <Image
-            src="/photos/home-domains.png"
+            src={src}
             alt="HR, Inkoop en Marketing versterken met digitale innovatie"
             fill
             className="object-cover object-center"
