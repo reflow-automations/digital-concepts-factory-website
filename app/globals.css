@@ -222,3 +222,10 @@ body {
 @media (hover: hover) and (pointer: fine) {
   .tap-safe::after { display: none; }
 }
+
+/* Homepage-hero: op een telefoon de liggende klantfoto, vanaf lg de staande
+   naast de tekst. Het kader volgt in beide gevallen de foto (2026-09-02). */
+.hero-kader { aspect-ratio: var(--kader-mobiel); }
+@media (min-width: 1024px) {
+  .hero-kader { aspect-ratio: var(--kader-desktop); }
+}

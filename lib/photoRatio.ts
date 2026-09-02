@@ -12,6 +12,8 @@ const PHOTO_RATIOS: Record<string, string> = {
   "home-dashboards.png": "1672 / 941",
   "home-domains.png": "1667 / 941",
   "home-hero-en.png": "1023 / 1537",
+  "home-hero-liggend-en.png": "1672 / 941",
+  "home-hero-liggend-nl.png": "1672 / 941",
   "home-hero-nl.png": "1023 / 1537",
   "home-hero.png": "1672 / 941",
   "home-long-term.png": "1667 / 940",

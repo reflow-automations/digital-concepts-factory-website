@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { getImageProps } from "next/image";
 import Link from "next/link";
 import { useLang, usePick } from "@/lib/i18n/provider";
 import { cta } from "@/content/ui";
@@ -12,7 +12,21 @@ export default function Hero() {
   const t = usePick(home).hero;
   const ctaLong = usePick(cta.long);
   const lang = useLang();
-  const heroSrc = lang === "nl" ? "/photos/home-hero-nl.png" : "/photos/home-hero-en.png";
+
+  // Twee klantfoto's van dezelfde scene: staand (3C/3D) naast de tekst op een
+  // groot scherm, liggend (3A/3B) op een telefoon. De klant koos dit op
+  // 2026-09-02 boven de staande foto op mobiel, omdat de pagina daar te lang
+  // werd. De <picture> zorgt dat de browser alleen de passende foto ophaalt.
+  const staandSrc = lang === "nl" ? "/photos/home-hero-nl.png" : "/photos/home-hero-en.png";
+  const liggendSrc = lang === "nl" ? "/photos/home-hero-liggend-nl.png" : "/photos/home-hero-liggend-en.png";
+  const gedeeld = { alt: t.h1, fill: true, quality: 90, priority: true } as const;
+  const {
+    props: { srcSet: staandSrcSet },
+  } = getImageProps({ ...gedeeld, src: staandSrc, sizes: "40vw" });
+  const {
+    props: { srcSet: liggendSrcSet, ...imgProps },
+  } = getImageProps({ ...gedeeld, src: liggendSrc, sizes: "100vw" });
+
   return (
     <section className="relative pt-10 pb-28 lg:pt-12 lg:pb-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-20">
@@ -43,20 +57,22 @@ export default function Hero() {
               }}
             />
 
-            {/* Photo frame — 2:3 matches the client-supplied portrait banners
-                (per-language variant, revisieronde 2026-08 punt 1) */}
-            <div className="relative w-full overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28),0_8px_24px_-12px_rgba(21,95,125,0.18)] ring-1 ring-ink/5" style={{ aspectRatio: photoAspect(heroSrc) }}>
-              <Image
-                key={lang}
-                src={heroSrc}
-                alt={t.h1}
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 1024px) 100vw, 40vw"
-                quality={90}
-              />
-
+            {/* Het kader volgt de foto: liggend onder lg, staand erboven (zie .hero-kader in globals.css) */}
+            <div
+              className="hero-kader relative w-full overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28),0_8px_24px_-12px_rgba(21,95,125,0.18)] ring-1 ring-ink/5"
+              style={
+                {
+                  "--kader-mobiel": photoAspect(liggendSrc),
+                  "--kader-desktop": photoAspect(staandSrc),
+                } as React.CSSProperties
+              }
+            >
+              <picture key={lang}>
+                <source media="(min-width: 1024px)" srcSet={staandSrcSet} sizes="40vw" />
+                <source srcSet={liggendSrcSet} sizes="100vw" />
+                {/* eslint-disable-next-line jsx-a11y/alt-text -- alt zit in imgProps */}
+                <img {...imgProps} className="object-cover" />
+              </picture>
             </div>
           </div>
 
