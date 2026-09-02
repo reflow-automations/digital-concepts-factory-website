@@ -26,7 +26,7 @@ export default function InkoopPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative pt-20 pb-24 lg:pt-28 lg:pb-32">
+      <section className="relative pt-10 pb-10 lg:pt-12 lg:pb-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <Reveal>
             <ChapterMark
@@ -34,7 +34,7 @@ export default function InkoopPage() {
               label={t.hero.chapter}
               className="text-muted mb-6"
             />
-            <h1 className="display-hero text-ink text-[clamp(2.75rem,7vw,6.5rem)] max-w-5xl">
+            <h1 className="display-hero text-ink text-[clamp(2.75rem,6.5vw,6rem)] max-w-5xl">
               <Accent
                 text={t.hero.h1}
                 accent={t.hero.h1Accent}
@@ -46,16 +46,16 @@ export default function InkoopPage() {
       </section>
 
       {/* HERO IMAGE */}
-      <section className="relative -mt-4 mb-20">
+      <section className="relative pb-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <Reveal>
-            <div className="photo-treatment relative overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(heroSrc) }}>
+            <div className="photo-treatment relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]" style={{ aspectRatio: photoAspect(heroSrc) }}>
               <Image
                 key={lang}
                 src={heroSrc}
                 alt={t.hero.imageAlt}
                 fill
-                className="object-cover duotone-blue"
+                className="object-cover"
                 priority
                 quality={90}
               />
@@ -202,7 +202,7 @@ export default function InkoopPage() {
                   src={secondarySrc}
                   alt={t.secondarySection.imageAlt}
                   fill
-                  className="object-cover duotone-blue"
+                  className="object-cover"
                   quality={90}
                 />
               </div>
