@@ -14,10 +14,10 @@ export default function Hero() {
   const lang = useLang();
   const heroSrc = lang === "nl" ? "/photos/home-hero-nl.png" : "/photos/home-hero-en.png";
   return (
-    <section className="relative pt-16 pb-28 lg:pt-20 lg:pb-32 overflow-hidden">
+    <section className="relative pt-10 pb-28 lg:pt-12 lg:pb-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-20">
         {/* Eyebrow */}
-        <div className="flex items-center gap-3 mb-10 lg:mb-14 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
+        <div className="flex items-center gap-3 mb-6 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
           <span className="text-cobalt">01</span>
           <span className="w-6 h-px bg-current opacity-30" />
           <span>{t.eyebrow}</span>
