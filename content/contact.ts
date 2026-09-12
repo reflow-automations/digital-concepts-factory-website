@@ -39,7 +39,7 @@ export const contact = {
   en: {
     hero: {
       chapter: "Contact",
-      h1: "A no-obligation conversation starts here",
+      h1: "Start a no-obligation conversation",
       h1Accent: "conversation",
     },
     divider: "Or leave a message",

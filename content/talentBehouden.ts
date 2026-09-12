@@ -71,9 +71,9 @@ export const talentBehouden = {
       lead: "Wanneer medewerkers meer ruimte krijgen om zelf te kiezen wat bij hen past, worden arbeidsvoorwaarden persoonlijker en waardevoller. Dat vergroot de betrokkenheid en versterkt de binding met de organisatie.",
       cta: "Ontdek de innovatie",
       quote:
-        "Wij draaien het uitgangspunt om: niet de werkgever bepaalt welke extra's worden aangeboden, maar medewerkers kiezen zelf wat voor hen waardevol is, binnen heldere kaders.",
+        "Wij draaien het uitgangspunt om:\nniet de werkgever bepaalt welke extra’s worden aangeboden, maar medewerkers kiezen zelf wat voor hen waardevol is, binnen heldere kaders.",
       paragraphs: [
-        "Voor veel organisaties leek maatwerk in arbeidsvoorwaarden lange tijd aantrekkelijk in theorie, maar lastig uitvoerbaar in de praktijk: te complex, te kostbaar en moeilijk te organiseren per medewerker.",
+        "Voor veel organisaties leek maatwerk in arbeidsvoorwaarden lange tijd in theorie aantrekkelijk, maar lastig uitvoerbaar in de praktijk: te complex, te kostbaar en moeilijk te organiseren per medewerker.",
         "Onze digitale innovatie verandert dat. Medewerkers krijgen ruimte voor persoonlijke keuzes, terwijl de organisatie grip houdt op kosten, uitvoering en kaders.",
       ],
       bannerAlt: "Banner talentbehoud, Nederlandse versie",
@@ -87,7 +87,7 @@ export const talentBehouden = {
         "Bron: Gallup · 42% of Employee Turnover Is preventable but often ignored",
       items: [
         { title: "Vacature en advertentiekosten", text: "Vacatureplaatsingen, jobboards, social advertising en campagnes. Vaak de eerste zichtbare kosten, maar zeker niet de enige." },
-        { title: "Tijd van HR en hiring managers", text: "Vacatures opstellen, cv's beoordelen en gesprekken voeren kost kostbare uren. Tijd die niet aan andere werkzaamheden kan worden besteed." },
+        { title: "Tijd van HR en hiring managers", text: "Vacatures opstellen, cv's beoordelen en gesprekken voeren zijn kostbare uren. Tijd die niet aan andere werkzaamheden kan worden besteed." },
         { title: "Selectie, screening en assessments", text: "Kosten voor screening, referentiechecks, assessments en administratieve verwerking, zeker bij specialistische of verantwoordelijke functies." },
         { title: "Externe recruitmentkosten", text: "Recruiters, bureaus en searchpartijen brengen aanvullende kosten met zich mee, vaak als vast bedrag of percentage van het jaarsalaris." },
         { title: "Onboarding en inwerktijd", text: "Nieuwe medewerkers vragen tijd en begeleiding van HR, leidinggevenden en collega's voordat zij volledig zelfstandig kunnen functioneren." },
@@ -146,10 +146,10 @@ export const talentBehouden = {
     intro: {
       eyebrow: "The challenge",
       heading:
-        "The days when employees stayed for years as a matter of course are behind us",
+        "The days when employees automatically stayed with an organisation for years are over",
       paragraphs: [
         "Employees largely determine an organisation's success. So it is not only important to attract good people, but at least as important to retain them. Retaining talent has grown into a strategic success factor.",
-        "Precisely when an employee is fully up to speed, has built up valuable knowledge and is of great value to the organisation, a departure can hit extra hard. Certainly when that person moves to another employer or a competitor.",
+        "Just when an employee is fully up to speed, has built up valuable knowledge and is of great value to the organisation, a departure can hit extra hard. Certainly when that person moves to another employer or a competitor.",
       ],
       readMore: {
         label: "Read more about this HR trend",
@@ -200,32 +200,32 @@ export const talentBehouden = {
     },
     innovation: {
       chapter: "The innovation",
-      heading: "Tailored employment terms, finally affordable",
+      heading: "Personalised employee benefits, finally affordable",
       headingAccent: "affordable",
-      lead: "When employees get more room to choose what suits them, employment terms become more personal and more valuable. That increases engagement and strengthens the bond with the organisation.",
+      lead: "When employees get more room to choose what suits them, employee benefits become more personal and more valuable. That increases engagement and strengthens the bond with the organisation.",
       cta: "Discover the innovation",
       quote:
-        "We flip the starting point around: the employer no longer decides which extras are offered, employees choose what is valuable to them, within clear frameworks.",
+        "We turn the traditional approach on its head: the employer no longer decides which extras are offered, employees choose what matters most to them, within clear frameworks.",
       paragraphs: [
-        "For many organisations, tailored employment terms long seemed attractive in theory but hard to deliver in practice: too complex, too expensive and difficult to organise per employee.",
-        "Our digital innovation changes that. Employees get room for personal choices, while the organisation keeps control over costs, delivery and frameworks.",
+        "For many organisations, personalised employee benefits long seemed attractive in theory but difficult to implement in practice: too complex, too costly and difficult to manage on an individual basis.",
+        "Our digital innovation changes that. Employees have the flexibility to make choices that suit their individual needs, while the organisation maintains control over costs, implementation and overall parameters.",
       ],
       bannerAlt: "Talent retention banner, English version",
     },
     costs: {
       chapter: "What do replacement costs consist of?",
-      heading: "One departure, ten types of cost",
+      heading: "One departure, ten types of costs",
       intro:
         "The real costs of staff turnover are often higher than the visible recruitment costs alone. Research shows that replacement costs can run up considerably, depending on the role and the organisation.",
       source:
         "Source: Gallup · 42% of Employee Turnover Is preventable but often ignored",
       items: [
         { title: "Vacancy and advertising costs", text: "Job postings, job boards, social advertising and campaigns. Often the first visible costs, but certainly not the only ones." },
-        { title: "Time of HR and hiring managers", text: "Drafting vacancies, reviewing CVs and holding interviews costs valuable hours. Time that cannot be spent on other work." },
+        { title: "HR and hiring managers' time", text: "Drafting vacancies, reviewing CVs and holding interviews costs valuable hours. Time that cannot be spent on other work." },
         { title: "Selection, screening and assessments", text: "Costs for screening, reference checks, assessments and administrative processing, especially for specialist or senior roles." },
         { title: "External recruitment costs", text: "Recruiters, agencies and search firms bring additional costs, often as a fixed fee or a percentage of the annual salary." },
         { title: "Onboarding and ramp-up time", text: "New employees require time and guidance from HR, managers and colleagues before they can operate fully independently." },
-        { title: "Education and training", text: "Think of onboarding programmes, system training, professional schooling, safety instructions and certifications." },
+        { title: "Training and development", text: "Think of onboarding programmes, system training, professional training, safety instructions and certifications." },
         { title: "Temporarily lower productivity", text: "A new employee is not fully productive from day one. During the ramp-up period, output often lags behind." },
         { title: "Extra workload for colleagues", text: "During a vacancy period, colleagues have to take over work, answer questions and guide new employees." },
         { title: "Loss of knowledge and relationships", text: "When an employee leaves, accumulated knowledge, client relationships and internal networks can disappear with them." },
@@ -259,10 +259,10 @@ export const talentBehouden = {
     },
     subpagesHeading: "More on talent retention",
     subpages: [
-      { no: "3a", title: "Innovation for talent retention", summary: "Tailored employment terms, finally scalable and affordable.", href: "/talent-behouden/innovatie" },
-      { no: "3b", title: "One package no longer fits", summary: "Why standard employment terms increasingly fail to match what employees want.", href: "/talent-behouden/arbeidsvoorwaarden" },
+      { no: "3a", title: "Innovation for talent retention", summary: "Personalised employee benefits, finally scalable and affordable.", href: "/talent-behouden/innovatie" },
+      { no: "3b", title: "One package no longer fits", summary: "Why standard employee benefits increasingly fail to match what employees want.", href: "/talent-behouden/arbeidsvoorwaarden" },
       { no: "3c", title: "Replacement costs broken down", summary: "Ten cost items that show why staff turnover is often more expensive than assumed.", href: "/talent-behouden/vervangingskosten" },
-      { no: "3d", title: "Calculate your saving", summary: "Calculate what retaining talent could potentially save your organisation.", href: "/talent-behouden/bereken" },
+      { no: "3d", title: "Calculate your potential savings", summary: "Calculate what retaining talent could potentially save your organisation.", href: "/talent-behouden/bereken" },
     ],
     closing: {
       heading: "Retain talent longer and save at least €19,200 per employee?",
@@ -408,23 +408,23 @@ export const talentBehoudenInnovatie = {
     h1Accent: "better you connect",
     intro: {
       eyebrow: "Our innovation",
-      headline: "No longer a fixed package, but a flexible tool that moves with your people",
+      headline: "Not a fixed package, but a flexible approach that evolves with your people",
       paragraphs: [
-        "Organisations that want to retain talent need to think differently about employment terms. Not as a fixed package, but as a flexible tool that matches what employees find important.",
-        "When employees get more room to choose what suits them, employment terms become more personal and more valuable. That increases engagement and strengthens the bond with the organisation.",
+        "Organisations that want to retain talent need to think differently about employee benefits. Not as a fixed package, but as a flexible tool that matches what employees find important.",
+        "When employees get more room to choose what suits them, employee benefits become more personal and more valuable. That increases engagement and strengthens the bond with the organisation.",
         "This creates a benefits package that better matches different life stages, wishes and needs, and gives employees more reason to stay.",
       ],
     },
     sections: [
       {
         type: "text" as const,
-        eyebrow: "Tailored terms expensive? That was true.",
-        heading: "Personal freedom of choice? Normally complex and expensive",
+        eyebrow: "PERSONALISED BENEFITS USED TO BE EXPENSIVE",
+        heading: "Personal choice? Traditionally complex and expensive",
         headingAccent: "complex and expensive",
         paragraphs: [
-          "For many organisations, tailored employment terms sound attractive but turn out to be hard to deliver in practice. Too complex, too expensive and difficult to scale to every individual employee.",
+          "For many organisations, Personalised employee benefits sound attractive but turn out to be hard to deliver in practice. Too complex, too expensive and difficult to scale to every individual employee.",
           "As a result, many organisations hold on to standard packages, while employees increasingly want freedom of choice and terms that fit their personal situation.",
-          "Our digital innovation breaks through that. We make personal tailoring accessible, scalable and affordable, with room for individual choices and control for the organisation.",
+          "Our digital innovation changes that. We make personalisation accessible, scalable and affordable, with room for individual choices and control for the organisation.",
         ],
       },
       {
@@ -433,7 +433,7 @@ export const talentBehoudenInnovatie = {
       },
       {
         type: "text" as const,
-        eyebrow: "Two birds with one stone",
+        eyebrow: "TWO BENEFITS, ONE SOLUTION",
         heading: "More loyalty and lower costs",
         headingAccent: "lower costs",
         paragraphs: [
@@ -529,27 +529,27 @@ export const talentBehoudenArbeidsvoorwaarden = {
     parentLabel: "Retaining talent",
     parentHref: "/talent-behouden",
     label: "One package no longer fits",
-    h1: "Standard employment terms?\nThat era is over!",
+    h1: "Standard employee benefits?\nThat era is over!",
     h1Accent: "That era is over!",
     intro: {
       eyebrow: "The labour market is changing",
       headline: "One standard package simply no longer fits every employee",
       paragraphs: [
-        "The labour market has changed. Employees increasingly expect employment terms that match their personal situation, life stage and what they value. One standard package simply offers too little room for that.",
-        "Where one person needs flexibility and balance, another chooses development, mobility, health or financial room. What employees value differs from person to person. That is precisely why personal freedom of choice is becoming more important.",
+        "The labour market has changed. Employees increasingly expect employee benefits that match their personal situation, life stage and what they value. One standard package simply offers too little room for that.",
+        "Where one person needs flexibility and balance, another chooses development, mobility, health or financial flexibility. What employees value differs from person to person. That is precisely why personal freedom of choice is becoming more important.",
       ],
     },
     sections: [
       {
         type: "image" as const,
         src: "/photos/talent-behouden-av-banner-en.png",
-        alt: "Standard employment terms banner, English version",
+        alt: "Standard employee benefits banner, English version",
       },
       {
         type: "text" as const,
         eyebrow: "The execution problem",
-        heading: "Many organisations recognise this, but get stuck on execution",
-        headingAccent: "execution",
+        heading: "Many organisations recognise this, but struggle with implementation",
+        headingAccent: "implementation",
         paragraphs: [
           "How do you offer tailored terms without it becoming complex, time-consuming and expensive? That is precisely where we make the difference.",
           "We flip the starting point: the organisation sets the frameworks, employees choose within them what is valuable to them. That creates personal freedom of choice without losing control over costs and delivery.",
@@ -557,7 +557,7 @@ export const talentBehoudenArbeidsvoorwaarden = {
       },
       {
         type: "callout" as const,
-        quote: "With our digital solution, personal freedom of choice becomes easy to organise. What was previously complex and expensive, we make accessible, scalable and affordable.",
+        quote: "With our digital solution, personal choice becomes easy to manage. What was previously complex and expensive, we make accessible, scalable and affordable.",
       },
       {
         type: "text" as const,
@@ -565,7 +565,7 @@ export const talentBehoudenArbeidsvoorwaarden = {
         heading: "The result is immediately noticeable",
         headingAccent: "immediately noticeable",
         paragraphs: [
-          "Employees gain more control and can consciously choose what suits them. That increases the personal relevance of employment terms and can strengthen engagement and the bond with the organisation.",
+          "Employees gain more control and can consciously choose what suits them. That increases the personal relevance of employee benefits and can strengthen engagement and the bond with the organisation.",
           "And that is exactly where the value for the organisation arises. A stronger bond contributes to retaining talent longer. Less avoidable turnover means less recruitment pressure, less loss of knowledge and lower potential replacement costs.",
         ],
       },
@@ -583,13 +583,13 @@ export const talentBehoudenArbeidsvoorwaarden = {
         headingAccent: "Freedom for your people",
         paragraphs: [
           "That creates a new balance in employment: more freedom and choice for employees, combined with control over costs and clear frameworks for the organisation.",
-          "Organisations that invest in this make the difference. Not by offering more, but by connecting better with what employees find valuable. That is how they build sustainably towards engaged and loyal employees, without losing control over costs and delivery.",
-          "No standard package for everyone, but employment terms that move with your people and your organisation.",
+          "Organisations that invest in this make the difference. Not by offering more, but by connecting better with what employees find valuable. That is how they build a more engaged and loyal workforce for the long term, without losing control over costs and delivery.",
+          "No standard package for everyone, but employee benefits that move with your people and your organisation.",
         ],
       },
     ],
     closing: {
-      headline: "Curious what tailored employment terms could mean for your organisation?",
+      headline: "Curious what Personalised employee benefits could mean for your organisation?",
       headlineAccent: "your organisation",
       ctaLabel: "Book a no-obligation call",
     },
@@ -658,8 +658,8 @@ export const talentBehoudenVervangingskosten = {
       },
     ],
     closing: {
-      headline: "Weten wat het vertrek van een medewerker u kost en hoeveel u kunt besparen?",
-      headlineAccent: "kunt besparen",
+      headline: "Weten wat het vertrek van een medewerker u kost en hoeveel u\nkunt besparen?",
+      headlineAccent: "besparen",
       ctaLabel: "Plan een vrijblijvend gesprek",
     },
   },
@@ -669,7 +669,7 @@ export const talentBehoudenVervangingskosten = {
     parentLabel: "Retaining talent",
     parentHref: "/talent-behouden",
     label: "What do replacement costs consist of?",
-    h1: "One departure, ten types of cost",
+    h1: "One departure, ten types of costs",
     h1Accent: "ten types of cost",
     intro: {
       eyebrow: "The hidden price tag",
@@ -689,15 +689,15 @@ export const talentBehoudenVervangingskosten = {
       {
         type: "numbered-list" as const,
         eyebrow: "What do those replacement costs consist of?",
-        heading: "Ten cost items, often invisible",
-        intro: "Many costs of a departing employee stay out of sight. Insight into these costs is the first step towards saving.",
+        heading: "Ten costs that often go unnoticed",
+        intro: "Many costs associated with an employee's departure go unnoticed. Insight into these costs is the first step towards saving.",
         items: [
           { n: "01", title: "Vacancy and advertising costs", text: "Job postings, job boards, social advertising, employer branding and campaign costs. Often the first visible costs of replacement, but certainly not the only ones." },
-          { n: "02", title: "Time of HR and hiring managers", text: "Writing vacancy texts, reviewing CVs and holding interviews. Direct wage costs and time that cannot be spent on other work." },
+          { n: "02", title: "HR and hiring managers' time", text: "Writing vacancy texts, reviewing CVs and holding interviews. Direct labour costs and time that cannot be spent on other work." },
           { n: "03", title: "Selection, screening and assessment", text: "Extra costs for screening, reference checks, assessments, test instruments and administrative processing. Especially for specialist or senior roles these costs can add up quickly." },
           { n: "04", title: "External recruitment support", text: "Recruiters, recruitment agencies or search firms bring additional costs, as a fixed fee, a percentage of the annual salary or a combination of both." },
           { n: "05", title: "Onboarding and ramp-up time", text: "A new employee requires time from colleagues, managers and HR. Those hours are not always directly visible as a cost, but they genuinely count." },
-          { n: "06", title: "Education and training", text: "Onboarding programmes, system training, professional schooling and any certifications take time and money before a new employee is fully deployable." },
+          { n: "06", title: "Training and development", text: "Onboarding programmes, system training, professional training and any certifications take time and money before a new employee is fully productive." },
           { n: "07", title: "Lower productivity during onboarding", text: "A new employee is rarely fully productive from day one. During the ramp-up period productivity is often lower, driving the real cost of replacement up further." },
           { n: "08", title: "Extra strain on colleagues", text: "Colleagues temporarily take over work, answer questions and support the new employee. That costs time and capacity and can raise workload within the team." },
           { n: "09", title: "Loss of knowledge, experience and relationships", text: "When an employee leaves, accumulated knowledge, experience and valuable relationships often go with them. Especially for experienced staff and key positions, the impact on continuity and quality can be significant." },
@@ -707,7 +707,7 @@ export const talentBehoudenVervangingskosten = {
       },
       {
         type: "stat" as const,
-        eyebrow: "Minimum floor, average salary",
+        eyebrow: "MINIMUM ESTIMATE BASED ON AVERAGE SALARY",
         value: "€19,200",
         detail: "At an average gross annual income of €48,000, replacement costs are at least 40% of gross annual salary, that is €19,200 per employee. For managers and specialists these costs can even run up to 200% of gross annual salary.",
         sourceNote: "Gallup · Randstad · CPB Key Figures MEV 2026",
@@ -719,7 +719,7 @@ export const talentBehoudenVervangingskosten = {
         headingAccent: "40% to 200%",
         paragraphs: [
           "When an employee leaves, the visible costs are often only the beginning. Recruitment and selection cost money, but lost productivity, ramp-up time and the loss of knowledge and experience count too. All together, replacement costs can run from 40% to 200% of gross annual salary, depending on the role.",
-          "That makes insight into the real costs of turnover important. Because those who know what a departure costs also see what retaining talent can deliver. Calculate with our [[interactive calculator|/talent-behouden/bereken]] what this means for your organisation.",
+          "That makes insight into the real costs of turnover important. Understanding the cost of employee turnover also reveals the value of retaining talent. Calculate with our [[interactive calculator|/talent-behouden/bereken]] what this means for your organisation.",
         ],
       },
     ],

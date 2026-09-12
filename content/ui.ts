@@ -20,7 +20,7 @@ export const NAV_ITEMS: NavItem[] = [
   },
   {
     href: "/ziekteverzuim",
-    label: { nl: "Ziekteverzuim", en: "Absenteeism" },
+    label: { nl: "Ziekteverzuim", en: "Sick leave" },
   },
   { href: "/inkoop", label: { nl: "Inkoop", en: "Procurement" } },
   { href: "/marketing", label: { nl: "Marketing", en: "Marketing" } },
@@ -60,7 +60,7 @@ export const ui = {
       colOffice: "Kantoor",
       colContact: "Contact",
       office: [
-        "Digital Concepts Factory",
+        "Digital Concepts Factory BV",
         "Stationsplein 45",
         "3013 AK Rotterdam",
         "Nederland",
@@ -80,7 +80,7 @@ export const ui = {
     header: { menu: "Menu" },
     footer: {
       eyebrow: "The bridge",
-      tagline: "The Digital Bridge between challenge and solution",
+      tagline: "The Digital Bridge between challenges and solutions",
       taglineAccent: "Digital Bridge",
       intro:
         "Curious where digital innovation can make the difference in your organisation? We are happy to think along with you.",
@@ -89,7 +89,7 @@ export const ui = {
       colOffice: "Office",
       colContact: "Contact",
       office: [
-        "Digital Concepts Factory",
+        "Digital Concepts Factory BV",
         "Stationsplein 45",
         "3013 AK Rotterdam",
         "The Netherlands",

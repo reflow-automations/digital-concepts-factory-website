@@ -70,7 +70,7 @@ export const overOns = {
         },
         {
           role: "Strategen",
-          text: "Verbinden innovatie met de doelen, uitdagingen en ambities van de organisatie.",
+          text: "Verbinden innovatie met de doelen, uitdagingen en ambities van organisaties.",
         },
       ],
     },
@@ -107,39 +107,39 @@ export const overOns = {
       eyebrow: "Understand first, build second",
       heading: "Every organisation has its own story",
       paragraphs: [
-        "We develop digital innovations that help organisations work smarter, stronger and more future-proof. We focus on three domains where innovation can genuinely make the difference: Human Resources Management (HR), Procurement and Marketing.",
-        "Because innovation does not have to be complicated, expensive or out of reach. We make it practical, affordable and applicable. No innovation for innovation's sake, but smart solutions for concrete challenges that genuinely move organisations forward.",
+        "We develop digital innovations that help organisations work smarter, stronger and more future-proof. We focus on three domains where innovation can genuinely make the difference: Human Resource Management (HR), Procurement and Marketing.",
+        "Because innovation does not have to be complicated, expensive or out of reach. We make it practical, affordable and accessible. No innovation for innovation's sake, but smart solutions for concrete challenges that genuinely move organisations forward.",
       ],
     },
     introExtra: [
-      "We always start with the challenge, not with the technology. From there we develop digital innovations that help find talent faster, retain employees longer, reduce sick leave, organise procurement processes more intelligently and deploy marketing more distinctively.",
+      "We always start with the challenge, not with the technology. From there we develop digital innovations that help find talent faster, retain employees longer, reduce sick leave, organise procurement processes more intelligently and make marketing more distinctive and effective.",
       "That is how we contribute to growth, continuity and return.",
     ],
     values: {
       chapter: "01",
       label: "Vision and core values",
       heading: "What we stand for",
-      lead: "Digital innovation with impact: cleverly conceived, practically applicable and results-oriented. No loose ideas, but concrete solutions that genuinely take organisations further.",
+      lead: "Digital innovation with impact: smartly designed, practically applicable and results-oriented. Not just ideas, but concrete solutions that genuinely take organisations further.",
       items: [
         {
           n: "01",
-          title: "Digital innovation must move things forward",
+          title: "Digital innovation must create progress",
           text: "For us, innovation is not an end in itself. It must solve concrete challenges and contribute to growth, continuity and results.",
         },
         {
           n: "02",
-          title: "Practical, affordable and applicable",
+          title: "Practical, affordable and accessible",
           text: "Good innovation does not have to be complicated or expensive. We develop solutions that are accessible and add value directly in practice.",
         },
         {
           n: "03",
           title: "Understand first, then develop",
-          text: "No organisation and no challenge is the same. That is why we first dig into the organisation, the market and the question. Only then do we develop the solution.",
+          text: "No organisation and no challenge is the same. That is why we first take the time to understand the organisation, the market and the challenge. Only then do we develop the solution.",
         },
         {
           n: "04",
-          title: "Surprising solutions make the difference",
-          text: "We are not looking for something different just to be different. We combine creativity, technology and nerve to reach solutions that genuinely add something.",
+          title: "Distinctive solutions make the difference",
+          text: "We are not looking for something different just to be different. We combine creativity, technology and bold thinking to reach solutions that create genuine value.",
         },
         {
           n: "05",
@@ -151,7 +151,7 @@ export const overOns = {
     team: {
       chapter: "02",
       label: "The team",
-      heading: "Technology, user experience and strategy connected",
+      heading: "Technology, user experience and strategy, connected",
       body: "Software developers, UX designers and strategists each bring their own expertise. Because real digital innovation arises when technology, design and strategy come together.",
       roles: [
         {
@@ -164,7 +164,7 @@ export const overOns = {
         },
         {
           role: "Strategists",
-          text: "Connect innovation with the goals, challenges and ambitions of the organisation.",
+          text: "Connect innovation with organisations’ goals, challenges and ambitions.",
         },
       ],
     },
@@ -267,10 +267,10 @@ export const overOnsVisie = {
     h1: "What we stand for",
     h1Accent: "stand for",
     intro: {
-      eyebrow: "Our conviction",
-      headline: "Digital innovation that works and delivers results",
+      eyebrow: "OUR BELIEF",
+      headline: "Digital innovation that works, and delivers results",
       paragraphs: [
-        "We believe digital innovation only has value when it genuinely moves organisations forward. No innovation for innovation's sake, but concrete solutions for real challenges. That is why we always start with the question and the desired result.",
+        "We believe digital innovation only has value when it genuinely moves organisations forward. No innovation for innovation's sake, but concrete solutions for real challenges. That is why we always start with the challenge and the desired result.",
         "Five principles form the basis of everything we do.",
       ],
     },
@@ -282,23 +282,23 @@ export const overOnsVisie = {
         items: [
           {
             n: "01",
-            title: "Digital innovation must move things forward",
+            title: "Digital innovation must create progress",
             text: "For us, innovation is not an end in itself. It must solve concrete challenges and contribute to growth, continuity and results.",
           },
           {
             n: "02",
-            title: "Practical, affordable and applicable",
+            title: "Practical, affordable and accessible",
             text: "Good innovation does not have to be complicated or expensive. We develop solutions that are accessible and add value directly in practice.",
           },
           {
             n: "03",
             title: "Understand first, then develop",
-            text: "No organisation and no challenge is the same. That is why we first dig into the organisation, the market and the question. Only then do we develop the solution.",
+            text: "No organisation and no challenge is the same. That is why we first take the time to understand the organisation, the market and the challenge. Only then do we develop the solution.",
           },
           {
             n: "04",
-            title: "Surprising solutions make the difference",
-            text: "We are not looking for something different just to be different. We combine creativity, technology and nerve to reach solutions that genuinely add something.",
+            title: "Distinctive solutions make the difference",
+            text: "We are not looking for something different just to be different. We combine creativity, technology and bold thinking to reach solutions that create genuine value.",
           },
           {
             n: "05",
@@ -314,7 +314,7 @@ export const overOnsVisie = {
       },
       {
         type: "callout" as const,
-        quote: "Cleverly conceived. Strongly executed. Aimed at lasting impact.",
+        quote: "Smartly designed. Effectively delivered. Built for lasting impact.",
       },
     ],
     closing: {
@@ -333,7 +333,7 @@ export const overOnsTeam = {
     parentHref: "/over-ons",
     label: "Het team",
     h1: "Een team dat technologie, business en de gebruiker samenbrengt",
-    h1Accent: "technologie, business en de gebruiker",
+    h1Accent: ["technologie", "business", "gebruiker"],
     intro: {
       eyebrow: "Achter onze innovaties",
       headline: "Software, UX en strategie onder één dak",
@@ -392,20 +392,20 @@ export const overOnsTeam = {
     parentLabel: "About us",
     parentHref: "/over-ons",
     label: "The team",
-    h1: "A team that connects technology, business and user",
-    h1Accent: "technology, business and user",
+    h1: "A team that connects technology, business and user needs",
+    h1Accent: ["technology", "business", "user"],
     intro: {
       eyebrow: "Behind our innovations",
       headline: "A versatile team of software developers, UX designers and strategists",
       paragraphs: [
-        "Our people have proved themselves across a wide range of sectors and industries. That combination of technical knowledge, creative thinking and strategic insight is precisely what makes it possible to develop digital innovations that are not only cleverly conceived but also genuinely work in practice.",
+        "Our team brings experience from across a wide range of sectors and industries. That combination of technical knowledge, creative thinking and strategic insight is precisely what makes it possible to develop digital innovations that are not only smartly designed but also genuinely work in practice.",
       ],
     },
     sections: [
       {
         type: "numbered-list" as const,
         eyebrow: "Three disciplines, one team",
-        heading: "What each role contributes",
+        heading: "What each discipline contributes",
         items: [
           {
             n: "01",
@@ -426,7 +426,7 @@ export const overOnsTeam = {
       },
       {
         type: "callout" as const,
-        quote: "Real digital innovation does not arise by looking only at technology, or only at strategy. It arises when content, technology, ease of use and market insight come together.",
+        quote: "Real digital innovation does not come from focusing on technology alone, or only at strategy. It arises when strategy, technology, user experience and market insight come together.",
       },
       {
         type: "text" as const,
@@ -434,7 +434,7 @@ export const overOnsTeam = {
         heading: "A team that looks beyond the idea",
         headingAccent: "beyond the idea",
         paragraphs: [
-          "For clients this means working with a team that understands both the business and the user as well as the technology. That enables us to develop solutions that are not only innovative but also practical, well-considered and results-oriented.",
+          "For clients this means working with a team that understands the business, the user and the technology. That enables us to develop solutions that are not only innovative but also practical, well-designed and results-oriented.",
           "Together we build digital innovations that make organisations smarter, stronger and more future-proof.",
         ],
       },

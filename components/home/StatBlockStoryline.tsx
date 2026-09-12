@@ -248,7 +248,7 @@ export default function StatBlockStoryline() {
         </div>
 
         {/* Header, pinned top */}
-        <div className="relative pt-16 lg:pt-20">
+        <div className="relative pt-24 lg:pt-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-20">
             <ChapterMark
               number="03"
@@ -273,7 +273,7 @@ export default function StatBlockStoryline() {
               return (
                 <div
                   key={s.label}
-                  className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 ease-out"
+                  className="absolute inset-0 flex items-center justify-center pt-20 lg:pt-0 transition-opacity duration-500 ease-out"
                   style={{
                     opacity: isActive ? 1 : 0,
                     pointerEvents: isActive ? "auto" : "none",
@@ -283,7 +283,7 @@ export default function StatBlockStoryline() {
                   <div className="mx-auto max-w-7xl w-full px-6 lg:px-20">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                       <div className="lg:col-span-8">
-                        <div className="flex items-baseline gap-4 mb-6">
+                        <div className="flex items-baseline gap-4 mb-3 lg:mb-6">
                           <span className="font-mono text-[11.5px] uppercase tracking-[0.14em] text-paper/60">
                             {String(i + 1).padStart(2, "0")} / {String(STATS.length).padStart(2, "0")}
                           </span>
@@ -292,7 +292,7 @@ export default function StatBlockStoryline() {
                           </span>
                         </div>
 
-                        <div className="flex items-end gap-6 mb-8">
+                        <div className="flex items-end gap-6 mb-4 lg:mb-8">
                           <div
                             className="display-numeric text-paper leading-none"
                             style={{ fontSize: "clamp(3.5rem, 9vw, 8rem)" }}
@@ -304,10 +304,10 @@ export default function StatBlockStoryline() {
                           )}
                         </div>
 
-                        <div className="text-paper text-[clamp(1.15rem,1.6vw,1.45rem)] font-medium tracking-tight mb-4 max-w-2xl">
+                        <div className="text-paper text-[clamp(1.15rem,1.6vw,1.45rem)] font-medium tracking-tight mb-3 lg:mb-4 max-w-2xl">
                           {s.label}
                         </div>
-                        <p className="text-paper/80 text-[16.5px] leading-[1.65] max-w-2xl">
+                        <p className="text-paper/80 text-[15px] leading-[1.55] lg:text-[16.5px] lg:leading-[1.65] max-w-2xl">
                           {s.detail}
                         </p>
                       </div>
@@ -353,8 +353,8 @@ export default function StatBlockStoryline() {
         {/* Bottom rail */}
         <div className="absolute bottom-0 inset-x-0 pb-8 pt-6">
           <div className="mx-auto max-w-7xl px-6 lg:px-20">
-            <div className="flex items-center justify-between gap-6">
-              <div className="flex-1 h-px bg-paper/15 relative">
+            <div className="flex flex-col items-start gap-4 pr-16 lg:flex-row lg:items-center lg:justify-end lg:gap-6 lg:pr-0">
+              <div className="hidden lg:block flex-1 h-px bg-paper/15 relative">
                 <div
                   className="absolute left-0 top-0 h-px bg-cobalt-bright transition-[width] duration-200"
                   style={{ width: `${progress * 100}%` }}
@@ -362,9 +362,18 @@ export default function StatBlockStoryline() {
               </div>
               <Link
                 href="/talent-behouden#bereken"
-                className="tap-safe group inline-flex items-center gap-3 text-[13px] tracking-tight text-paper hover:text-cobalt-bright transition-colors shrink-0"
+                className="tap-safe group inline-flex items-center gap-3 text-[13px] tracking-tight text-paper hover:text-cobalt-bright transition-colors shrink-0 max-w-full"
               >
                 <span className="link-underline">{t.calcLink}</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>
+                  <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinecap="square" />
+                </svg>
+              </Link>
+              <Link
+                href="/ziekteverzuim#bereken"
+                className="tap-safe group inline-flex items-center gap-3 text-[13px] tracking-tight text-paper hover:text-cobalt-bright transition-colors shrink-0 max-w-full"
+              >
+                <span className="link-underline">{t.sickLeaveCalcLink}</span>
                 <svg width="14" height="14" viewBox="0 0 14 14" className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>
                   <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinecap="square" />
                 </svg>

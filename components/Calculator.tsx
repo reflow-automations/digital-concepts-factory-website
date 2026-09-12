@@ -35,7 +35,7 @@ const LABELS = {
     salaryMid: "€ 48K average",
     salaryMax: "€ 150K",
     roleLabel: "Role type",
-    leaversLabel: "Voluntary leavers per year",
+    leaversLabel: "Voluntary departures per year",
     gallupNote: "Rules of thumb from",
     gallupFrontline: "40% for frontline roles, 80% for professional roles and up to 200% for leaders/managers.",
     perPerson: "Per departing employee",

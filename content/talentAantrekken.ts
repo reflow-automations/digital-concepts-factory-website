@@ -8,7 +8,7 @@ export const talentAantrekken = {
       h1: "Wie talent begrijpt wordt gekozen",
       h1Accent: "wordt gekozen",
       imageAlt:
-        "Stel bekijkt DOOH-billboard Erasmus MC werken-bij campagne",
+        "Stel bekijkt een DOOH-campagne voor het fictieve Noorderlicht Ziekenhuis",
     },
     intro: {
       eyebrow: "De arbeidsmarkt",
@@ -17,10 +17,10 @@ export const talentAantrekken = {
         "Steeds meer werkgevers benaderen ons met dezelfde vraag: hoe trekken wij in deze krappe arbeidsmarkt de juiste mensen aan? Kandidaten hebben veel te kiezen en vergelijken werkgevers allang niet meer alleen op salaris of secundaire arbeidsvoorwaarden.",
         "Steeds vaker kijken zij of een organisatie, cultuur en arbeidsvoorwaarden passen bij hun identiteit, leefstijl, waarden en toekomstbeeld.",
       ],
-      paragraphStrongHeading: "Nieuwe generatie werknemers",
+      paragraphStrongHeading: "Nieuwe verwachtingen van werknemers",
       paragraphStrong: [
-        "Een nieuwe generatie werknemers stelt andere eisen aan werkgevers. Vooral jong talent verwacht dat organisaties meegaan met de tijd en aandacht hebben voor thema's als ontwikkeling, duurzaamheid, zingeving en toekomstgericht werken.",
-        "Werkgevers die dit niet alleen bieden, maar ook zichtbaar en geloofwaardig weten uit te dragen, hebben een duidelijke voorsprong bij het aantrekken van talent.",
+        "Werknemers stellen andere eisen aan werkgevers dan voorheen. Naast salaris en arbeidsvoorwaarden spelen thema’s als ontwikkeling, flexibiliteit, duurzaamheid, zingeving en toekomstperspectief een steeds grotere rol.",
+        "Werkgevers die daar niet alleen invulling aan geven, maar dit ook zichtbaar en geloofwaardig weten uit te dragen, versterken hun positie op de arbeidsmarkt en vergroten hun aantrekkingskracht op talent.",
       ],
     },
     innovation: {
@@ -31,9 +31,9 @@ export const talentAantrekken = {
       quote:
         "Veel werkgevers richten zich vandaag de dag vooral op online campagnes. Daarmee lopen zij het risico op te gaan in de online massa. Wij geloven juist in de kracht van de combinatie: sterke branding online én zichtbare aanwezigheid in de echte wereld.",
       body1: "Met onze Employer Branding campagnes bouwen we zowel online als offline aan de zichtbaarheid en herkenning van werkgevers. Via Digital Out of Home (DOOH) brengen we het werkgeversmerk onder de aandacht op locaties waar de doelgroep dagelijks komt.",
-      body1Strong: "Digital Out of Home (DOOH)",
+      body1Strong: "",
       body2: "Online versterken we die zichtbaarheid en zetten we met slimme retargeting de stap van herkenning naar conversie. Branding waar talent kijkt. Conversie waar talent klikt.",
-      body2Strong: "slimme retargeting",
+      body2Strong: "",
     },
     secondaryImageAlt:
       "DOOH-billboard in stadsplein met meerdere werkgevers",
@@ -71,35 +71,35 @@ export const talentAantrekken = {
   en: {
     hero: {
       chapter: "Attracting talent",
-      h1: "Whoever understands talent gets chosen",
-      h1Accent: "gets chosen",
+      h1: "Employers who understand talent get chosen",
+      h1Accent: "get chosen",
       imageAlt:
-        "Couple looking at a DOOH billboard for an Erasmus MC recruitment campaign",
+        "Couple viewing a DOOH recruitment campaign for the fictional Noorderlicht Hospital",
     },
     intro: {
       eyebrow: "The labour market",
       heading: "Employers on talent's radar",
       paragraphs: [
-        "More and more employers come to us with the same question: how do we attract the right people in this tight labour market? Candidates have plenty of choice and stopped comparing employers on salary or benefits alone long ago.",
-        "Increasingly, they look at whether an organisation, culture and employment terms fit their identity, lifestyle, values and vision of the future.",
+        "More and more employers come to us with the same question: how do we attract the right people in this tight labour market? Candidates have plenty of choice and no longer compare employers on salary and benefits alone.",
+        "Increasingly, they look at whether an organisation, culture and employee benefits fit their identity, lifestyle, values and vision of the future.",
       ],
-      paragraphStrongHeading: "A new generation of employees",
+      paragraphStrongHeading: "Changing employee expectations",
       paragraphStrong: [
-        "A new generation of employees sets different expectations for employers. Young talent in particular expects organisations to move with the times and pay attention to themes such as development, sustainability, purpose and future-focused work.",
-        "Employers who not only offer this, but also communicate it visibly and credibly, hold a clear advantage in attracting talent.",
+        "Employees expect more from employers than they did in the past. Alongside salary and employee benefits, factors such as professional development, flexibility, sustainability, purpose and future career prospects are becoming increasingly important.",
+        "Employers that not only respond to these expectations, but also communicate their commitment clearly and credibly, strengthen their position in the labour market and become more attractive to talent.",
       ],
     },
     innovation: {
       chapter: "The innovation",
-      heading: "Reaching talent at heart, online and offline",
+      heading: "Reaching talent where it matters, online and offline",
       headingAccent: "and offline",
-      lead: "We help employers with boundary-pushing digital innovations to appear at the right moment in front of the right audience. Thanks to our experience in marketing and communication, we know where talent is and how organisations can reach this audience online and offline.",
+      lead: "We help employers with innovative digital solutions to appear at the right moment in front of the right audience. Thanks to our experience in marketing and communication, we know where to reach the right talent and how organisations can reach this audience online and offline.",
       quote:
-        "Many employers today focus mainly on online campaigns. In doing so, they risk disappearing into the online crowd. We believe in the power of the combination: strong branding online and visible presence in the real world.",
-      body1: "With our employer branding campaigns we build visibility and recognition for employers, both online and offline. Through Digital Out of Home (DOOH) we bring the employer brand to the attention of the audience at locations they visit every day.",
-      body1Strong: "Digital Out of Home (DOOH)",
-      body2: "Online we reinforce that visibility and use smart retargeting to take the step from recognition to conversion. Branding where talent looks. Conversion where talent clicks.",
-      body2Strong: "smart retargeting",
+        "Many employers today focus mainly on online campaigns. In doing so, they risk disappearing into the online crowd. We believe in the power of the combination: strong branding online and a strong presence in the physical world.",
+      body1: "With our employer branding campaigns we build visibility and recognition for employers, both online and offline. Through Digital Out of Home (DOOH) we put the employer brand in front of the right audience at locations they visit every day.",
+      body1Strong: "",
+      body2: "Online we reinforce that visibility and use smart retargeting to take the step from recognition to conversion. Build recognition where talent goes. Drive conversion where talent clicks.",
+      body2Strong: "",
     },
     secondaryImageAlt:
       "DOOH billboard in a city square featuring several employers",
@@ -107,23 +107,23 @@ export const talentAantrekken = {
       chapter: "Why DOOH works",
       heading: "Visible where it really counts:\nin the real world",
       intro:
-        "Eight reasons why Digital Out of Home makes employers visible, distinctive and relevant to talented candidates.",
+        "Eight reasons why Digital Out of Home makes employers visible, distinctive and relevant to potential candidates.",
       source: "Sources: DCF research · NL DOOH network",
       cta: "Discover what DOOH can do for you",
       points: [
         { title: "Reach up to 2 million candidates per month", text: "Depending on locations and campaign setup, reach can run from 250,000 to 2 million candidates per month, mainly in the Randstad region." },
-        { title: "Mission, vision and culture become visible", text: "DOOH is more than a screen with a message. Employers also show their mission, vision and culture. That makes their message more personal and more credible." },
+        { title: "Bring your mission, vision and culture to life", text: "DOOH is more than a screen with a message. Employers also show their mission, vision and culture. That makes their message more personal and more credible." },
         { title: "Locations where the audience actually goes", text: "The screens stand at locations where students, young professionals and experienced staff work, travel and spend time." },
         { title: "Long dwell time and more attention", text: "Candidates spend on average one to two hours a week at these locations. That increases the chance that a message is noticed and remembered." },
         { title: "The right message at the right moment", text: "With DOOH, the message can be quickly adapted to current vacancies, moments and new developments. That way you always reach candidates with a message that is relevant at that moment." },
-        { title: "Images that demonstrably draw attention", text: "Research shows that 83% of people notice DOOH advertising. With moving images, employers also bring the atmosphere on the work floor, collaboration and culture to life." },
-        { title: "Employers stand out beyond the online crowd", text: "On social media and job boards, employers barely stand out anymore. With DOOH, employers step out of the online crowd and become visible in the streetscape." },
+        { title: "Visual content that captures attention", text: "Research shows that 83% of people notice DOOH advertising. With moving images, employers also bring the atmosphere in the workplace, collaboration and culture to life." },
+        { title: "Employers stand out beyond the online crowd", text: "On social media and job boards, employers barely stand out anymore. With DOOH, employers stand out beyond crowded online channels and become visible in the physical world." },
         { title: "DOOH enables direct conversion", text: "Through smart links with digital technology, targeted advertising and direct conversion become possible. That turns offline visibility into online results." },
       ],
     },
     subpagesHeading: "More on reaching and convincing talent",
     subpages: [
-      { no: "2a", title: "Innovative talent attraction", summary: "How we bring employers to the attention of the right talent, online and offline.", href: "/talent-aantrekken/innovatie" },
+      { no: "2a", title: "Innovative talent attraction", summary: "How we put employers in front of the right talent, online and offline.", href: "/talent-aantrekken/innovatie" },
       { no: "2b", title: "Employer Branding", summary: "How a strong employer brand builds recognition, preference and distinction.", href: "/talent-aantrekken/employer-branding" },
       { no: "2c", title: "From visibility to conversion", summary: "How offline and online reinforce each other, from branding to smart retargeting.", href: "/talent-aantrekken/waarom-werkgevers" },
       { no: "2d", title: "Why DOOH works", summary: "Eight concrete reasons why DOOH works in reaching talent.", href: "/talent-aantrekken/dooh-effectief" },
@@ -180,8 +180,8 @@ export const talentAantrekkenInnovatie = {
     parentLabel: "Attracting talent",
     parentHref: "/talent-aantrekken",
     label: "Innovation for attracting talent",
-    h1: "Reaching talent at heart",
-    h1Accent: "at heart",
+    h1: "Reaching talent where it matters",
+    h1Accent: "where it matters",
     intro: {
       eyebrow: "Our innovation",
       headline: "Appearing at the right moment in front of the right audience: online and offline",
@@ -194,10 +194,10 @@ export const talentAantrekkenInnovatie = {
       {
         type: "text" as const,
         eyebrow: "What this delivers for organisations",
-        heading: "Faster contact, stronger as an employer, higher-quality inflow",
+        heading: "Faster connections, a stronger employer brand and higher-quality candidates",
         headingAccent: "Faster",
         paragraphs: [
-          "With this approach we help organisations connect with suitable candidates faster, position their employer brand more strongly and achieve higher-quality inflow.",
+          "With this approach we help organisations connect with suitable candidates faster, position their employer brand more strongly and attract higher-quality candidates.",
           "Not competing for attention online alone, but being visible in the places where talent actually is. Online and offline, smartly connected.",
         ],
       },
@@ -254,13 +254,16 @@ export const talentAantrekkenEmployerBranding = {
       },
       {
         type: "image" as const,
+        layout: "photo" as const,
+        maxWidth: 976,
         src: "/photos/talent-aantrekken-eb-banner-nl.png",
         alt: "Banner Employer Branding, Nederlandse versie",
       },
       {
         type: "text" as const,
         eyebrow: "Wat dit u oplevert",
-        heading: "Sterkere zichtbaarheid, meer aantrekkingskracht, een sterkere positie op de arbeidsmarkt",
+        headingSize: "compact" as const,
+        heading: "Sterkere zichtbaarheid, meer aantrekkingskracht, een sterkere positie op de arbeidsmarkt",
         headingAccent: "Sterkere zichtbaarheid",
         paragraphs: [
           "Met onze Employer Branding aanpak bouwen werkgevers aan meer zichtbaarheid, herkenning en aantrekkingskracht. Zo ontstaat een sterkere positie op de arbeidsmarkt en groeit de voorkeur voor uw organisatie bij het juiste talent.",
@@ -283,7 +286,7 @@ export const talentAantrekkenEmployerBranding = {
     h1Accent: "right moment",
     intro: {
       eyebrow: "Why employer branding?",
-      headline: "A strong employer brand is essential for attracting and retaining",
+      headline: "A strong employer brand is essential for attracting and retaining talent",
       paragraphs: [
         "Research shows that employers with a strong reputation attract more applicants than organisations with a less visible or less distinctive employer brand. Employer branding therefore not only helps reach and convince talent, but also keeps employees with the organisation for longer.",
         "A strong position in the labour market does not arise by itself. It requires an employer story that is recognisable, credible and distinctive, and that is made visible consistently.",
@@ -296,7 +299,7 @@ export const talentAantrekkenEmployerBranding = {
         heading: "Strong recruitment starts with strong marketing",
         headingAccent: "strong marketing",
         paragraphs: [
-          "We help employers build a strong preferred position in the labour market with distinctive employer branding campaigns. We do this by making the employer brand visible in the places where the right talent is, online and offline.",
+          "We help employers build a strong position of preference in the labour market with distinctive employer branding campaigns. We do this by making the employer brand visible in the places where the right talent is, online and offline.",
           "Alongside targeted online campaigns, we deploy Digital Out of Home to make employers visible in the real world too. That builds recognition, trust and appeal, and keeps employers on talent's radar for longer.",
         ],
       },
@@ -307,21 +310,24 @@ export const talentAantrekkenEmployerBranding = {
         items: [
           { n: "01", title: "Visible online and offline to the right talent", text: "Your employer brand needs to be visible where talent is. That is why we combine relevant online channels with visibility at locations your audience visits every day, building reach and recognition both online and offline." },
           { n: "02", title: "DOOH and retargeting reinforce each other", text: "With powerful Digital Out of Home networks we reach large groups of potential candidates every month. By combining this offline visibility with smart online retargeting, we strengthen the employer brand and take the step from recognition to conversion." },
-          { n: "03", title: "Creative campaigns that stick", text: "No flat or interchangeable employer branding campaigns, but distinctive concepts that stand out, surprise and connect. With powerful video content and creative campaign formats, we put employers in front of talent in a way that sticks." },
+          { n: "03", title: "Creative campaigns that stick", text: "No generic or interchangeable employer branding campaigns, but distinctive concepts that stand out, surprise and connect. With powerful video content and creative campaign formats, we put employers in front of talent in a way that sticks." },
         ],
       },
       {
         type: "image" as const,
+        layout: "photo" as const,
+        maxWidth: 976,
         src: "/photos/talent-aantrekken-eb-banner-en.png",
         alt: "Employer Branding banner, English version",
       },
       {
         type: "text" as const,
         eyebrow: "What this delivers for you",
+        headingSize: "compact" as const,
         heading: "Stronger visibility, more appeal, a stronger position in the labour market",
         headingAccent: "Stronger visibility",
         paragraphs: [
-          "With our employer branding approach, employers build more visibility, recognition and appeal. That creates a stronger position in the labour market and grows the preference for your organisation among the right talent.",
+          "With our employer branding approach, employers build more visibility, recognition and appeal. That creates a stronger position in the labour market and increases your organisation's appeal to the right talent.",
         ],
       },
     ],
@@ -369,7 +375,7 @@ export const talentAantrekkenWaaromWerkgevers = {
       {
         type: "callout" as const,
         eyebrow: "Van offline zichtbaarheid naar online conversie",
-        quote: "DOOH zorgt offline voor zichtbaarheid en herkenning. Slimme retargeting zet die aandacht online om in conversie.",
+        quote: "We onderzoeken de doelgroep online, versterken de zichtbaarheid met DOOH op relevante locaties en brengen de doelgroep via slimme retargeting online terug naar conversie.",
       },
       {
         type: "text" as const,
@@ -411,18 +417,18 @@ export const talentAantrekkenWaaromWerkgevers = {
       headline: "Being visible online is good. Being visible online and offline is stronger",
       paragraphs: [
         "We believe in the power of online visibility, but just as much in presence in the real world. Many employers focus mainly on online campaigns and compete there for the same attention. We deliberately look further.",
-        "That is why we combine targeted online campaigns with powerful visibility via Digital Out of Home. This way we also put employers in front of talent at the places they visit every day. Online and offline reinforce each other and together drive more recognition, distinction and impact.",
+        "That is why we combine targeted online campaigns with powerful visibility via Digital Out of Home. This way we also put employers in front of talent at the places they visit every day. Online and offline reinforce each other and together drive greater recognition, differentiation and impact.",
       ],
     },
     sections: [
       {
         type: "text" as const,
         eyebrow: "Online and offline on the radar",
-        heading: "Reach in the real world of candidates, not just on their screen",
+        heading: "Reach candidates in the real world, not just on their screens",
         headingAccent: "real world",
         paragraphs: [
           "We focus not only on online channels such as LinkedIn and other digital platforms, but also on the physical world of candidates. With Digital Out of Home we make the employer brand visible at strategic locations where students, young professionals and experienced staff come every day.",
-          "This way employers reach talent beyond the screen too, in a familiar environment. Depending on the campaign and chosen locations, reach can run from 250,000 to 2 million contact moments per month.",
+          "This way employers reach talent beyond the screen too, in a familiar environment. Depending on the campaign and chosen locations, reach can run from 250,000 to 2 million touchpoints per month.",
         ],
       },
       {
@@ -433,16 +439,16 @@ export const talentAantrekkenWaaromWerkgevers = {
       {
         type: "callout" as const,
         eyebrow: "From offline visibility to online conversion",
-        quote: "DOOH provides offline visibility and recognition. Smart retargeting turns that attention into conversion online.",
+        quote: "We analyse the target audience online, strengthen visibility through DOOH at relevant locations, and then use smart retargeting to reconnect with that audience online and drive conversion.",
       },
       {
         type: "text" as const,
         eyebrow: "Online and offline reinforce each other",
-        heading: "From brand experience to concrete action at the right moment",
-        headingAccent: "concrete action",
+        heading: "From brand awareness to action at the right moment",
+        headingAccent: "action",
         paragraphs: [
           "Our strength lies in the smart combination of online and offline visibility. Through Digital Out of Home and online channels we build reach, recognition and a strong employer brand. Both reinforce each other and ensure employers appear in front of talent at multiple moments and places.",
-          "With smart retargeting we connect these contact moments and increase the chance of interaction and conversion. This creates one integrated approach in which online and offline reinforce each other and together contribute to results.",
+          "With smart retargeting we connect these touchpoints and increase the chance of interaction and conversion. This creates one integrated approach in which online and offline reinforce each other and together contribute to results.",
         ],
       },
       {
@@ -485,7 +491,7 @@ export const talentAantrekkenDoohEffectief = {
       {
         type: "numbered-list" as const,
         eyebrow: "Acht redenen",
-        heading: "Waarom DOOH werkt",
+        heading: "Waarom DOOH werkt?",
         intro: "Acht concrete redenen waarom DOOH meer doet dan bereik creëren en juist in combinatie met online marketing extra krachtig wordt.",
         items: [
           { n: "01", title: "Groot bereik onder relevante kandidaten", text: "Afhankelijk van locaties en campagneopzet bereikt DOOH 250.000 tot 2 miljoen kandidaten per maand, met het grootste bereik in de Randstad." },
@@ -529,14 +535,14 @@ export const talentAantrekkenDoohEffectief = {
         heading: "Why DOOH works",
         intro: "Eight concrete reasons why DOOH does more than create reach, and becomes especially powerful in combination with online marketing.",
         items: [
-          { n: "01", title: "Large reach among relevant candidates", text: "Depending on locations and campaign setup, DOOH reaches 250,000 to 2 million candidates per month, with the largest reach in the Randstad region." },
-          { n: "02", title: "Mission, vision and culture become visible", text: "DOOH offers more room than just a vacancy message. Employers can make their mission, vision and culture visible, building recognition and a stronger employer brand." },
-          { n: "03", title: "Reach where the audience actually goes", text: "DOOH screens stand at strategic locations where students, young professionals and experienced staff come every day." },
+          { n: "01", title: "Extensive reach among relevant candidates", text: "Depending on locations and campaign setup, DOOH reaches 250,000 to 2 million candidates per month, with the largest reach in the Randstad region." },
+          { n: "02", title: "Bring your mission, vision and culture to life", text: "DOOH offers more room than just a vacancy message. Employers can make their mission, vision and culture visible, building recognition and a stronger employer brand." },
+          { n: "03", title: "Reach your audience where they actually are", text: "DOOH screens stand at strategic locations where students, young professionals and experienced staff come every day." },
           { n: "04", title: "Longer dwell time, more attention", text: "Candidates spend on average one to two hours a week at these locations. That increases the chance a message is seen, recognised and remembered." },
           { n: "05", title: "Flexible response to current events", text: "Campaigns can be quickly adapted to new vacancies, developments or audiences, keeping the message current and relevant." },
           { n: "06", title: "Moving images draw attention", text: "83% of people notice DOOH advertising. Moving images in particular bring the atmosphere, collaboration and culture of the workplace to life and strengthen the experience of the employer brand." },
           { n: "07", title: "Employers stand out beyond the online crowd", text: "Where employers compete online for the same attention, DOOH creates extra visibility in the physical world where talent lives." },
-          { n: "08", title: "Online and offline strengthen conversion", text: "By smartly connecting DOOH and online marketing, multiple contact moments arise with the same audience, driving more recognition, more interaction and a greater chance of conversion." },
+          { n: "08", title: "Online and offline work together to drive conversion", text: "By smartly connecting DOOH and online marketing, the same audience is reached across multiple touchpoints, driving more recognition, more interaction and a greater chance of conversion." },
         ],
         sourceNote: "Sources: DCF research · NL DOOH network",
       },

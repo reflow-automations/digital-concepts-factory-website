@@ -228,7 +228,7 @@ const privacyDocEn: LegalDoc = {
       blocks: [
         { type: "p", text: "Digital Concepts Factory B.V. (\"DCF\") develops and delivers innovative solutions in the fields of Human Resources, Procurement, Marketing, Software, Artificial Intelligence (AI), Websites, SaaS solutions and digital platforms." },
         { type: "p", text: "DCF respects your privacy and processes personal data carefully, confidentially and in accordance with the General Data Protection Regulation (GDPR)." },
-        { type: "p", text: "Controller of personal data processing:" },
+        { type: "p", text: "Data controller:" },
         { type: "ul", items: [
           "Digital Concepts Factory B.V.",
           "Chamber of Commerce number: 55540325",
@@ -245,9 +245,9 @@ const privacyDocEn: LegalDoc = {
         { type: "h3", text: "Contact details" },
         { type: "ul", items: ["First and last name", "Company name", "Job title", "Email address", "Phone number", "Address details"] },
         { type: "h3", text: "Website data" },
-        { type: "ul", items: ["IP address", "Browser data", "Device data", "Cookies", "Website behaviour", "Click behaviour"] },
+        { type: "ul", items: ["IP address", "Browser data", "Device data", "Cookies", "Website usage data", "Click behaviour"] },
         { type: "h3", text: "Newsletter data" },
-        { type: "ul", items: ["Name", "Email address", "Open and click behaviour"] },
+        { type: "ul", items: ["Name", "Email address", "Email open and click data"] },
         { type: "h3", text: "Client data" },
         { type: "ul", items: ["Invoice details", "Payment details", "Correspondence", "Contract details"] },
         { type: "h3", text: "Recruitment and application data" },
@@ -280,7 +280,7 @@ const privacyDocEn: LegalDoc = {
         { type: "p", text: "DCF processes personal data on the basis of one or more of the following legal grounds:" },
         { type: "ul", items: ["Performance of a contract;", "Legal obligation;", "Consent;", "Legitimate interest."] },
         { type: "p", text: "Legitimate interest includes, among other things:" },
-        { type: "ul", items: ["Marketing activities towards business contacts;", "Improvement of services;", "Security of systems;", "Fraud prevention;", "Business operations."] },
+        { type: "ul", items: ["Marketing activities towards business contacts;", "Improvement of services;", "Security of systems;", "Fraud prevention;", "Business operations and administration."] },
       ],
     },
     {
@@ -375,9 +375,9 @@ const privacyDocEn: LegalDoc = {
       heading: "14. Your rights",
       blocks: [
         { type: "p", text: "You have the right to:" },
-        { type: "ul", items: ["Access your data;", "Correct your data;", "Have your data deleted;", "Restrict processing;", "Object to processing;", "Transfer your data;", "Withdraw your consent."] },
+        { type: "ul", items: ["Access your data;", "Correct your data;", "Have your data deleted;", "Restrict processing;", "Object to processing;", "Exercise your right to data portability;", "Withdraw your consent."] },
         { type: "p", text: "Requests can be submitted via: info@digitalconceptsfactory.nl" },
-        { type: "p", text: "DCF may request additional verification before handling a request." },
+        { type: "p", text: "DCF may request additional information to verify your identity before processing a request." },
       ],
     },
     {
@@ -548,9 +548,9 @@ const disclaimerDocEn: LegalDoc = {
       heading: "2. Informational nature",
       blocks: [
         { type: "p", text: "The information on this website is intended solely for general informational purposes." },
-        { type: "p", text: "The information explicitly does not constitute:" },
+        { type: "p", text: "The information does not constitute:" },
         { type: "ul", items: ["legal advice;", "financial advice;", "tax advice;", "HR advice;", "procurement advice;", "purchasing advice;", "employment law advice;", "medical advice;", "business advice."] },
-        { type: "p", text: "Visitors should always seek advice from a qualified professional for specific situations." },
+        { type: "p", text: "Visitors should seek advice from an appropriately qualified professional for their specific circumstances." },
       ],
     },
     {
@@ -558,7 +558,7 @@ const disclaimerDocEn: LegalDoc = {
       blocks: [
         { type: "p", text: "This website may refer to examples, calculations, case studies, forecasts, research, statistics, savings, returns and other results. This information is intended solely for illustrative purposes." },
         { type: "p", text: "DCF does not guarantee that:" },
-        { type: "ul", items: ["the same results will be achieved;", "stated savings will actually be realised;", "staff turnover will be reduced;", "absenteeism will be lowered;", "cost savings will be achieved;", "procurement costs will be reduced;", "contract management results will improve;", "marketing results will be achieved."] },
+        { type: "ul", items: ["the same results will be achieved;", "stated savings will actually be realised;", "staff turnover will be reduced;", "Sick leave will be lowered;", "cost savings will be achieved;", "procurement costs will be reduced;", "contract management results will improve;", "marketing results will be achieved."] },
         { type: "p", text: "Actual results depend on various factors, including organisation size, market conditions, implementation, user behaviour and other circumstances beyond DCF's control." },
       ],
     },
@@ -588,7 +588,7 @@ const disclaimerDocEn: LegalDoc = {
         { type: "p", text: "DCF has no control over the content, availability, security or privacy practices of these external websites." },
         { type: "p", text: "DCF accepts no liability for:" },
         { type: "ul", items: ["the content of external websites;", "the accuracy of information on external websites;", "products or services of third parties;", "damage arising from the use of external websites."] },
-        { type: "p", text: "Visiting external websites is entirely at the visitor's own risk." },
+        { type: "p", text: "Use of external websites is at the visitor's own risk." },
       ],
     },
     {
@@ -801,10 +801,10 @@ const voorwaardenDocEn: LegalDoc = {
       heading: "Article 3 - Quotes and offers",
       blocks: [
         { type: "ul", items: [
-          "3.1 All quotes from DCF are without obligation unless expressly stated otherwise.",
+          "3.1 All quotations issued by DCF are non-binding unless expressly stated otherwise.",
           "3.2 Quotes are valid for 30 days.",
           "3.3 Obvious errors or mistakes in quotes do not bind DCF.",
-          "3.4 DCF is entitled to adjust its rates at interim stages if circumstances have changed.",
+          "3.4 DCF is entitled to adjust its rates during the term of an agreement if circumstances change.",
         ]},
       ],
     },
@@ -821,8 +821,8 @@ const voorwaardenDocEn: LegalDoc = {
       blocks: [
         { type: "ul", items: [
           "5.1 DCF will perform the agreement to the best of its ability and knowledge.",
-          "5.2 DCF is subject only to a best-efforts obligation, unless a result obligation has been expressly agreed in writing.",
-          "5.3 Results, savings, returns, conversions, cost reductions, absenteeism reductions or other forecasts mentioned by DCF are indicative only.",
+          "5.2 DCF is subject to a best-efforts obligation only, unless an obligation to achieve a specific result has been expressly agreed in writing.",
+          "5.3 Results, savings, returns, conversions, cost reductions, Sick leave reductions or other forecasts mentioned by DCF are indicative only.",
           "5.4 DCF does not guarantee that specific commercial, financial or operational results will be achieved.",
         ]},
       ],
@@ -830,8 +830,8 @@ const voorwaardenDocEn: LegalDoc = {
     { heading: "Article 6 - Client cooperation", blocks: [{ type: "ul", items: ["6.1 The Client provides all necessary information in a timely manner.", "6.2 Delays caused by missing information are for the Client's account.", "6.3 DCF is not liable for damage resulting from incorrect or incomplete information provided by the Client."] }] },
     { heading: "Article 7 - Recruitment, HR and Employer Branding", blocks: [{ type: "ul", items: ["7.1 DCF carries out work on a best-efforts basis.", "7.2 DCF does not guarantee that candidates will be hired.", "7.3 DCF does not guarantee that employees will remain in employment.", "7.4 DCF is not liable for the conduct, performance or statements of candidates.", "7.5 Any replacement guarantees apply only if agreed in writing."] }] },
     { heading: "Article 8 - Marketing services", blocks: [{ type: "ul", items: ["8.1 DCF does not guarantee a specific number of leads, applicants, clients, revenue growth or conversions.", "8.2 Campaign results are partly dependent on market conditions, competition, audience behaviour and factors beyond DCF's control.", "8.3 DCF may use third parties for ad placements, media buying and campaign management."] }] },
-    { heading: "Article 9 - Procurement, tendering and contract management services", blocks: [{ type: "ul", items: ["9.1 DCF supports clients in procurement and tendering processes.", "9.2 DCF does not provide legal advice unless expressly agreed in writing.", "9.3 The Client remains solely responsible for decisions regarding tenders, contracts and supplier selections.", "9.4 DCF is not liable for tendering disputes, objection procedures or legal proceedings."] }] },
-    { heading: "Article 10 - Software and SaaS", blocks: [{ type: "ul", items: ["10.1 DCF grants only a right of use for software.", "10.2 Intellectual property remains entirely owned by DCF.", "10.3 DCF does not guarantee that software will function without errors or interruption.", "10.4 Maintenance work may be carried out without prior notice.", "10.5 DCF may modify, extend or remove functionalities.", "10.6 It is not permitted to copy, reverse engineer or decompile software."] }] },
+    { heading: "Article 9 - Procurement, tendering and contract management services", blocks: [{ type: "ul", items: ["9.1 DCF supports clients in procurement and tendering processes.", "9.2 DCF does not provide legal advice unless expressly agreed in writing.", "9.3 The Client remains solely responsible for decisions regarding tenders, contracts and supplier selections.", "9.4 DCF is not liable for tender disputes, challenge procedures or legal proceedings."] }] },
+    { heading: "Article 10 - Software and SaaS", blocks: [{ type: "ul", items: ["10.1 DCF grants the Client a right to use the software only.", "10.2 Intellectual property remains entirely owned by DCF.", "10.3 DCF does not guarantee that software will function without errors or interruption.", "10.4 Maintenance work may be carried out without prior notice.", "10.5 DCF may modify, extend or remove functionalities.", "10.6 It is not permitted to copy, reverse engineer or decompile software."] }] },
     { heading: "Article 11 - AI solutions", blocks: [{ type: "ul", items: ["11.1 DCF's AI solutions generate results based on algorithms and available data.", "11.2 DCF does not guarantee that AI outcomes are completely accurate, current or error-free.", "11.3 The Client remains responsible for checking AI-generated output.", "11.4 DCF is not liable for decisions made on the basis of AI output."] }] },
     { heading: "Article 12 - Websites and digital platforms", blocks: [{ type: "ul", items: ["12.1 DCF aims for optimal availability of websites and platforms.", "12.2 Temporary outages do not entitle the Client to compensation.", "12.3 The Client is responsible for content it supplies.", "12.4 The Client indemnifies DCF against third-party claims relating to supplied content."] }] },
     { heading: "Article 13 - Subscriptions", blocks: [{ type: "ul", items: ["13.1 Subscriptions are entered into for the agreed period.", "13.2 Subscriptions are automatically renewed unless cancelled in writing.", "13.3 Cancellation must take place at least one month before expiry.", "13.4 Amounts already paid will not be refunded."] }] },
@@ -846,7 +846,7 @@ const voorwaardenDocEn: LegalDoc = {
       ],
     },
     { heading: "Article 16 - Confidentiality", blocks: [{ type: "ul", items: ["16.1 The parties treat confidential information in strict confidence.", "16.2 This obligation persists after termination of the agreement."] }] },
-    { heading: "Article 17 - Privacy and GDPR", blocks: [{ type: "ul", items: ["17.1 DCF processes personal data in accordance with the GDPR.", "17.2 Where necessary, the parties enter into a data processing agreement.", "17.3 The Client guarantees that personal data provided has been obtained lawfully.", "17.4 DCF is not liable for breaches of privacy legislation by the Client."] }] },
+    { heading: "Article 17 - Privacy and GDPR", blocks: [{ type: "ul", items: ["17.1 DCF processes personal data in accordance with the GDPR.", "17.2 Where necessary, the parties enter into a data processing agreement.", "17.3 The Client warrants that any personal data it provides has been obtained lawfully.", "17.4 DCF is not liable for breaches of privacy legislation by the Client."] }] },
     {
       heading: "Article 18 - Liability",
       blocks: [
@@ -870,13 +870,13 @@ const voorwaardenDocEn: LegalDoc = {
       blocks: [
         { type: "p", text: "20.1 DCF may suspend work in the event of non-payment." },
         { type: "p", text: "20.2 DCF may terminate the agreement immediately if:" },
-        { type: "ul", items: ["the Client fails to perform;", "bankruptcy is applied for;", "a moratorium on payments is granted;", "business activities are ceased."] },
+        { type: "ul", items: ["the Client fails to perform;", "a bankruptcy petition is filed;", "a moratorium on payments is granted;", "business operations are discontinued."] },
         { type: "p", text: "20.3 Work already carried out remains payable." },
       ],
     },
     { heading: "Article 21 - Indemnification", blocks: [{ type: "ul", items: ["21.1 The Client indemnifies DCF against third-party claims arising from the use of the services, software, websites, AI solutions or content delivered.", "21.2 The Client compensates all damage and costs arising from such claims."] }] },
     { heading: "Article 22 - Applicable law", blocks: [{ type: "ul", items: ["22.1 All agreements are governed exclusively by Dutch law.", "22.2 The Vienna Sales Convention is excluded."] }] },
-    { heading: "Article 23 - Disputes", blocks: [{ type: "ul", items: ["23.1 Disputes will first be resolved by mutual consultation.", "23.2 If this proves impossible, disputes are submitted exclusively to the competent court of the Rotterdam District Court."] }] },
+    { heading: "Article 23 - Disputes", blocks: [{ type: "ul", items: ["23.1 The parties will first attempt to resolve disputes through mutual consultation.", "23.2 If this proves impossible, disputes are submitted exclusively to the competent court of the Rotterdam District Court."] }] },
     { heading: "Article 24 - Final provisions", blocks: [{ type: "ul", items: ["24.1 DCF may amend these General Terms and Conditions.", "24.2 The most recent version will be published on the DCF website.", "24.3 The Client is deemed to have agreed to any amendments if it continues to use the services after the amended terms have been announced."] }] },
   ],
 };

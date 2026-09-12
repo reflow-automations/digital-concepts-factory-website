@@ -92,7 +92,7 @@ export default function TalentBehoudenPage() {
                   label={t.intro.readMore.label}
                   labelOpen={t.intro.readMore.labelOpen}
                   blocks={t.intro.readMore.blocks}
-                  closing={t.intro.readMore.closing}
+                  closing={{ ...t.intro.readMore.closing, ctaLabel: ctaLong }}
                 />
               </Reveal>
             </div>
@@ -155,24 +155,13 @@ export default function TalentBehoudenPage() {
                 {t.innovation.cta}
               </CTA>
 
-              {/* Banner onder het tekstblok links (revisieronde 2026-08, punt 40) */}
-              <div className="mt-10 relative w-full overflow-hidden rounded-2xl bg-ink" style={{ aspectRatio: photoAspect(innovatieSrc) }}>
-                <Image
-                  key={lang}
-                  src={innovatieSrc}
-                  alt={t.innovation.bannerAlt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                  quality={90}
-                />
-              </div>
+
             </Reveal>
 
             <div className="lg:col-span-6 lg:col-start-7 space-y-8 text-[16px] leading-[1.65] text-text">
               <Reveal delay={80}>
                 <div className="bg-paper-deep p-8 lg:p-10 border-l-2 border-cobalt">
-                  <p className="text-[clamp(1.1rem,1.5vw,1.3rem)] text-ink leading-[1.5]">
+                  <p className="text-[clamp(1.1rem,1.5vw,1.3rem)] text-ink leading-[1.5] whitespace-pre-line">
                     {t.innovation.quote}
                   </p>
                 </div>
@@ -183,6 +172,19 @@ export default function TalentBehoudenPage() {
               </Reveal>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Innovation photo, full section width (revision 2). */}
+      <section className="py-12">
+        <div className="mx-auto max-w-7xl px-6">
+          <Reveal>
+            <div className="relative w-full overflow-hidden rounded-3xl bg-ink" style={{ aspectRatio: photoAspect(innovatieSrc) }}>
+              <Image key={lang} src={innovatieSrc} alt={t.innovation.bannerAlt} fill
+                className="object-cover" quality={90}
+                sizes="(min-width: 1280px) 1232px, calc(100vw - 48px)" />
+            </div>
+          </Reveal>
         </div>
       </section>
 

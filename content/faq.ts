@@ -16,7 +16,7 @@ export const talentAantrekkenFaq: FaqSet = {
   nl: [
     {
       q: "Hoe helpt Digital Concepts Factory bij het aantrekken van talent?",
-      a: "Wij brengen werkgevers op het juiste moment in beeld bij de juiste kandidaten, online en offline. Met Employer Branding-campagnes, Digital Out of Home en slimme retargeting bereiken organisaties talent op de juiste plekken en momenten. Zo ontstaat meer herkenning én sterkere conversie.",
+      a: "Wij brengen werkgevers op het juiste moment in beeld bij de juiste kandidaten, online en offline. Met Employer Branding campagnes, Digital Out of Home en slimme retargeting bereiken organisaties talent op de juiste plekken en momenten. Zo ontstaat meer herkenning én sterkere conversie.",
     },
     {
       q: "Wat is Digital Out of Home (DOOH) en waarom werkt het voor werving?",
@@ -24,7 +24,7 @@ export const talentAantrekkenFaq: FaqSet = {
     },
     {
       q: "Hoe verhoudt offline branding zich tot online conversie?",
-      a: "Branding vindt offline plaats, conversie online. Wij maken werkgevers zichtbaar via DOOH op locaties waar de doelgroep komt en bereiken diezelfde doelgroep vervolgens opnieuw op de smartphone via slimme retargeting. Zo verbinden we offline zichtbaarheid met meetbare online conversie.",
+      a: "Van online naar offline en terug naar online!\n\nWe bereiken de doelgroep eerst online en krijgen inzicht in waar zij zich bevindt. Op basis daarvan maken we werkgevers via DOOH zichtbaar op relevante locaties. Vervolgens bereiken we diezelfde doelgroep opnieuw op de smartphone via slimme retargeting. Zo versterken online en offline elkaar gedurende de hele klantreis, met meetbare online conversie als eindpunt.",
     },
     {
       q: "Hoeveel kandidaten kunt u met DOOH bereiken?",
@@ -38,15 +38,15 @@ export const talentAantrekkenFaq: FaqSet = {
   en: [
     {
       q: "How does Digital Concepts Factory help attract talent?",
-      a: "We put employers in front of the right candidates at the right moment, online and offline. With Employer Branding campaigns, Digital Out of Home and smart retargeting, organisations reach talent at the right places and moments. That builds more recognition and stronger conversion.",
+      a: "We put employers in front of the right candidates at the right moment, online and offline. With Employer Branding campaigns, Digital Out of Home and smart retargeting, organisations reach talent at the right places and moments. This builds recognition and increases the potential for conversion.",
     },
     {
       q: "What is Digital Out of Home (DOOH) and why does it work for recruitment?",
       a: "Research shows that 83 percent of people notice DOOH advertising. With moving images you also bring your mission, vision and culture to life and stand out beyond the online crowd.",
     },
     {
-      q: "How does offline branding relate to online conversion?",
-      a: "Branding happens offline, conversion online. We make employers visible through DOOH at locations the audience visits, then reach that same audience again on their smartphone through smart retargeting. That connects offline visibility with measurable online conversion.",
+      q: "How do online targeting, DOOH and retargeting work together?",
+      a: "From online to offline and back online!\n\nWe first analyse the target audience online, strengthen visibility with DOOH at relevant locations and then reconnect with that audience online through smart retargeting, ultimately driving online conversion.",
     },
     {
       q: "How many candidates can you reach with DOOH?",
@@ -54,7 +54,7 @@ export const talentAantrekkenFaq: FaqSet = {
     },
     {
       q: "Which organisations is this approach suitable for?",
-      a: "This approach suits employers who want to stand out in a tight labour market and want to reach talent beyond job boards and social media too. Large organisations and (semi-)public bodies that want to reach the right people structurally benefit especially from this approach.",
+      a: "This approach suits employers who want to stand out in a tight labour market and want to reach talent beyond job boards and social media too. Large organisations and (semi-)public bodies that want to reach the right people consistently benefit especially from this approach.",
     },
   ],
 };
@@ -84,8 +84,8 @@ export const talentBehoudenFaq: FaqSet = {
   ],
   en: [
     {
-      q: "How does DCF make tailored employment terms affordable and scalable?",
-      a: "We flip the starting point: the employer no longer decides which extras are offered, employees choose what is valuable to them, within clear frameworks. Our digital solution makes personal tailoring scalable and affordable, while the organisation keeps control over costs and delivery.",
+      q: "How does DCF make Personalised employee benefits affordable and scalable?",
+      a: "We flip the starting point: the employer no longer decides which extras are offered, employees choose what matters most to them, within clear frameworks. Our digital solution makes personalisation scalable and affordable, while the organisation keeps control over costs and delivery.",
     },
     {
       q: "How much can an organisation save by retaining talent?",
@@ -101,7 +101,7 @@ export const talentBehoudenFaq: FaqSet = {
     },
     {
       q: "Who is this solution suitable for?",
-      a: "For organisations that want to retain talent longer and want to offer employees more freedom of choice than standard employment terms allow. Our solution makes personal tailoring accessible, affordable and practical to deliver.",
+      a: "For organisations that want to retain talent longer and want to offer employees more freedom of choice than standard employee benefits allow. Our solution makes personalisation accessible, affordable and practical to deliver.",
     },
   ],
 };
@@ -132,15 +132,15 @@ export const ziekteverzuimFaq: FaqSet = {
   en: [
     {
       q: "How does DCF help reduce sick leave?",
-      a: "DCF helps organisations with an affordable digital solution that encourages employees not to call in sick unnecessarily, without complex programmes or high barriers. Fewer unnecessary sick-day calls means more control over costs, calmer teams and greater continuity.",
+      a: "DCF helps organisations with an affordable digital solution that encourages employees to reduce avoidable short-term sick leave, without complex programmes or high barriers. Less avoidable short-term sick leave means more control over costs, calmer teams and greater continuity.",
     },
     {
       q: "What does sick leave cost on average per employee?",
       a: "In the Netherlands, average costs run between 4,500 and 7,000 euros per employee per year, depending on sector, role and duration. In 2023, total continued-pay costs for sick days amounted to 8.3 billion euros.",
     },
     {
-      q: "Does the solution also work for short-term absenteeism?",
-      a: "Short-term absenteeism in particular is a thorn in the side of many employers because it arrives unexpectedly and disrupts rosters. Our solution focuses on positively influencing behaviour so that unnecessary short-term sick-day calls decrease.",
+      q: "Does the solution also work for short-term Sick leave?",
+      a: "Short-term Sick leave in particular is a recurring challenge for many employers because it arrives unexpectedly and disrupts rosters. Our solution focuses on positively influencing behaviour so that unnecessary short-term sick-day calls decrease.",
     },
     {
       q: "Is the solution affordable for my organisation?",
@@ -148,7 +148,7 @@ export const ziekteverzuimFaq: FaqSet = {
     },
     {
       q: "Who is this approach suitable for?",
-      a: "For employers who want to reduce sick leave structurally and gain more control over the related costs and continuity. The approach is intended as a practical, low-threshold addition to your existing absenteeism policy.",
+      a: "For employers who want to reduce sick leave structurally and gain more control over the related costs and continuity. The approach is intended as a practical, accessible addition to your existing Sick leave policy.",
     },
   ],
 };
@@ -183,11 +183,11 @@ export const inkoopFaq: FaqSet = {
     },
     {
       q: "Does this also work for European tenders?",
-      a: "Yes. European tenders in particular, which demand structure, specialist knowledge and capacity, are where our solution adds value. The entire process becomes clearer, more transparent and demonstrably verifiable.",
+      a: "Yes. European tenders in particular, which demand structure, specialist knowledge and capacity, are where our solution adds value. The entire process becomes clearer, more transparent and fully auditable.",
     },
     {
       q: "What is contract management and why does it matter?",
-      a: "Contract management is monitoring agreements, performance, deadlines and obligations after a contract is signed. Without control, contracts roll on silently, renewal moments are missed and unnecessary costs arise. Central insight prevents that.",
+      a: "Contract management is monitoring agreements, performance, deadlines and obligations after a contract is signed. Without control, contracts may renew unnoticed, renewal moments are missed and unnecessary costs arise. Centralised visibility helps prevent this.",
     },
     {
       q: "Where are the real costs of tendering?",
@@ -195,7 +195,7 @@ export const inkoopFaq: FaqSet = {
     },
     {
       q: "Is this only for large organisations?",
-      a: "No. Our solution is designed to be affordable and accessible for every organisation. Professional and more efficient tendering is therefore not a privilege of large players with large budgets.",
+      a: "No. Our solution is designed to be affordable and accessible for every organisation. Professional and more efficient tendering is therefore not a privilege of large organisations with large budgets.",
     },
   ],
 };
@@ -226,23 +226,23 @@ export const marketingFaq: FaqSet = {
   en: [
     {
       q: "What makes DCF's marketing approach different?",
-      a: "We do not develop predictable standard campaigns, but surprising, smart and distinctive concepts that genuinely move audiences. Anyone who wants to make an impact must be willing to deviate from the beaten path.",
+      a: "We do not develop predictable standard campaigns, but distinctive marketing concepts that stand out, engage audiences and inspire action. Anyone who wants to make an impact must be willing to be willing to take a different approach.",
     },
     {
       q: "What does DCF mean by online and offline marketing?",
-      a: "Audiences do not live only on their screens, but also in cities, at locations and on the move. Where many agencies focus mainly on online, real strength is often in the combination of both: more reach, more recognition and more differentiation.",
+      a: "Audiences do not live only on their screens, they are also out in cities, at physical locations and on the move. Where many agencies focus mainly on online, The real strength often lies in combining the two of both: more reach, more recognition and more differentiation.",
     },
     {
-      q: "Does DCF only do the concept or also the execution?",
-      a: "Both. Our strength lies not only in devising distinctive ideas but also in realising them. We support everything from strategy and concept development through to execution, follow-up and evaluation.",
+      q: "Does DCF handle both concept development and execution?",
+      a: "Both. Our strength lies not only in developing distinctive ideas but also in realising them. We support everything from strategy and concept development through to execution, optimisation and evaluation.",
     },
     {
       q: "Who is this marketing approach suitable for?",
-      a: "For organisations that find it hard to stand out in a market where everyone wants to be visible, and that want marketing which fits their brand, ambition and market rather than a standard format.",
+      a: "For organisations that want to stand out in a market where everyone wants to be visible, and that want marketing that fits their brand, ambitions, audience and market rather than a standard format.",
     },
     {
-      q: "How do you measure whether the marketing delivers?",
-      a: "Marketing is ultimately about results: more visibility, a stronger brand and more customers. We do not develop campaigns just to be present, but concepts that demonstrably move organisations forward, with follow-up and evaluation.",
+      q: "How do you measure marketing results?",
+      a: "Marketing is ultimately about results: more visibility, a stronger brand and more customers. We do not develop campaigns just to be present, but concepts designed to deliver measurable results, with follow-up and evaluation.",
     },
   ],
 };

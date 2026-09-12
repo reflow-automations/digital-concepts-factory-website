@@ -9,7 +9,6 @@ const CLIENTS = [
   "ING",
   "IKEA",
   "MediaMarkt",
-  "Fit For Free",
   "CBR",
   "OGER",
   "Club Med",

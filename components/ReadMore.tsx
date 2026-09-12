@@ -13,6 +13,7 @@
  */
 
 import { useId, useState } from "react";
+import CTA from "@/components/CTA";
 
 export type ReadMoreBlock = {
   /** Kop boven het tekstblok. Optioneel: losse alinea's hebben er geen. */
@@ -31,7 +32,7 @@ export default function ReadMore({
   label: string;
   labelOpen: string;
   blocks: ReadMoreBlock[];
-  closing?: { heading: string; text: string };
+  closing?: { heading: string; text: string; ctaLabel?: string; ctaHref?: string };
 }) {
   const [open, setOpen] = useState(false);
   const panelId = useId();
@@ -90,6 +91,9 @@ export default function ReadMore({
             <div className="border-t border-mist pt-6">
               <p className="text-ink font-medium mb-1">{closing.heading}</p>
               <p>{closing.text}</p>
+              {closing.ctaLabel && (
+                <CTA href={closing.ctaHref ?? "/contact"} className="mt-5">{closing.ctaLabel}</CTA>
+              )}
             </div>
           )}
         </div>

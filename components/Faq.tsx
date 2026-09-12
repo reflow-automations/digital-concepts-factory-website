@@ -75,7 +75,7 @@ export default function Faq({ items }: { items: FaqItem[] }) {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="text-text/85 text-[15px] leading-[1.65] pb-6 max-w-3xl">
+                      <p className="text-text/85 text-[15px] leading-[1.65] pb-6 max-w-3xl whitespace-pre-line">
                         {item.a}
                       </p>
                     </div>

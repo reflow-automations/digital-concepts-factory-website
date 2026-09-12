@@ -88,48 +88,48 @@ export const marketing = {
   en: {
     hero: {
       chapter: "Marketing",
-      h1: "When everyone is visible, you need to be different",
-      h1Accent: "be different",
+      h1: "When everyone is visible, you need to stand out",
+      h1Accent: "stand out",
       imageAlt: "Laptop showing a campaign-results dashboard and marketing checklist",
     },
     intro: {
       eyebrow: "The marketing reality",
-      heading: "Standing out no longer works with standard marketing",
+      heading: "Standard marketing is no longer enough to stand out",
       paragraphs: [
         "Many organisations wrestle with the same question: how do you genuinely capture attention in a market where everyone wants to be visible? The reality is simple: standard campaigns and predictable communication often no longer cut it.",
-        "That is precisely where we make the difference. We develop marketing concepts that are not dull, safe or interchangeable, but surprising, smart and distinctive. These are concepts that help organisations become visible, stay relevant and genuinely move audiences.",
+        "That is precisely where we make the difference. We develop marketing concepts that are not dull, safe or interchangeable, but surprising, smart and distinctive. These are concepts that help organisations become visible, stay relevant and inspire audiences to take action.",
       ],
-      paragraphStrong: "Anyone who wants to make an impact must be willing to deviate from the beaten path.",
+      paragraphStrong: "Anyone who wants to make an impact must be willing to be willing to take a different approach.",
       cta: "Book a no-obligation call",
     },
     approach: {
       chapter: "01",
       label: "Our approach",
-      heading: "We walk surprising paths",
-      headingAccent: "surprising paths",
-      lead: "Five principles that underpin every marketing assignment. Smarter, fresher and more distinctive than the crowd.",
+      heading: "We take a different approach",
+      headingAccent: "different approach",
+      lead: "Five principles that underpin every marketing assignment. Smarter, fresher and designed to stand out.",
       cta: "Book a call",
     },
     principles: [
       {
         n: "01",
-        title: "Where others take the standard route, we turn off",
-        text: "We do not automatically choose the ads, posts and campaigns everyone already knows. We look for surprising angles and smart combinations that stand out, spark curiosity and above all: stick.",
+        title: "Where others follow the standard route, we choose a different path",
+        text: "We do not automatically choose the ads, posts and campaigns everyone already knows. We look for surprising angles and smart combinations that stand out, spark curiosity and above all, stay memorable.",
       },
       {
         n: "02",
         title: "Online and offline, the combination makes the difference",
-        text: "Where many marketing agencies focus mainly on online visibility, we deliberately look broader. Real strength is often in the combination of online and offline. That creates more reach, more recognition and more differentiation.",
+        text: "Where many marketing agencies focus mainly on online visibility, we deliberately look beyond online. The real strength often lies in combining the two of online and offline. That creates more reach, more recognition and more differentiation.",
       },
       {
         n: "03",
-        title: "No standard formats, but an approach that fits",
-        text: "No organisation, audience or market is the same. That is why we do not believe in off-the-shelf marketing formats. We dig into brand, ambition, audience and market and build a concept from there that genuinely fits and stands out.",
+        title: "No standard formats, an approach tailored to you",
+        text: "No organisation, audience or market is the same. That is why we do not believe in off-the-shelf marketing formats. We take the time to understand the brand, ambitions, audience and market and build a concept from there that genuinely fits and stands out.",
       },
       {
         n: "04",
-        title: "From strong idea to visible result",
-        text: "A good concept only becomes valuable when it is executed well. That is why we do not stop at the creative idea. We guide the full journey: from strategy and concept development to execution, optimisation and evaluation.",
+        title: "From a strong idea to measurable results",
+        text: "A good concept only becomes valuable when it is executed well. That is why we do not stop at the creative idea. We manage the entire process: from strategy and concept development to execution, optimisation and evaluation.",
       },
       {
         n: "05",
@@ -142,10 +142,10 @@ export const marketing = {
       label: "Not visibility, but results",
       heading: "Online and offline, for maximum impact",
       headingAccent: "maximum impact",
-      body: "We do not develop predictable standard campaigns, but marketing concepts that stand out, surprise and get audiences moving. We combine creativity with smart online and offline options to be not just visible, but genuinely effective.",
+      body: "We do not develop predictable standard campaigns, but marketing concepts that stand out, surprise and inspire audiences to take action. We combine creativity with smart online and offline channels to be not just visible, but genuinely effective.",
       items: [
         "Smart online activations",
-        "Strong offline applications",
+        "Powerful offline activations",
         "Unexpected combinations of both",
         "Tailored to each organisation, audience and market",
         "Strategy, concept and execution",
@@ -157,12 +157,12 @@ export const marketing = {
       {
         no: "6a",
         title: "Marketing innovation",
-        summary: "Distinctive marketing concepts that smartly combine online and offline.",
+        summary: "Distinctive marketing concepts that intelligently combine online and offline channels.",
         href: "/marketing/innovatie",
       },
     ],
     closing: {
-      heading: "Discover what a surprising marketing approach can do for you",
+      heading: "Discover what a fresh marketing approach can do for your organisation",
       headingAccent: "marketing approach",
       cta: "Book a no-obligation call",
     },
@@ -255,13 +255,13 @@ export const marketingInnovatie = {
     parentLabel: "Marketing",
     parentHref: "/marketing",
     label: "Marketing innovation",
-    h1: "Marketing that not only stands out but also delivers",
-    h1Accent: "also delivers",
+    h1: "Marketing that doesn't just stand out, it delivers",
+    h1Accent: "it delivers",
     intro: {
       eyebrow: "Our approach",
       headline: "We do not believe in marketing on autopilot",
       paragraphs: [
-        "We look beyond the standard mix of ads, posts and look-alike campaigns. By taking surprising paths we develop concepts that stand out and stick better.",
+        "We look beyond the standard mix of ads, posts and look-alike campaigns. By taking a different approach, we develop concepts that stand out and stay memorable.",
         "Sometimes that strength lies in a smart online activation. Sometimes in a strong offline application. And often precisely in the combination of both. Because audiences do not live only on their screens: they are also out in cities, at locations, on the move and in their everyday environment.",
       ],
     },
@@ -269,11 +269,11 @@ export const marketingInnovatie = {
       {
         type: "text" as const,
         eyebrow: "Online and offline",
-        heading: "Not online or offline, but the combination",
-        headingAccent: "the combination",
+        heading: "Not online or offline, but the power of both",
+        headingAccent: "the power of both",
         paragraphs: [
-          "Where many marketing agencies focus mainly on online visibility, we look further. Because the greatest impact often arises precisely when online and offline reinforce each other.",
-          "By connecting both worlds intelligently, we create campaigns that not only achieve greater reach but also build recognition, stand out and stick. Marketing that is not only seen, but genuinely sets something in motion.",
+          "Where many marketing agencies focus mainly on online visibility, we look further. Because the greatest impact often comes when online and offline reinforce each other.",
+          "By connecting both worlds intelligently, we create campaigns that build recognition, stand out and stay memorable while also achieving greater reach. Marketing that is not only seen, but genuinely inspires action.",
         ],
       },
       {
@@ -292,7 +292,7 @@ export const marketingInnovatie = {
         headingAccent: "Marketing that fits",
         paragraphs: [
           "No organisation, brand or market is the same. So why would the marketing approach be?",
-          "That is why we do not start with a standard solution, but with understanding. We dig into the organisation, the brand, the ambitions and the market. From that basis we develop a marketing concept that genuinely fits and is aimed at the result the organisation wants to achieve.",
+          "That is why we do not start with a standard solution, but with understanding. We take the time to understand the organisation, the brand, the ambitions and the market. From that basis we develop a marketing concept that genuinely fits and is aimed at the result the organisation wants to achieve.",
         ],
       },
       {
@@ -303,27 +303,27 @@ export const marketingInnovatie = {
       {
         type: "text" as const,
         eyebrow: "From concept to execution",
-        heading: "Our strength lies not only in thinking it up, but also in making it happen",
-        headingAccent: "making it happen",
+        heading: "Our strength lies not only in developing the idea, but also in bringing it to life",
+        headingAccent: "bringing it to life",
         paragraphs: [
-          "We support organisations from strategy and concept development through to execution, follow-up and evaluation.",
+          "We support organisations from strategy and concept development through to execution, optimisation and evaluation.",
           "That means it does not stop at a good idea: it becomes marketing that actually works in practice.",
         ],
       },
       {
         type: "text" as const,
         eyebrow: "Marketing must deliver results",
-        heading: "In the end only one thing counts: results",
+        heading: "Ultimately, only one thing matters: results",
         headingAccent: "results",
         paragraphs: [
           "More visibility, a stronger brand and ultimately more customers.",
-          "That is why we do not develop marketing just to be visible, but concepts that genuinely move organisations forward. Smarter, fresher and more distinctive than the crowd.",
+          "That is why we do not develop marketing just to be visible, but concepts that genuinely move organisations forward. Smarter, fresher and designed to stand out.",
         ],
       },
     ],
     closing: {
-      headline: "Discover what a surprising marketing approach can do for you",
-      headlineAccent: "surprising marketing approach",
+      headline: "Discover what a fresh marketing approach can do for your organisation",
+      headlineAccent: "fresh marketing approach",
       ctaLabel: "Book a no-obligation call",
     },
   } satisfies SubpageTemplateProps,

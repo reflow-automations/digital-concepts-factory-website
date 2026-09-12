@@ -32,10 +32,10 @@ export const ziekteverzuim = {
       headingAccent: "én betaalbaar is",
       lead: "Veel werkgevers willen ziekteverzuim terugdringen, maar worstelen met dezelfde vraag: hoe beïnvloed je gedrag op een positieve manier, zonder dat de oplossing ingewikkeld, duur of moeilijk uitvoerbaar wordt?",
       cta: "Plan gesprek",
-      quote: "Digital Concepts Factory ontwikkelde een betaalbare digitale oplossing die medewerkers stimuleert om zich niet onnodig ziek te melden. Zonder ingewikkelde trajecten of hoge drempels.",
+      quote: "Onze betaalbare digitale oplossing stimuleert medewerkers om zich niet onnodig ziek te melden. Zonder ingewikkelde trajecten of hoge drempels.",
       body1: "Minder onnodige ziekmeldingen betekent meer grip op kosten, meer rust in teams, minder druk op collega's en meer continuïteit in de dagelijkse bedrijfsvoering.",
       body2: "De kracht zit in de combinatie van betaalbaarheid, toegankelijkheid en praktische toepasbaarheid. Daarmee wordt ziekteverzuim terugdringen haalbaar voor grote én kleinere organisaties, zonder hoge kosten of complexe implementatietrajecten.",
-      body2Strong: "betaalbaarheid",
+      body2Strong: "",
       bannerAlt: "Banner ziekteverzuim terugdringen, Nederlandse versie",
     },
     secondaryImageAlt: "Kettingreactie van ziekmelding op het team",
@@ -87,13 +87,13 @@ export const ziekteverzuim = {
   en: {
     hero: {
       chapter: "Reducing sick leave",
-      h1: "Absenteeism hits your costs and continuity directly",
+      h1: "Sick leave directly affects costs and continuity",
       h1Accent: "costs and continuity",
       imageAlt: "Sick employee at home with laptop and cost indicator",
     },
     intro: {
       eyebrow: "A persistent problem",
-      heading: "Short-term absenteeism in particular remains a recurring problem",
+      heading: "Short-term sick leave remains a recurring challenge",
       paragraphs: [
         "Sick leave has been a significant cost item for many organisations for years. Average costs in the Netherlands run between €4,500 and €7,000 per employee per year, depending on sector, role and duration.",
         "Short-term sick leave in particular has a major impact on day-to-day operations. It often arrives unexpectedly, is hard to plan for and puts immediate pressure on rosters, staffing and continuity.",
@@ -102,7 +102,7 @@ export const ziekteverzuim = {
       source: "Source: TNO, Arbobalans 2024 · ArboNed",
     },
     bigNumber: {
-      eyebrow: "Absenteeism costs per employee per year",
+      eyebrow: "SICK LEAVE COSTS PER EMPLOYEE PER YEAR",
       detailPre: "Sick leave costs organisations an average of €4,500 to €7,000 per employee per year. In 2023, continued-pay costs due to sick leave in the Netherlands alone amounted to ",
       detailStrong: "€8.3 billion",
       detailPost: ".",
@@ -114,16 +114,16 @@ export const ziekteverzuim = {
       headingAccent: "and is affordable",
       lead: "Many employers want to reduce sick leave but struggle with the same question: how do you positively influence behaviour without the solution becoming complicated, expensive or hard to implement?",
       cta: "Book a call",
-      quote: "Digital Concepts Factory developed an affordable digital solution that encourages employees not to call in sick unnecessarily. Without complex programmes or high barriers.",
-      body1: "Fewer unnecessary sick-day calls means more control over costs, calmer teams, less pressure on colleagues and greater continuity in day-to-day operations.",
+      quote: "Our affordable digital solution encourages employees to avoid unnecessary sick leave, without complex processes or unnecessary barriers.",
+      body1: "Less avoidable short-term sick leave means more control over costs, calmer teams, less pressure on colleagues and greater continuity in day-to-day operations.",
       body2: "The strength lies in the combination of affordability, accessibility and practical applicability. That makes reducing sick leave achievable for large and smaller organisations alike, without high costs or complex implementation programmes.",
-      body2Strong: "affordability",
+      body2Strong: "",
       bannerAlt: "Reducing sick leave banner, English version",
     },
     secondaryImageAlt: "Chain reaction triggered by a sick-day call on the team",
     consequences: {
       chapter: "Consequences of sick leave",
-      heading: "Every sick-day call triggers a chain reaction",
+      heading: "Every absence can trigger a chain reaction",
       intro: "The consequences are felt both financially and organisationally. In costs, workload, motivation and continuity.",
       financialTitle: "Direct costs",
       financialItems: [
@@ -141,8 +141,8 @@ export const ziekteverzuim = {
         "Lower customer satisfaction",
         "Pressure on managers and continuity",
       ],
-      sourceNote: "TNO: psychosocial work pressure accounts for more than half of work-related absenteeism costs, €4.9 billion out of €8.3 billion in 2023.",
-      cta: "Discuss your absenteeism challenge",
+      sourceNote: "TNO: psychosocial work pressure accounts for more than half of work-related Sick leave costs, €4.9 billion out of €8.3 billion in 2023.",
+      cta: "Discuss your sick leave challenge",
     },
     subpagesHeading: "More on sick leave",
     subpages: [
@@ -175,7 +175,7 @@ export const ziekteverzuimInnovatie = {
     parentHref: "/ziekteverzuim",
     label: "Innovatie ziekteverzuim",
     h1: "Eindelijk een oplossing die werkt én betaalbaar is",
-    h1Accent: "én betaalbaar is",
+    h1Accent: ["werkt", "betaalbaar"],
     intro: {
       eyebrow: "Het knelpunt",
       headline: "Hoe beïnvloed je gedrag positief, zonder hoge kosten of complexe uitvoering?",
@@ -226,13 +226,13 @@ export const ziekteverzuimInnovatie = {
     parentHref: "/ziekteverzuim",
     label: "Sick leave innovation",
     h1: "Finally a solution that works and is affordable",
-    h1Accent: "and is affordable",
+    h1Accent: ["works", "affordable"],
     intro: {
       eyebrow: "The bottleneck",
-      headline: "How do you influence behaviour positively, without high costs or complex delivery?",
+      headline: "How do you influence behaviour positively, without high costs or complex implementation?",
       paragraphs: [
-        "Many employers want to reduce sick leave but run into the same challenge in practice. Solutions are often too heavy, too costly or do not connect well enough to daily operations.",
-        "As a result, short-term absenteeism remains a recurring problem that costs organisations a great deal of money year after year.",
+        "Many employers want to reduce sick leave but run into the same challenge in practice. Solutions are often too complex, too costly or do not connect well enough to daily operations.",
+        "As a result, short-term Sick leave remains a recurring problem that costs organisations a great deal of money year after year.",
       ],
     },
     sections: [
@@ -243,7 +243,7 @@ export const ziekteverzuimInnovatie = {
       },
       {
         type: "callout" as const,
-        quote: "An affordable digital solution that encourages employees not to call in sick unnecessarily, without complex programmes or high barriers.",
+        quote: "An affordable digital solution that encourages employees to reduce avoidable short-term sick leave, without complex programmes or high barriers.",
       },
       {
         type: "text" as const,
@@ -251,21 +251,21 @@ export const ziekteverzuimInnovatie = {
         heading: "More cost control, calmer teams, greater continuity",
         headingAccent: "calmer teams",
         paragraphs: [
-          "This innovation helps organisations structurally reduce sick leave. Fewer unnecessary sick-day calls means immediate control over costs, calmer teams, less pressure on colleagues and greater continuity in day-to-day operations.",
+          "This innovation helps organisations structurally reduce sick leave. Less avoidable short-term sick leave means immediate control over costs, calmer teams, less pressure on colleagues and greater continuity in day-to-day operations.",
           "The strength of this solution lies in the combination of affordability, accessibility and practical applicability. That makes reducing sick leave achievable not only for large organisations but especially for employers looking for a solution that works and is financially responsible.",
         ],
       },
       {
         type: "stat" as const,
-        eyebrow: "What absenteeism costs you",
+        eyebrow: "WHAT SICK LEAVE COSTS YOUR ORGANISATION",
         value: "€4,500 — €7,000",
-        detail: "Average absenteeism costs per employee per year in the Netherlands. Less absence means lower costs and greater continuity.",
+        detail: "Average SICK LEAVE COSTS PER EMPLOYEE PER YEAR in the Netherlands. Less absence means lower costs and greater continuity.",
         sourceNote: "TNO · ArboNed",
       },
     ],
     closing: {
-      headline: "Structurally reduce sick leave and save on absence costs?",
-      headlineAccent: "structurally reduce",
+      headline: "Structurally reduce sick leave and save on sick leave costs?",
+      headlineAccent: "Structurally reduce",
       ctaLabel: "Book a no-obligation call",
     },
   } satisfies SubpageTemplateProps,
@@ -291,6 +291,7 @@ export const ziekteverzuimGevolgen = {
     sections: [
       {
         type: "image" as const,
+        layout: "photo" as const,
         src: "/photos/ziekteverzuim-sub-gevolgen-banner-nl.png",
         alt: "Banner gevolgen ziekteverzuim, Nederlandse versie",
       },
@@ -332,6 +333,7 @@ export const ziekteverzuimGevolgen = {
           "Voor organisaties blijven de kosten van ziekteverzuim niet beperkt tot loondoorbetaling. Vervanging, productiviteitsverlies, administratieve lasten en verstoring van de dagelijkse bedrijfsvoering zorgen ervoor dat de werkelijke impact vaak veel groter is dan op het eerste gezicht zichtbaar is.",
           "Daarnaast krijgen werkgevers bij ziekte te maken met verplichtingen rond loondoorbetaling en re-integratie, waardoor de financiële en organisatorische impact verder kan oplopen.",
         ],
+        sourceNote: "Bron: AWVN",
       },
     ],
     closing: {
@@ -347,11 +349,11 @@ export const ziekteverzuimGevolgen = {
     parentLabel: "Sick leave",
     parentHref: "/ziekteverzuim",
     label: "Consequences of sick leave",
-    h1: "Every sick-day call triggers a chain reaction",
+    h1: "Every absence can trigger a chain reaction",
     h1Accent: "chain reaction",
     intro: {
       eyebrow: "The impact goes beyond continued pay",
-      headline: "Sick leave affects more than your costs, it affects your whole organisation",
+      headline: "Sick leave affects more than your costs, it affects your entire organisation",
       paragraphs: [
         "Sick leave affects more than just your costs. Short-term absence in particular immediately disrupts rosters, staffing and service delivery and puts teams under unexpected pressure.",
         "The consequences ripple through the whole organisation: from higher costs and workload to unrest, delays and reduced motivation.",
@@ -360,6 +362,7 @@ export const ziekteverzuimGevolgen = {
     sections: [
       {
         type: "image" as const,
+        layout: "photo" as const,
         src: "/photos/ziekteverzuim-sub-gevolgen-banner-en.png",
         alt: "Consequences of sick leave banner, English version",
       },
@@ -395,12 +398,13 @@ export const ziekteverzuimGevolgen = {
       {
         type: "text" as const,
         eyebrow: "Why the impact is underestimated",
-        heading: "Sick leave is more than continued pay, it is the indirect costs that add up quickly",
+        heading: "Sick leave costs go far beyond continued pay, indirect costs can add up quickly",
         headingAccent: "indirect costs",
         paragraphs: [
           "For organisations, the costs of sick leave are not limited to continued pay. Replacement, productivity loss, administrative burden and disruption to daily operations mean the real impact is often far greater than it appears at first sight.",
           "In addition, during illness employers face obligations around continued pay and reintegration, which can increase the financial and organisational impact further.",
         ],
+        sourceNote: "Source: AWVN",
       },
     ],
     closing: {

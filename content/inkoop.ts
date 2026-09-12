@@ -81,7 +81,7 @@ export const inkoop = {
   en: {
     hero: {
       chapter: "Procurement",
-      h1: "Tendering is more complex than ever and demands control",
+      h1: "Tendering is more complex than ever, and demands greater control",
       h1Accent: "control",
       imageAlt: "Procurement and tendering workshop",
     },
@@ -104,13 +104,13 @@ export const inkoop = {
       "Less manual work thanks to streamlined process steps",
       "Fewer mistakes and less rework thanks to a structured way of working",
       "More available capacity thanks to less searching and coordination",
-      "More overview and transparency throughout the entire tendering process",
+      "Greater visibility and transparency throughout the entire tendering process",
     ],
     extraBlock: {
-      heading: "A lack of knowledge and capacity makes procurement vulnerable",
+      heading: "Limited expertise and capacity make procurement vulnerable",
       paragraphs: [
         "In practice, organisations often lack sufficient knowledge, time and capacity to organise procurement processes well. That leads to delays, ambiguity, missed opportunities and unnecessary costs. Especially in tendering and contract management this is a risk, because that is precisely where accuracy, control and continuity are essential.",
-        "In its 2025 Global Chief Procurement Officer Survey, Deloitte shows that procurement keeps growing more complex, while organisations simultaneously expect more from technology and scarce professionals.",
+        "In its 2025 Global Chief Procurement Officer Survey, Deloitte shows that procurement continues to grow more complex, while organisations simultaneously expect more from technology and scarce professionals.",
       ],
       source: "Source: Deloitte CPO Survey 2025",
     },
@@ -124,7 +124,7 @@ export const inkoop = {
       {
         no: "5a",
         title: "Procurement innovation",
-        summary: "Digital solutions that make procurement, tendering and contract management clearer, more efficient and better managed.",
+        summary: "Digital solutions that make procurement, tendering and contract management more transparent, efficient and manageable.",
         href: "/inkoop/innovatie",
       },
       {
@@ -142,8 +142,8 @@ export const inkoop = {
     ],
     secondarySection: {
       eyebrow: "Internal costs add up quickly",
-      heading: "The biggest costs of tendering are often the least visible",
-      body: "The cost of a tender is not only in external support. Drafting and assessing documents, legal checks, internal coordination, planning, justification and file management all take considerable time and capacity. That makes tendering processes cost more time and money internally than estimated in advance.",
+      heading: "The biggest costs of tendering often lie beneath the surface",
+      body: "The cost of tendering goes far beyond external support. Drafting and assessing documents, legal checks, internal coordination, planning, justification and file management all take considerable time and capacity. That makes tendering processes cost more time and money internally than estimated in advance.",
       cta: "Discuss your procurement challenge",
       imageAlt: "Tendering team with dossiers",
     },
@@ -212,19 +212,19 @@ export const inkoopInnovatie = {
       eyebrow: "Our innovation",
       headline: "Control over procurement, tendering and contract management",
       paragraphs: [
-        "We develop digital solutions for different parts of the procurement process: from procurement and tendering to contract management. Each solution addresses a specific challenge and helps organisations structure processes more intelligently, make information clear and reduce manual work.",
-        "That makes processes more efficient and better managed, shortens lead times and reduces pressure on scarce internal capacity. The result: more overview, less manual work and a more efficient way of working.",
+        "We develop digital solutions for different parts of the procurement process: from procurement and tendering to contract management. Each solution addresses a specific challenge and helps organisations structure processes more intelligently, make information more accessible and reduce manual work.",
+        "That makes processes more efficient and better managed, shortens lead times and reduces pressure on scarce internal capacity. The result: greater visibility, less manual work and a more efficient way of working.",
       ],
     },
     sections: [
       {
         type: "text" as const,
         eyebrow: "Affordable for every organisation",
-        heading: "Smart innovation is not the privilege of large players",
-        headingAccent: "not the privilege",
+        heading: "Smart innovation should not be limited to large organisations",
+        headingAccent: "should not be limited",
         paragraphs: [
-          "Many organisations think that innovative digital solutions are mainly reserved for large players with generous budgets. We develop our solutions specifically to make digital innovation affordable and accessible for organisations of different sizes.",
-          "That makes modern digital innovation within procurement practically applicable for organisations that want to work smarter, save time and costs and get more out of their available capacity.",
+          "Many organisations think that innovative digital solutions are mainly reserved for large organisations with large budgets. We develop our solutions specifically to make digital innovation affordable and accessible for organisations of different sizes.",
+          "That makes modern digital innovation within procurement practically applicable for organisations that want to work smarter, save time and reduce costs and get more out of their available capacity.",
         ],
       },
       {
@@ -234,11 +234,11 @@ export const inkoopInnovatie = {
       },
       {
         type: "callout" as const,
-        quote: "Procurement has long been about more than just ordering. It demands structure, overview and specialist knowledge. We develop digital solutions for procurement, tendering and contract management that help organisations work smarter and more efficiently.",
+        quote: "Procurement has long been about more than just ordering. It demands structure, visibility and specialist knowledge. We develop digital solutions for procurement, tendering and contract management that help organisations work smarter and more efficiently.",
       },
     ],
     closing: {
-      headline: "Organise procurement smarter, more efficiently and better managed?",
+      headline: "Make procurement smarter, more efficient and easier to manage?",
       headlineAccent: "smarter",
       ctaLabel: "Book a no-obligation call",
     },
@@ -334,9 +334,9 @@ export const inkoopAanbesteden = {
     h1Accent: "control, structure",
     intro: {
       eyebrow: "The challenge",
-      headline: "A tendering process is complex, time-consuming and quickly costs tens of thousands of euros",
+      headline: "Tendering is complex, time-consuming and can quickly cost tens of thousands of euros",
       paragraphs: [
-        "A tendering process demands a lot from an organisation. Documents must be carefully prepared, papers must be legally sound and deadlines must be monitored precisely. At the same time the entire process must run transparently, carefully and verifiably. European tenders in particular require structure, specialist knowledge and sufficient capacity.",
+        "A tendering process demands a lot from an organisation. Documents must be carefully prepared, tender documents must be legally sound and deadlines must be monitored precisely. At the same time the entire process must run transparent, rigorous and fully auditable. European tenders in particular require structure, specialist knowledge and sufficient capacity.",
         "That is exactly where the challenge often lies in practice. Time and capacity are limited and not all the required knowledge is always available internally to organise tenders efficiently and carefully.",
       ],
     },
@@ -368,15 +368,15 @@ export const inkoopAanbesteden = {
       {
         type: "numbered-list" as const,
         eyebrow: "What this delivers for you",
-        heading: "What the innovation concretely changes",
-        intro: "Far less manual searching. One digital working environment that makes the tendering process clearer and better managed.",
+        heading: "What our innovation changes in practice",
+        intro: "Far less time spent searching for information. One digital working environment that makes the tendering process clearer and better managed.",
         items: [
-          { n: "01", title: "Less time lost", text: "No more fragmented information in emails, SharePoint and local files. Everything sits clearly in one central place." },
+          { n: "01", title: "Less time lost", text: "No more fragmented information in emails, SharePoint and local files. Everything is clearly available in one central location." },
           { n: "02", title: "Less manual work", text: "Thanks to structured process steps, far less searching and coordination is needed." },
           { n: "03", title: "Fewer mistakes and less rework", text: "Standardised steps and checkpoints reduce the chance of mistakes, rework and legal errors." },
-          { n: "04", title: "More available capacity", text: "Scarce professionals are relieved, so more work can be done with the same capacity." },
+          { n: "04", title: "More available capacity", text: "Specialist staff spend less time on administrative work, so more work can be done with the same capacity." },
           { n: "05", title: "Greater transparency", text: "The entire process is visible, verifiable and well substantiated for everyone involved." },
-          { n: "06", title: "Better manageability", text: "Planning, progress, risks and deadlines are visible throughout the entire process, not just per phase." },
+          { n: "06", title: "Better control", text: "Planning, progress, risks and deadlines are visible throughout the entire process, not just per phase." },
         ],
       },
       {
@@ -387,11 +387,11 @@ export const inkoopAanbesteden = {
       {
         type: "text" as const,
         eyebrow: "Affordable for everyone",
-        heading: "Professional tendering is not the privilege of large players",
-        headingAccent: "not the privilege",
+        heading: "Professional tendering should not be limited to large organisations",
+        headingAccent: "should not be limited",
         paragraphs: [
-          "Many organisations think that digital solutions for tendering are mainly reserved for large players with generous budgets. Our solution is specifically developed to make professional tendering affordable and accessible for organisations of different sizes.",
-          "That makes more efficient tendering achievable without large budgets too: with less manual work, lower internal costs and a better managed process.",
+          "Many organisations think that digital solutions for tendering are mainly reserved for large organisations with large budgets. Our solution is specifically developed to make professional tendering affordable and accessible for organisations of different sizes.",
+          "That makes more efficient tendering achievable without large budgets too: with less manual work, lower internal costs and a more manageable process.",
         ],
       },
     ],
@@ -411,7 +411,7 @@ export const inkoopContractmanagement = {
     parentHref: "/inkoop",
     label: "Contractmanagement",
     h1: "Grip op contracten begint met inzicht en overzicht",
-    h1Accent: "inzicht en overzicht",
+    h1Accent: ["inzicht", "overzicht"],
     intro: {
       eyebrow: "Na de handtekening begint het pas",
       headline: "Het werk stopt niet bij het afsluiten van een contract, daarna begint het beheer",
@@ -453,6 +453,7 @@ export const inkoopContractmanagement = {
       },
       {
         type: "image" as const,
+        layout: "photo" as const,
         src: "/photos/inkoop-banner5-nl.png",
         alt: "Banner grip op contracten, Nederlandse versie",
       },
@@ -498,11 +499,11 @@ export const inkoopContractmanagement = {
     parentLabel: "Procurement",
     parentHref: "/inkoop",
     label: "Contract management",
-    h1: "Control over contracts starts with insight and overview",
-    h1Accent: "insight and overview",
+    h1: "Control over contracts starts with visibility and insight",
+    h1Accent: ["insight", "visibility"],
     intro: {
       eyebrow: "The work starts after signing",
-      headline: "The work does not stop when a contract is signed, that is when management begins",
+      headline: "The work does not stop when a contract is signed, that is when contract management begins",
       paragraphs: [
         "After a contract is signed, an equally important phase begins: monitoring agreements, performance, deadlines, risks and obligations. Good contract management is therefore an essential part of professional procurement.",
         "Yet contract management still receives insufficient attention in many organisations. There is often a lack of time, capacity, structure and specialist knowledge to actively and carefully manage contracts.",
@@ -512,12 +513,12 @@ export const inkoopContractmanagement = {
       {
         type: "text" as const,
         eyebrow: "What goes wrong without control",
-        heading: "Fragmented contracts cost time, money and opportunities",
+        heading: "Fragmented contract information costs time, money and opportunities",
         headingAccent: "time, money",
         paragraphs: [
-          "When contract management is not properly set up, agreements and information become fragmented, deadlines are missed and there is no overview of obligations, renewal moments, performance and risks. That leads to extra work and unrest, but can also cause unnecessary costs and missed opportunities.",
-          "In many organisations contract information is spread across different departments, people and systems. Ownership is not always clear and important signals are therefore noticed too late. It takes a lot of time to maintain an overview and the organisation becomes dependent on the knowledge of individual employees.",
-          "That is precisely where risks arise: contracts that roll on unnoticed, agreements that are not followed up in time, supplier performance that is insufficiently monitored and obligations that fall out of sight. Without structure, contract management becomes reactive rather than proactive.",
+          "When contract management is not properly set up, agreements and information become fragmented, deadlines are missed and there is no clear view of obligations, renewal moments, performance and risks. That leads to additional work and uncertainty, but can also cause unnecessary costs and missed opportunities.",
+          "In many organisations contract information is spread across different departments, people and systems. Ownership is not always clear and important signals are therefore noticed too late. It takes a lot of time to maintain visibility and the organisation becomes dependent on the knowledge of individual employees.",
+          "That is precisely where risks arise: contracts that renew unnoticed, agreements that are not followed up in time, supplier performance that is insufficiently monitored and obligations that are overlooked. Without structure, contract management becomes reactive rather than proactive.",
         ],
       },
       {
@@ -527,7 +528,7 @@ export const inkoopContractmanagement = {
       },
       {
         type: "callout" as const,
-        quote: "Contract management is about monitoring compliance with agreements, both by the supplier and by the organisation itself. Without a central overview, agreements, obligations and key moments quickly fall out of sight.",
+        quote: "Contract management is about monitoring compliance with agreements, both by the supplier and by the organisation itself. Without centralised visibility, agreements, obligations and key moments are easily overlooked.",
       },
       {
         type: "text" as const,
@@ -536,11 +537,12 @@ export const inkoopContractmanagement = {
         headingAccent: "Centrally visible",
         paragraphs: [
           "We have developed a digital solution that makes contract management clearer, more transparent and more efficient.",
-          "Contract information becomes centrally visible, key moments are monitored in time and organisations gain more overview of agreements, responsibilities and progress. That makes contract management less dependent on scattered files, manual checks and knowledge held by individual employees.",
+          "Contract information becomes centrally visible, key dates are monitored proactively and organisations gain greater visibility of agreements, responsibilities and progress. That makes contract management less dependent on scattered files, manual checks and knowledge held by individual employees.",
         ],
       },
       {
         type: "image" as const,
+        layout: "photo" as const,
         src: "/photos/inkoop-banner5-en.png",
         alt: "Control over contracts banner, English version",
       },
@@ -549,12 +551,12 @@ export const inkoopContractmanagement = {
         eyebrow: "What this delivers",
         heading: "More control, less risk, lower internal burden",
         items: [
-          { n: "01", title: "Always an overview of active contracts", text: "All contract information in one place: status, owner, deadlines and agreements." },
+          { n: "01", title: "Always have a clear view of active contracts", text: "All contract information in one place: status, owner, deadlines and agreements." },
           { n: "02", title: "Direct insight into agreements and obligations", text: "See at a glance who agreed what, when action is needed and which actions are still open." },
-          { n: "03", title: "Timely view of renewal and termination dates", text: "Automatic alerts ensure important contract dates are in view on time." },
+          { n: "03", title: "Timely visibility of renewal and termination dates", text: "Automatic alerts ensure important contract dates are flagged well in advance." },
           { n: "04", title: "Contract knowledge no longer dependent on individuals", text: "Agreements and information are recorded centrally and remain available, even when employees leave." },
-          { n: "05", title: "Fewer mistakes and less rework", text: "A fixed way of working and timely alerts reduce the chance of mistakes and costly rework." },
-          { n: "06", title: "Prevent unnecessary costs", text: "Get a timely view of unwanted renewals, duplicate purchases and agreements that are not being met." },
+          { n: "05", title: "Fewer mistakes and less rework", text: "A standardised way of working and timely alerts reduce the chance of mistakes and costly rework." },
+          { n: "06", title: "Prevent unnecessary costs", text: "Identify unwanted renewals in time, duplicate purchases and agreements that are not being met." },
         ],
       },
       {
@@ -565,17 +567,17 @@ export const inkoopContractmanagement = {
       {
         type: "text" as const,
         eyebrow: "Accessible for organisations",
-        heading: "Affordable, accessible, immediately applicable",
+        heading: "Affordable, accessible and ready to use",
         headingAccent: "Affordable",
         paragraphs: [
-          "Many organisations think that professional contract management requires large systems and high investments. Our solution shows it can be done differently: accessible, affordable and practical to deploy.",
-          "That makes professional contract management within reach for organisations that want more overview, want to limit risks and want to save time, without complex implementations or high investments.",
+          "Many organisations think that professional contract management requires large-scale systems and significant investment. Our solution shows it can be done differently: accessible, affordable and practical to deploy.",
+          "That makes professional contract management within reach for organisations that want greater visibility, want to limit risks and want to save time, without complex implementations or high investments.",
         ],
       },
     ],
     closing: {
-      headline: "Organise contract management with more clarity, transparency and efficiency?",
-      headlineAccent: "more clarity",
+      headline: "Make contract management clearer, more transparent and more efficient?",
+      headlineAccent: "clearer",
       ctaLabel: "Book a no-obligation call",
     },
   } satisfies SubpageTemplateProps,

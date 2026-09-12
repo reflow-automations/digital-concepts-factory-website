@@ -90,7 +90,7 @@ export default function TalentAantrekkenPage() {
                 <p className="font-semibold text-ink mb-2">{t.intro.paragraphStrongHeading}</p>
                 <div className="space-y-3">
                   {t.intro.paragraphStrong.map((para) => (
-                    <p key={para} className="font-medium text-ink">{para}</p>
+                    <p key={para} className="font-normal text-ink">{para}</p>
                   ))}
                 </div>
               </Reveal>

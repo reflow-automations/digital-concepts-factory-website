@@ -20,6 +20,7 @@ import Reveal from "@/components/Reveal";
 import ChapterMark from "@/components/ChapterMark";
 import CTA from "@/components/CTA";
 import ListIntro from "@/components/ListIntro";
+import Accent from "@/components/Accent";
 import { photoAspect } from "@/lib/photoRatio";
 
 export type SubpageSection =
@@ -27,6 +28,7 @@ export type SubpageSection =
       type: "text";
       eyebrow?: string;
       heading: string;
+      headingSize?: "compact";
       headingAccent?: string;
       paragraphs: string[];
       sourceNote?: string;
@@ -67,6 +69,8 @@ export type SubpageSection =
       type: "image";
       src: string;
       alt: string;
+      layout?: "photo" | "banner";
+      maxWidth?: number;
     };
 
 export interface SubpageTemplateProps {
@@ -76,7 +80,7 @@ export interface SubpageTemplateProps {
   parentHref: string;     // "/talent-aantrekken"
   label: string;          // "Innovatie talent aantrekken"
   h1: string;             // "Talent in het hart raken"
-  h1Accent?: string;      // "raken" (italic-cobalt portion)
+  h1Accent?: string | readonly string[];
   intro: {
     eyebrow: string;
     headline: string;
@@ -87,23 +91,14 @@ export interface SubpageTemplateProps {
   sections: SubpageSection[];
   closing: {
     headline: string;
-    headlineAccent?: string;
+    headlineAccent?: string | readonly string[];
     ctaLabel: string;
     ctaHref?: string;     // default /contact
   };
 }
 
-function renderAccented(text: string, accent?: string) {
-  if (!accent) return <>{text}</>;
-  const idx = text.indexOf(accent);
-  if (idx === -1) return <>{text}</>;
-  return (
-    <>
-      {text.slice(0, idx)}
-      <em className="italic font-light text-cobalt">{accent}</em>
-      {text.slice(idx + accent.length)}
-    </>
-  );
+function renderAccented(text: string, accent?: string | readonly string[]) {
+  return <Accent text={text} accent={accent} className="italic font-light text-cobalt" />;
 }
 
 /**
@@ -135,16 +130,7 @@ function renderParagraph(text: string) {
 }
 
 function renderAccentedSection(text: string, accent?: string) {
-  if (!accent) return <>{text}</>;
-  const idx = text.indexOf(accent);
-  if (idx === -1) return <>{text}</>;
-  return (
-    <>
-      {text.slice(0, idx)}
-      <em className="font-display italic font-light text-cobalt">{accent}</em>
-      {text.slice(idx + accent.length)}
-    </>
-  );
+  return <Accent text={text} accent={accent} className="font-display italic font-light text-cobalt" />;
 }
 
 export default function SubpageTemplate(p: SubpageTemplateProps) {
@@ -240,7 +226,7 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
                         {s.eyebrow}
                       </p>
                     )}
-                    <h2 className="display-section text-[clamp(1.75rem,2.75vw,2.5rem)] text-ink">
+                    <h2 className={`display-section text-ink ${s.headingSize === "compact" ? "text-[clamp(1.65rem,2.5vw,2.25rem)]" : "text-[clamp(1.75rem,2.75vw,2.5rem)]"}`}>
                       {renderAccentedSection(s.heading, s.headingAccent)}
                     </h2>
                   </Reveal>
@@ -438,15 +424,17 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
 
         if (s.type === "image") {
           return (
-            <section key={key} className="py-0">
+            <section key={key} className={s.layout === "photo" ? "py-12" : "py-0"}>
+              <div className={s.layout === "photo" ? "mx-auto max-w-7xl px-6 lg:px-20" : undefined}>
               <Reveal>
-                <div className="relative w-full overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(s.src) }}>
-                  <Image src={s.src} alt={s.alt} fill className="object-cover" sizes="100vw"
+                <div className={`relative w-full overflow-hidden bg-ink ${s.layout === "photo" ? "rounded-3xl mx-auto" : ""}`} style={{ aspectRatio: photoAspect(s.src), maxWidth: s.maxWidth }}>
+                  <Image src={s.src} alt={s.alt} fill className="object-cover" sizes={s.layout === "photo" ? `(min-width: 1280px) ${s.maxWidth ?? 1120}px, (min-width: 1024px) calc(100vw - 160px), calc(100vw - 48px)` : "100vw"}
   quality={90}
 />
                   <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/40 to-transparent pointer-events-none" />
                 </div>
               </Reveal>
+              </div>
             </section>
           );
         }
@@ -460,7 +448,7 @@ export default function SubpageTemplate(p: SubpageTemplateProps) {
           <div className="border-t border-b border-ink/10 py-20">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
               <div className="lg:col-span-8">
-                <h2 className="display-hero text-[clamp(2rem,4vw,3.5rem)] text-ink">
+                <h2 className="display-hero text-[clamp(2rem,4vw,3.5rem)] text-ink whitespace-pre-line">
                   {renderAccented(p.closing.headline, p.closing.headlineAccent)}
                 </h2>
               </div>

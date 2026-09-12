@@ -87,20 +87,7 @@ export default function OverOnsPage() {
                 </Reveal>
               ))}
 
-              {/* Banner onder het tekstblok (revisieronde 2026-08, punt 132) */}
-              <Reveal delay={340}>
-                <div className="mt-4 relative w-full overflow-hidden rounded-2xl bg-ink" style={{ aspectRatio: photoAspect(banner1Src) }}>
-                  <Image
-                    key={lang}
-                    src={banner1Src}
-                    alt={t.hero.imageAlt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    quality={90}
-                  />
-                </div>
-              </Reveal>
+
             </div>
           </div>
         </div>
@@ -148,6 +135,20 @@ export default function OverOnsPage() {
               </ol>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Photo follows the five principles, revision 2 points 40/40a. */}
+      <section className="pb-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-20">
+          <Reveal>
+            <div className="relative w-full overflow-hidden rounded-3xl bg-ink" style={{ aspectRatio: photoAspect(banner1Src) }}>
+              <Image key={lang} src={banner1Src}
+                alt={lang === "nl" ? "Geen innovatie om de innovatie, maar om impact" : "No innovation for innovation's sake, but for impact"}
+                fill className="object-cover" quality={90}
+                sizes="(min-width: 1280px) 1120px, (min-width: 1024px) calc(100vw - 160px), calc(100vw - 48px)" />
+            </div>
+          </Reveal>
         </div>
       </section>
 

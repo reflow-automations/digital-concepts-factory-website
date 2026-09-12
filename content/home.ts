@@ -34,9 +34,9 @@ export const home = {
         },
         {
           summary:
-            "Een betaalbare digitale oplossing die kortdurend verzuim direct aanpakt. Snel te implementeren, eenvoudig in gebruik en gericht op resultaat.",
+            "Een betaalbare digitale oplossing die kortdurend ziekteverzuim direct aanpakt. Snel te implementeren, eenvoudig in gebruik en gericht op resultaat.",
           bullets: [
-            "Kortdurend verzuim",
+            "Kortdurend ziekteverzuim",
             "€4.500 - €7.000 p/p per jaar besparing",
             "Eenvoudige implementatie",
           ],
@@ -58,6 +58,7 @@ export const home = {
       heading: "Innovatie die rekent",
       headingAccent: "rekent",
       calcLink: "Bereken uw besparingspotentieel",
+      sickLeaveCalcLink: "Bereken uw besparing op ziekteverzuim",
       items: [
         {
           navLabel: "Besparing door personeelsbehoud",
@@ -88,7 +89,7 @@ export const home = {
           navLabel: "Maandelijks bereik DOOH-netwerk",
           label: "Bereik talent op grote schaal",
           detail:
-            "Met onze DOOH-netwerken bereiken werkgevers maandelijks 250.000 tot 2 miljoen kandidaten op strategische locaties in de Randstad. Slimme online retargeting versterkt die zichtbaarheid en zorgt ervoor dat werkgevers langer op het netvlies van talent blijven.",
+            "Met onze DOOH-netwerken bereiken werkgevers maandelijks 250.000 tot 2 miljoen potentiële kandidaten op strategische locaties in de Randstad. Zo versterken werkgevers hun positie op de arbeidsmarkt en vergroten zij hun herkenbaarheid en aantrekkingskracht.",
           source: "DCF netwerk",
           suffix: " mln+",
         },
@@ -139,11 +140,11 @@ export const home = {
   en: {
     hero: {
       eyebrow: "Digital innovation · HR · Procurement · Marketing",
-      h1: "Control over growth starts with digital innovation",
+      h1: "Driving growth starts with digital innovation",
       h1Accent: "digital innovation",
       lead: [
-        "Digital Concepts Factory develops digital innovations that help organisations tackle their biggest challenges in Human Resource Management (HR), Procurement and Marketing in a smarter, more focused way.",
-        "We help organisations find talent faster, retain employees longer, reduce absenteeism, organise procurement processes more intelligently and give marketing more impact.",
+        "Digital Concepts Factory develops digital innovations that help organisations tackle their biggest challenges more intelligently and effectively across Human Resource Management (HR), Procurement and Marketing.",
+        "We help organisations find talent faster, retain employees longer, reduce Sick leave, organise procurement processes more intelligently and make marketing more impactful.",
         "Our solutions are practical to apply and focused on concrete results: lower costs, higher returns and sustainable growth.",
         "Digital innovation is no longer a luxury, but a necessity to keep moving forward.",
       ],
@@ -151,33 +152,33 @@ export const home = {
     },
     pillars: {
       chapter: "Our innovations",
-      heading: "Five domains, one firm promise",
-      headingAccent: "firm promise",
+      heading: "Five domains, one clear promise",
+      headingAccent: "clear promise",
       intro:
         "Our digital innovations tackle recognisable organisational challenges and contribute directly to growth, continuity and return.",
       items: [
         {
           summary:
-            "Employers lastingly on talent's radar. Offline through DOOH networks and online through smart retargeting.",
+            "Keeping employers on talent's radar. Offline through DOOH networks and online through smart retargeting.",
           bullets: ["Employer branding", "DOOH campaigns", "Retargeting"],
         },
         {
           summary:
-            "More room for personalised employment terms, without losing control. Stronger commitment, less turnover and lower replacement costs.",
-          bullets: ["Tailored", "€19,200 p/p saving", "Scalable"],
+            "More room for personalised employee benefits, without losing control. Stronger commitment, less turnover and lower replacement costs.",
+          bullets: ["Tailored", "€19,200 SAVING PER EMPLOYEE", "Scalable"],
         },
         {
           summary:
-            "An affordable digital solution that tackles short-term absence head-on. Quick to implement, easy to use and focused on results.",
+            "An affordable digital solution that tackles short-term sick absence head-on. Quick to implement, easy to use and focused on results.",
           bullets: [
-            "Short-term absence",
-            "€4,500 - €7,000 p/p per year saving",
+            "Short-term sick leave",
+            "€4,500-€7,000 SAVING PER EMPLOYEE PER YEAR",
             "Simple implementation",
           ],
         },
         {
           summary:
-            "More overview and control over tendering and contract management, with proven savings of up to 50%.",
+            "Greater visibility and control over tendering and contract management, with proven savings of up to 50%.",
           bullets: ["(European) tendering", "Contract management", "Savings up to 50%"],
         },
         {
@@ -189,9 +190,10 @@ export const home = {
     },
     stats: {
       chapter: "The numbers",
-      heading: "Innovation that adds up",
-      headingAccent: "adds up",
-      calcLink: "Calculate your savings potential",
+      heading: "Innovation that delivers measurable value",
+      headingAccent: "measurable value",
+      calcLink: "Calculate your potential savingss potential",
+      sickLeaveCalcLink: "Calculate your sick leave savings",
       items: [
         {
           navLabel: "Savings through staff retention",
@@ -202,10 +204,10 @@ export const home = {
           prefix: "€",
         },
         {
-          navLabel: "Savings through less absenteeism",
-          label: "Absenteeism costs more than you think",
+          navLabel: "Savings through reduced sick leave",
+          label: "Sick leave costs more than you think",
           detail:
-            "Absenteeism costs an organisation an average of €4,500 to €7,000 per employee per year. And it does not stop there. Lost productivity, extra workload and disruption to operations often make the real costs considerably higher.",
+            "Sick leave costs an organisation an average of €4,500 to €7,000 per employee per year. And it does not stop there. Lost productivity, extra workload and disruption to operations often make the real costs considerably higher.",
           source: "TNO · ArboNed",
           prefix: "€",
         },
@@ -213,7 +215,7 @@ export const home = {
           navLabel: "Savings on tendering costs",
           label: "Control over the tendering process",
           detail:
-            "More overview, less manual work and shorter lead times. With up to 50% lower tendering costs as the result.",
+            "Greater visibility, less manual work and shorter lead times. With up to 50% lower tendering costs as the result.",
           source: "DCF research",
           word: "up to",
           suffix: "%",
@@ -222,7 +224,7 @@ export const home = {
           navLabel: "Monthly DOOH network reach",
           label: "Reach talent at scale",
           detail:
-            "With our DOOH networks, employers reach 250,000 to 2 million candidates a month at strategic locations across the Randstad. Smart online retargeting reinforces that visibility and keeps employers on talent's radar for longer.",
+            "Through our DOOH networks, employers reach between 250,000 and 2 million potential candidates every month at strategic locations across the Randstad. This helps strengthen their position in the labour market while increasing brand recognition and employer appeal.",
           source: "DCF network",
           suffix: " M+",
         },
@@ -230,10 +232,10 @@ export const home = {
     },
     manifesto: {
       chapter: "What we believe",
-      heading: "The Digital Bridge between challenge and solution",
+      heading: "The Digital Bridge between challenges and solutions",
       headingAccent: "Digital Bridge",
       intro:
-        "Every organisation faces challenges that call for new ways of thinking and working. With our digital innovations we bridge concrete organisational challenges and practical solutions that make organisations smarter, stronger and more future-proof.",
+        "Every organisation faces challenges that call for new ways of thinking and working. Our digital innovations bridge the gap between concrete organisational challenges and practical solutions that make organisations smarter, stronger and more future-proof.",
       points: [
         {
           title: "Understand first, then build",
@@ -244,13 +246,13 @@ export const home = {
           text: "Above all, innovation has to work in daily practice. That is why we develop solutions that are smart, accessible and practical to apply.",
         },
         {
-          title: "In the end, results are what count",
-          text: "More overview, more control, lower costs and smarter processes. Our innovations focus on what ultimately counts: growth, continuity and return.",
+          title: "Ultimately, results are what matter",
+          text: "Greater visibility, more control, lower costs and smarter processes. Our innovations focus on what ultimately counts: growth, continuity and return.",
         },
       ],
     },
     clients: {
-      eyebrow: "We are proud of our collaborations",
+      eyebrow: "PROUD TO HAVE WORKED WITH",
     },
     newsletter: {
       chapter: "Newsletter",

@@ -15,6 +15,7 @@ import ListIntro from "@/components/ListIntro";
 import { cta } from "@/content/ui";
 import { ziekteverzuim } from "@/content/ziekteverzuim";
 import { photoAspect } from "@/lib/photoRatio";
+import SickLeaveCalculator from "@/components/SickLeaveCalculator";
 import { ziekteverzuimFaq } from "@/content/faq";
 import { serviceSchemaFor, faqSchema, breadcrumbFor } from "@/lib/seo/schema";
 
@@ -160,18 +161,7 @@ export default function ZiekteverzuimPage() {
                 {t.innovation.cta}
               </CTA>
 
-              {/* Banner onder het tekstblok links (revisieronde 2026-08, punt 71) */}
-              <div className="mt-10 relative w-full overflow-hidden rounded-2xl bg-ink" style={{ aspectRatio: photoAspect(innovatieSrc) }}>
-                <Image
-                  key={lang}
-                  src={innovatieSrc}
-                  alt={t.innovation.bannerAlt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                  quality={90}
-                />
-              </div>
+
             </Reveal>
 
             <div className="lg:col-span-6 lg:col-start-7 space-y-8 text-[16px] leading-[1.65] text-text">
@@ -197,22 +187,17 @@ export default function ZiekteverzuimPage() {
         </div>
       </section>
 
-      {/* SECONDARY IMAGE BAND */}
-      <section className="py-0">
-        <Reveal>
-          <div className="relative w-full overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(gevolgenSrc) }}>
-            <Image
-              key={lang}
-              src={gevolgenSrc}
-              alt={t.secondaryImageAlt}
-              fill
-              className="object-cover"
-              sizes="100vw"
-              quality={90}
-            />
-            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/40 to-transparent pointer-events-none" />
-          </div>
-        </Reveal>
+      {/* Innovation photo, full section width (revision 2). */}
+      <section className="py-12">
+        <div className="mx-auto max-w-7xl px-6 lg:px-20">
+          <Reveal>
+            <div className="relative w-full overflow-hidden rounded-3xl bg-ink" style={{ aspectRatio: photoAspect(innovatieSrc) }}>
+              <Image key={lang} src={innovatieSrc} alt={t.innovation.bannerAlt} fill
+                className="object-cover" quality={90}
+                sizes="(min-width: 1280px) 1120px, (min-width: 1024px) calc(100vw - 160px), calc(100vw - 48px)" />
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* CONSEQUENCES */}
@@ -288,6 +273,24 @@ export default function ZiekteverzuimPage() {
         </div>
       </section>
 
+      {/* SECONDARY IMAGE BAND */}
+      <section className="py-0">
+        <Reveal>
+          <div className="relative w-full overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(gevolgenSrc) }}>
+            <Image
+              key={lang}
+              src={gevolgenSrc}
+              alt={t.secondaryImageAlt}
+              fill
+              className="object-cover"
+              sizes="100vw"
+              quality={90}
+            />
+            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/40 to-transparent pointer-events-none" />
+          </div>
+        </Reveal>
+      </section>
+
       <JsonLd
         schema={[
           serviceSchemaFor("/ziekteverzuim", "Absenteeism reduction"),
@@ -296,6 +299,8 @@ export default function ZiekteverzuimPage() {
         ]}
       />
       <Faq items={faq} />
+
+      <SickLeaveCalculator />
 
       <SubpagesNav chapter="03" heading={t.subpagesHeading} items={t.subpages} />
 

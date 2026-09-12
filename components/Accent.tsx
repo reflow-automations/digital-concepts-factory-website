@@ -11,17 +11,22 @@ export default function Accent({
   className,
 }: {
   text: string;
-  accent?: string;
+  accent?: string | readonly string[];
   className: string;
 }): ReactNode {
   if (!accent) return text;
-  const idx = text.indexOf(accent);
-  if (idx === -1) return text;
-  return (
-    <>
-      {text.slice(0, idx)}
-      <em className={className}>{accent}</em>
-      {text.slice(idx + accent.length)}
-    </>
-  );
+  const accents = typeof accent === "string" ? [accent] : accent;
+  const matches = accents.filter(Boolean).map((value) => ({ value, index: text.indexOf(value) }))
+    .filter(({ index }) => index >= 0).sort((a, b) => a.index - b.index);
+  const parts: ReactNode[] = [];
+  let cursor = 0;
+  for (const { value, index } of matches) {
+    if (index < cursor) continue;
+    parts.push(text.slice(cursor, index));
+    // Give italic letter overhang room without changing the actual sentence.
+    parts.push(<em key={index} className={`dcf-accent ${className}`}>{value}</em>);
+    cursor = index + value.length;
+  }
+  parts.push(text.slice(cursor));
+  return <>{parts}</>;
 }

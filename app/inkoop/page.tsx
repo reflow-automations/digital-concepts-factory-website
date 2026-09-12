@@ -175,7 +175,7 @@ export default function InkoopPage() {
                   <div className="font-mono text-[11px] uppercase tracking-[0.14em] text-cobalt mb-12">
                     {s.no}
                   </div>
-                  <h3 className="display-section text-[clamp(1.5rem,1.9vw,1.85rem)] text-ink mb-4">
+                  <h3 className="display-section text-[clamp(1.5rem,1.9vw,1.7rem)] text-ink mb-4">
                     {s.title}
                   </h3>
                   <p className="text-text/80 text-[15px] leading-[1.6] mb-8">

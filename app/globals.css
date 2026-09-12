@@ -93,6 +93,12 @@ body {
   letter-spacing: -0.02em;
 }
 
+/* Italic overhang must not visually swallow the following word space. */
+.display-hero .dcf-accent,
+.display-section .dcf-accent {
+  padding-inline-end: 0.07em;
+}
+
 .display-numeric {
   font-family: var(--font-sans);
   font-weight: 700;
