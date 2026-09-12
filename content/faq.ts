@@ -84,7 +84,7 @@ export const talentBehoudenFaq: FaqSet = {
   ],
   en: [
     {
-      q: "How does DCF make Personalised employee benefits affordable and scalable?",
+      q: "How does DCF make personalised employee benefits affordable and scalable?",
       a: "We flip the starting point: the employer no longer decides which extras are offered, employees choose what matters most to them, within clear frameworks. Our digital solution makes personalisation scalable and affordable, while the organisation keeps control over costs and delivery.",
     },
     {
@@ -139,8 +139,8 @@ export const ziekteverzuimFaq: FaqSet = {
       a: "In the Netherlands, average costs run between 4,500 and 7,000 euros per employee per year, depending on sector, role and duration. In 2023, total continued-pay costs for sick days amounted to 8.3 billion euros.",
     },
     {
-      q: "Does the solution also work for short-term Sick leave?",
-      a: "Short-term Sick leave in particular is a recurring challenge for many employers because it arrives unexpectedly and disrupts rosters. Our solution focuses on positively influencing behaviour so that unnecessary short-term sick-day calls decrease.",
+      q: "Does the solution also work for short-term sick leave?",
+      a: "Short-term sick leave in particular is a recurring challenge for many employers because it arrives unexpectedly and disrupts rosters. Our solution focuses on positively influencing behaviour so that unnecessary short-term sick-day calls decrease.",
     },
     {
       q: "Is the solution affordable for my organisation?",
@@ -148,7 +148,7 @@ export const ziekteverzuimFaq: FaqSet = {
     },
     {
       q: "Who is this approach suitable for?",
-      a: "For employers who want to reduce sick leave structurally and gain more control over the related costs and continuity. The approach is intended as a practical, accessible addition to your existing Sick leave policy.",
+      a: "For employers who want to reduce sick leave structurally and gain more control over the related costs and continuity. The approach is intended as a practical, accessible addition to your existing sick leave policy.",
     },
   ],
 };
@@ -226,11 +226,11 @@ export const marketingFaq: FaqSet = {
   en: [
     {
       q: "What makes DCF's marketing approach different?",
-      a: "We do not develop predictable standard campaigns, but distinctive marketing concepts that stand out, engage audiences and inspire action. Anyone who wants to make an impact must be willing to be willing to take a different approach.",
+      a: "We do not develop predictable standard campaigns, but distinctive marketing concepts that stand out, engage audiences and inspire action. Anyone who wants to make an impact must be willing to take a different approach.",
     },
     {
       q: "What does DCF mean by online and offline marketing?",
-      a: "Audiences do not live only on their screens, they are also out in cities, at physical locations and on the move. Where many agencies focus mainly on online, The real strength often lies in combining the two of both: more reach, more recognition and more differentiation.",
+      a: "Audiences do not live only on their screens, they are also out in cities, at physical locations and on the move. Where many agencies focus mainly on online, we consider both online and offline channels. The real strength often lies in combining the two: more reach, more recognition and more differentiation.",
     },
     {
       q: "Does DCF handle both concept development and execution?",

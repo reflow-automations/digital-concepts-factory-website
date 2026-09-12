@@ -822,7 +822,7 @@ const voorwaardenDocEn: LegalDoc = {
         { type: "ul", items: [
           "5.1 DCF will perform the agreement to the best of its ability and knowledge.",
           "5.2 DCF is subject to a best-efforts obligation only, unless an obligation to achieve a specific result has been expressly agreed in writing.",
-          "5.3 Results, savings, returns, conversions, cost reductions, Sick leave reductions or other forecasts mentioned by DCF are indicative only.",
+          "5.3 Results, savings, returns, conversions, cost reductions, sick leave reductions or other forecasts mentioned by DCF are indicative only.",
           "5.4 DCF does not guarantee that specific commercial, financial or operational results will be achieved.",
         ]},
       ],

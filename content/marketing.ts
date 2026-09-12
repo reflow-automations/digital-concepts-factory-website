@@ -99,7 +99,7 @@ export const marketing = {
         "Many organisations wrestle with the same question: how do you genuinely capture attention in a market where everyone wants to be visible? The reality is simple: standard campaigns and predictable communication often no longer cut it.",
         "That is precisely where we make the difference. We develop marketing concepts that are not dull, safe or interchangeable, but surprising, smart and distinctive. These are concepts that help organisations become visible, stay relevant and inspire audiences to take action.",
       ],
-      paragraphStrong: "Anyone who wants to make an impact must be willing to be willing to take a different approach.",
+      paragraphStrong: "Anyone who wants to make an impact must be willing to take a different approach.",
       cta: "Book a no-obligation call",
     },
     approach: {
@@ -119,7 +119,7 @@ export const marketing = {
       {
         n: "02",
         title: "Online and offline, the combination makes the difference",
-        text: "Where many marketing agencies focus mainly on online visibility, we deliberately look beyond online. The real strength often lies in combining the two of online and offline. That creates more reach, more recognition and more differentiation.",
+        text: "Where many marketing agencies focus mainly on online visibility, we deliberately look beyond online to include offline channels. The real strength often lies in combining the two. That creates more reach, more recognition and more differentiation.",
       },
       {
         n: "03",

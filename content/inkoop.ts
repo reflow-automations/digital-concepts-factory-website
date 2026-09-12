@@ -336,7 +336,7 @@ export const inkoopAanbesteden = {
       eyebrow: "The challenge",
       headline: "Tendering is complex, time-consuming and can quickly cost tens of thousands of euros",
       paragraphs: [
-        "A tendering process demands a lot from an organisation. Documents must be carefully prepared, tender documents must be legally sound and deadlines must be monitored precisely. At the same time the entire process must run transparent, rigorous and fully auditable. European tenders in particular require structure, specialist knowledge and sufficient capacity.",
+        "A tendering process demands a lot from an organisation. Documents must be carefully prepared, tender documents must be legally sound and deadlines must be monitored precisely. At the same time the entire process must be transparent, rigorous and fully auditable. European tenders in particular require structure, specialist knowledge and sufficient capacity.",
         "That is exactly where the challenge often lies in practice. Time and capacity are limited and not all the required knowledge is always available internally to organise tenders efficiently and carefully.",
       ],
     },
@@ -556,7 +556,7 @@ export const inkoopContractmanagement = {
           { n: "03", title: "Timely visibility of renewal and termination dates", text: "Automatic alerts ensure important contract dates are flagged well in advance." },
           { n: "04", title: "Contract knowledge no longer dependent on individuals", text: "Agreements and information are recorded centrally and remain available, even when employees leave." },
           { n: "05", title: "Fewer mistakes and less rework", text: "A standardised way of working and timely alerts reduce the chance of mistakes and costly rework." },
-          { n: "06", title: "Prevent unnecessary costs", text: "Identify unwanted renewals in time, duplicate purchases and agreements that are not being met." },
+          { n: "06", title: "Prevent unnecessary costs", text: "Identify unwanted renewals in time. Also detect duplicate purchases and agreements that are not being met." },
         ],
       },
       {

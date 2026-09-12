@@ -141,7 +141,7 @@ export const ziekteverzuim = {
         "Lower customer satisfaction",
         "Pressure on managers and continuity",
       ],
-      sourceNote: "TNO: psychosocial work pressure accounts for more than half of work-related Sick leave costs, €4.9 billion out of €8.3 billion in 2023.",
+      sourceNote: "TNO: psychosocial work pressure accounts for more than half of work-related sick leave costs, €4.9 billion out of €8.3 billion in 2023.",
       cta: "Discuss your sick leave challenge",
     },
     subpagesHeading: "More on sick leave",
@@ -232,7 +232,7 @@ export const ziekteverzuimInnovatie = {
       headline: "How do you influence behaviour positively, without high costs or complex implementation?",
       paragraphs: [
         "Many employers want to reduce sick leave but run into the same challenge in practice. Solutions are often too complex, too costly or do not connect well enough to daily operations.",
-        "As a result, short-term Sick leave remains a recurring problem that costs organisations a great deal of money year after year.",
+        "As a result, short-term sick leave remains a recurring problem that costs organisations a great deal of money year after year.",
       ],
     },
     sections: [
@@ -259,7 +259,7 @@ export const ziekteverzuimInnovatie = {
         type: "stat" as const,
         eyebrow: "WHAT SICK LEAVE COSTS YOUR ORGANISATION",
         value: "€4,500 — €7,000",
-        detail: "Average SICK LEAVE COSTS PER EMPLOYEE PER YEAR in the Netherlands. Less absence means lower costs and greater continuity.",
+        detail: "Average sick leave costs per employee per year in the Netherlands. Less absence means lower costs and greater continuity.",
         sourceNote: "TNO · ArboNed",
       },
     ],

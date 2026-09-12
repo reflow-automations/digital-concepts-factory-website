@@ -422,7 +422,7 @@ export const talentBehoudenInnovatie = {
         heading: "Personal choice? Traditionally complex and expensive",
         headingAccent: "complex and expensive",
         paragraphs: [
-          "For many organisations, Personalised employee benefits sound attractive but turn out to be hard to deliver in practice. Too complex, too expensive and difficult to scale to every individual employee.",
+          "For many organisations, personalised employee benefits sound attractive but turn out to be hard to deliver in practice. Too complex, too expensive and difficult to scale to every individual employee.",
           "As a result, many organisations hold on to standard packages, while employees increasingly want freedom of choice and terms that fit their personal situation.",
           "Our digital innovation changes that. We make personalisation accessible, scalable and affordable, with room for individual choices and control for the organisation.",
         ],
@@ -589,7 +589,7 @@ export const talentBehoudenArbeidsvoorwaarden = {
       },
     ],
     closing: {
-      headline: "Curious what Personalised employee benefits could mean for your organisation?",
+      headline: "Curious what personalised employee benefits could mean for your organisation?",
       headlineAccent: "your organisation",
       ctaLabel: "Book a no-obligation call",
     },

@@ -426,7 +426,7 @@ export const overOnsTeam = {
       },
       {
         type: "callout" as const,
-        quote: "Real digital innovation does not come from focusing on technology alone, or only at strategy. It arises when strategy, technology, user experience and market insight come together.",
+        quote: "Real digital innovation does not come from focusing on technology alone, or on strategy alone. It arises when strategy, technology, user experience and market insight come together.",
       },
       {
         type: "text" as const,

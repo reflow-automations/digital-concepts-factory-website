@@ -144,7 +144,7 @@ export const home = {
       h1Accent: "digital innovation",
       lead: [
         "Digital Concepts Factory develops digital innovations that help organisations tackle their biggest challenges more intelligently and effectively across Human Resource Management (HR), Procurement and Marketing.",
-        "We help organisations find talent faster, retain employees longer, reduce Sick leave, organise procurement processes more intelligently and make marketing more impactful.",
+        "We help organisations find talent faster, retain employees longer, reduce sick leave, organise procurement processes more intelligently and make marketing more impactful.",
         "Our solutions are practical to apply and focused on concrete results: lower costs, higher returns and sustainable growth.",
         "Digital innovation is no longer a luxury, but a necessity to keep moving forward.",
       ],
@@ -192,7 +192,7 @@ export const home = {
       chapter: "The numbers",
       heading: "Innovation that delivers measurable value",
       headingAccent: "measurable value",
-      calcLink: "Calculate your potential savingss potential",
+      calcLink: "Calculate your potential savings",
       sickLeaveCalcLink: "Calculate your sick leave savings",
       items: [
         {
