@@ -434,6 +434,7 @@ export const inkoopContractmanagement = {
       },
       {
         type: "image" as const,
+        layout: "photo" as const,
         src: "/photos/inkoop-banner4-nl.png",
         alt: "Banner contractmanagement, Nederlandse versie",
       },
@@ -453,7 +454,6 @@ export const inkoopContractmanagement = {
       },
       {
         type: "image" as const,
-        layout: "photo" as const,
         src: "/photos/inkoop-banner5-nl.png",
         alt: "Banner grip op contracten, Nederlandse versie",
       },
@@ -523,6 +523,7 @@ export const inkoopContractmanagement = {
       },
       {
         type: "image" as const,
+        layout: "photo" as const,
         src: "/photos/inkoop-banner4-en.png",
         alt: "Contract management banner, English version",
       },
@@ -542,7 +543,6 @@ export const inkoopContractmanagement = {
       },
       {
         type: "image" as const,
-        layout: "photo" as const,
         src: "/photos/inkoop-banner5-en.png",
         alt: "Control over contracts banner, English version",
       },

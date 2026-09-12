@@ -46,6 +46,9 @@ export default function ZiekteverzuimPage() {
                 className="italic font-light text-cobalt"
               />
             </h1>
+            <CTA href="#bereken" className="mt-7 rounded-full">
+              {t.hero.calculatorLink}
+            </CTA>
           </Reveal>
         </div>
       </section>
@@ -122,7 +125,7 @@ export default function ZiekteverzuimPage() {
                 secondValue={7000}
                 prefix="€"
                 thousands
-                separator="—"
+                separator="-"
               />
             </div>
             <p className="text-paper/80 text-[clamp(1.05rem,1.5vw,1.35rem)] max-w-3xl mx-auto leading-[1.5]">
@@ -298,9 +301,9 @@ export default function ZiekteverzuimPage() {
           breadcrumbFor("/ziekteverzuim"),
         ]}
       />
-      <Faq items={faq} />
-
       <SickLeaveCalculator />
+
+      <Faq items={faq} />
 
       <SubpagesNav chapter="03" heading={t.subpagesHeading} items={t.subpages} />
 

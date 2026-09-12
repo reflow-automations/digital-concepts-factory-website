@@ -7,6 +7,7 @@ export const ziekteverzuim = {
       chapter: "Ziekteverzuim terugdringen",
       h1: "Verzuim raakt direct uw kosten en continuïteit",
       h1Accent: "kosten en continuïteit",
+      calculatorLink: "Open de ziekteverzuimcalculator",
       imageAlt: "Zieke medewerker thuis met laptop en kosten-indicatie",
     },
     intro: {
@@ -89,6 +90,7 @@ export const ziekteverzuim = {
       chapter: "Reducing sick leave",
       h1: "Sick leave directly affects costs and continuity",
       h1Accent: "costs and continuity",
+      calculatorLink: "Open the sick leave calculator",
       imageAlt: "Sick employee at home with laptop and cost indicator",
     },
     intro: {
@@ -207,7 +209,7 @@ export const ziekteverzuimInnovatie = {
       {
         type: "stat" as const,
         eyebrow: "Wat verzuim u kost",
-        value: "€4.500 — €7.000",
+        value: "€4.500 - €7.000",
         detail: "Gemiddelde verzuimkosten per medewerker per jaar in Nederland. Minder verzuim betekent lagere kosten én meer continuïteit.",
         sourceNote: "TNO · ArboNed",
       },
@@ -258,7 +260,7 @@ export const ziekteverzuimInnovatie = {
       {
         type: "stat" as const,
         eyebrow: "WHAT SICK LEAVE COSTS YOUR ORGANISATION",
-        value: "€4,500 — €7,000",
+        value: "€4,500 - €7,000",
         detail: "Average sick leave costs per employee per year in the Netherlands. Less absence means lower costs and greater continuity.",
         sourceNote: "TNO · ArboNed",
       },

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useLang } from "@/lib/i18n/provider";
 
 interface CountUpProps {
   /** Final numeric value to count to. */
@@ -11,7 +12,7 @@ interface CountUpProps {
   suffix?: string;
   /** Duration of the count animation in ms. */
   duration?: number;
-  /** Format with Dutch thousands separator (1.234). */
+  /** Format with the selected language's thousands separator. */
   thousands?: boolean;
   /** Optional dash separator for ranges, pass when value is "low, high". */
   separator?: string;
@@ -37,6 +38,7 @@ export default function CountUp({
   word,
   className = "",
 }: CountUpProps) {
+  const lang = useLang();
   const ref = useRef<HTMLSpanElement>(null);
   const [current, setCurrent] = useState(0);
   const [current2, setCurrent2] = useState(0);
@@ -76,7 +78,7 @@ export default function CountUp({
   }, [started, value, secondValue, duration]);
 
   const fmt = (n: number) =>
-    thousands ? n.toLocaleString("nl-NL") : String(n);
+    thousands ? n.toLocaleString(lang === "nl" ? "nl-NL" : "en-GB") : String(n);
 
   return (
     <span ref={ref} className={className}>
