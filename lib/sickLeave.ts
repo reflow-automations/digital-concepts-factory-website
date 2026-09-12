@@ -21,4 +21,3 @@ export function calculateSickLeave({ employees, salary, absencePercent, reductio
     savingsPerEmployee: count > 0 ? savings / count : 0,
   };
 }
-
