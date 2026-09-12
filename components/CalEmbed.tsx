@@ -77,6 +77,7 @@ function loadCalEmbed() {
     elementOrSelector: `#${CAL_TARGET_ID}`,
     config: {
       layout: "month_view",
+      theme: "dark",
       useSlotsViewOnSmallScreen: "true",
     },
     calLink: "len-v-fiuafk/30min",
