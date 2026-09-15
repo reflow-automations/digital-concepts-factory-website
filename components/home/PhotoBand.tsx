@@ -2,7 +2,7 @@ import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import { photoAspect } from "@/lib/photoRatio";
 
-const src = "/photos/home-domains.png";
+const src = "/photos/home-domains.avif";
 
 export default function PhotoBand() {
   return (

@@ -256,7 +256,7 @@ export const talentAantrekkenEmployerBranding = {
         type: "image" as const,
         layout: "photo" as const,
         maxWidth: 976,
-        src: "/photos/talent-aantrekken-eb-banner-nl.png",
+        src: "/photos/talent-aantrekken-eb-banner-nl.avif",
         alt: "Banner Employer Branding, Nederlandse versie",
       },
       {
@@ -317,7 +317,7 @@ export const talentAantrekkenEmployerBranding = {
         type: "image" as const,
         layout: "photo" as const,
         maxWidth: 976,
-        src: "/photos/talent-aantrekken-eb-banner-en.png",
+        src: "/photos/talent-aantrekken-eb-banner-en.avif",
         alt: "Employer Branding banner, English version",
       },
       {
@@ -369,7 +369,7 @@ export const talentAantrekkenWaaromWerkgevers = {
       },
       {
         type: "image" as const,
-        src: "/photos/talent-aantrekken-ww-banner-nl.png",
+        src: "/photos/talent-aantrekken-ww-banner-nl.avif",
         alt: "Banner waarom werkgevers kiezen, Nederlandse versie",
       },
       {
@@ -433,7 +433,7 @@ export const talentAantrekkenWaaromWerkgevers = {
       },
       {
         type: "image" as const,
-        src: "/photos/talent-aantrekken-ww-banner-en.png",
+        src: "/photos/talent-aantrekken-ww-banner-en.avif",
         alt: "Why employers choose us banner, English version",
       },
       {

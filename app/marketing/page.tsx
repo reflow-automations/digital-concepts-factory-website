@@ -21,8 +21,8 @@ export default function MarketingPage() {
   const ctaLong = usePick(cta.long);
   const faq = usePick(marketingFaq);
   const lang = useLang();
-  const sectieSrc = lang === "nl" ? "/photos/marketing-sectie-nl.png" : "/photos/marketing-sectie-en.png";
-  const heroSrc = lang === "nl" ? "/photos/marketing-hero-nl.png" : "/photos/marketing-hero-en.png";
+  const sectieSrc = lang === "nl" ? "/photos/marketing-sectie-nl.avif" : "/photos/marketing-sectie-en.avif";
+  const heroSrc = lang === "nl" ? "/photos/marketing-hero-nl.avif" : "/photos/marketing-hero-en.avif";
 
   return (
     <>

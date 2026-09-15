@@ -189,7 +189,7 @@ export const ziekteverzuimInnovatie = {
     sections: [
       {
         type: "image" as const,
-        src: "/photos/ziekteverzuim-sub-innovatie-banner-nl.png",
+        src: "/photos/ziekteverzuim-sub-innovatie-banner-nl.avif",
         alt: "Banner innovatie ziekteverzuim, Nederlandse versie",
       },
       {
@@ -240,7 +240,7 @@ export const ziekteverzuimInnovatie = {
     sections: [
       {
         type: "image" as const,
-        src: "/photos/ziekteverzuim-sub-innovatie-banner-en.png",
+        src: "/photos/ziekteverzuim-sub-innovatie-banner-en.avif",
         alt: "Sick leave innovation banner, English version",
       },
       {
@@ -294,7 +294,7 @@ export const ziekteverzuimGevolgen = {
       {
         type: "image" as const,
         layout: "photo" as const,
-        src: "/photos/ziekteverzuim-sub-gevolgen-banner-nl.png",
+        src: "/photos/ziekteverzuim-sub-gevolgen-banner-nl.avif",
         alt: "Banner gevolgen ziekteverzuim, Nederlandse versie",
       },
       {
@@ -365,7 +365,7 @@ export const ziekteverzuimGevolgen = {
       {
         type: "image" as const,
         layout: "photo" as const,
-        src: "/photos/ziekteverzuim-sub-gevolgen-banner-en.png",
+        src: "/photos/ziekteverzuim-sub-gevolgen-banner-en.avif",
         alt: "Consequences of sick leave banner, English version",
       },
       {

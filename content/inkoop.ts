@@ -185,7 +185,7 @@ export const inkoopInnovatie = {
       },
       {
         type: "image" as const,
-        src: "/photos/inkoop-banner1-nl.png",
+        src: "/photos/inkoop-banner1-nl.avif",
         alt: "Banner innovatie inkoop, Nederlandse versie",
       },
       {
@@ -229,7 +229,7 @@ export const inkoopInnovatie = {
       },
       {
         type: "image" as const,
-        src: "/photos/inkoop-banner1-en.png",
+        src: "/photos/inkoop-banner1-en.avif",
         alt: "Procurement innovation banner, English version",
       },
       {
@@ -265,7 +265,7 @@ export const inkoopAanbesteden = {
     sections: [
       {
         type: "image" as const,
-        src: "/photos/inkoop-banner2-nl.png",
+        src: "/photos/inkoop-banner2-nl.avif",
         alt: "Banner aanbesteden, Nederlandse versie",
       },
       {
@@ -303,7 +303,7 @@ export const inkoopAanbesteden = {
       },
       {
         type: "image" as const,
-        src: "/photos/inkoop-banner3-nl.png",
+        src: "/photos/inkoop-banner3-nl.avif",
         alt: "Banner professioneel aanbesteden, Nederlandse versie",
       },
       {
@@ -343,7 +343,7 @@ export const inkoopAanbesteden = {
     sections: [
       {
         type: "image" as const,
-        src: "/photos/inkoop-banner2-en.png",
+        src: "/photos/inkoop-banner2-en.avif",
         alt: "Tendering banner, English version",
       },
       {
@@ -381,7 +381,7 @@ export const inkoopAanbesteden = {
       },
       {
         type: "image" as const,
-        src: "/photos/inkoop-banner3-en.png",
+        src: "/photos/inkoop-banner3-en.avif",
         alt: "Professional tendering banner, English version",
       },
       {
@@ -435,7 +435,7 @@ export const inkoopContractmanagement = {
       {
         type: "image" as const,
         layout: "photo" as const,
-        src: "/photos/inkoop-banner4-nl.png",
+        src: "/photos/inkoop-banner4-nl.avif",
         alt: "Banner contractmanagement, Nederlandse versie",
       },
       {
@@ -454,7 +454,7 @@ export const inkoopContractmanagement = {
       },
       {
         type: "image" as const,
-        src: "/photos/inkoop-banner5-nl.png",
+        src: "/photos/inkoop-banner5-nl.avif",
         alt: "Banner grip op contracten, Nederlandse versie",
       },
       {
@@ -472,7 +472,7 @@ export const inkoopContractmanagement = {
       },
       {
         type: "image" as const,
-        src: "/photos/inkoop-banner6-nl.png",
+        src: "/photos/inkoop-banner6-nl.avif",
         alt: "Banner toegankelijk contractmanagement, Nederlandse versie",
       },
       {
@@ -524,7 +524,7 @@ export const inkoopContractmanagement = {
       {
         type: "image" as const,
         layout: "photo" as const,
-        src: "/photos/inkoop-banner4-en.png",
+        src: "/photos/inkoop-banner4-en.avif",
         alt: "Contract management banner, English version",
       },
       {
@@ -543,7 +543,7 @@ export const inkoopContractmanagement = {
       },
       {
         type: "image" as const,
-        src: "/photos/inkoop-banner5-en.png",
+        src: "/photos/inkoop-banner5-en.avif",
         alt: "Control over contracts banner, English version",
       },
       {
@@ -561,7 +561,7 @@ export const inkoopContractmanagement = {
       },
       {
         type: "image" as const,
-        src: "/photos/inkoop-banner6-en.png",
+        src: "/photos/inkoop-banner6-en.avif",
         alt: "Accessible contract management banner, English version",
       },
       {

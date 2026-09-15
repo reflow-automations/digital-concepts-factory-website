@@ -17,8 +17,8 @@ export default function Hero() {
   // groot scherm, liggend (3A/3B) op een telefoon. De klant koos dit op
   // 2026-09-02 boven de staande foto op mobiel, omdat de pagina daar te lang
   // werd. De <picture> zorgt dat de browser alleen de passende foto ophaalt.
-  const staandSrc = lang === "nl" ? "/photos/home-hero-nl.png" : "/photos/home-hero-en.png";
-  const liggendSrc = lang === "nl" ? "/photos/home-hero-liggend-nl.png" : "/photos/home-hero-liggend-en.png";
+  const staandSrc = lang === "nl" ? "/photos/home-hero-nl.avif" : "/photos/home-hero-en.avif";
+  const liggendSrc = lang === "nl" ? "/photos/home-hero-liggend-nl.avif" : "/photos/home-hero-liggend-en.avif";
   const gedeeld = { alt: t.h1, fill: true, quality: 90, priority: true } as const;
   const {
     props: { srcSet: staandSrcSet },

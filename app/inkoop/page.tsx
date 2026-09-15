@@ -20,8 +20,8 @@ export default function InkoopPage() {
   const ctaLong = usePick(cta.long);
   const faq = usePick(inkoopFaq);
   const lang = useLang();
-  const secondarySrc = lang === "nl" ? "/photos/inkoop-secondary-nl.png" : "/photos/inkoop-secondary-en.png";
-  const heroSrc = lang === "nl" ? "/photos/inkoop-hero-nl.png" : "/photos/inkoop-hero-en.png";
+  const secondarySrc = lang === "nl" ? "/photos/inkoop-secondary-nl.avif" : "/photos/inkoop-secondary-en.avif";
+  const heroSrc = lang === "nl" ? "/photos/inkoop-hero-nl.avif" : "/photos/inkoop-hero-en.avif";
 
   return (
     <>

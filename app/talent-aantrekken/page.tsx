@@ -23,8 +23,8 @@ export default function TalentAantrekkenPage() {
   const ctaShort = usePick(cta.short);
   const faq = usePick(talentAantrekkenFaq);
   const lang = useLang();
-  const secondarySrc = lang === "nl" ? "/photos/talent-aantrekken-secondary-nl.png" : "/photos/talent-aantrekken-secondary-en.png";
-  const heroSrc = lang === "nl" ? "/photos/talent-aantrekken-hero-nl.png" : "/photos/talent-aantrekken-hero-en.png";
+  const secondarySrc = lang === "nl" ? "/photos/talent-aantrekken-secondary-nl.avif" : "/photos/talent-aantrekken-secondary-en.avif";
+  const heroSrc = lang === "nl" ? "/photos/talent-aantrekken-hero-nl.avif" : "/photos/talent-aantrekken-hero-en.avif";
 
   return (
     <>

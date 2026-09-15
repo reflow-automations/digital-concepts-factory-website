@@ -24,8 +24,8 @@ export default function TalentBehoudenPage() {
   const ctaLong = usePick(cta.long);
   const faq = usePick(talentBehoudenFaq);
   const lang = useLang();
-  const innovatieSrc = lang === "nl" ? "/photos/talent-behouden-innovatie-banner-nl.png" : "/photos/talent-behouden-innovatie-banner-en.png";
-  const heroSrc = lang === "nl" ? "/photos/talent-behouden-hero-nl.png" : "/photos/talent-behouden-hero-en.png";
+  const innovatieSrc = lang === "nl" ? "/photos/talent-behouden-innovatie-banner-nl.avif" : "/photos/talent-behouden-innovatie-banner-en.avif";
+  const heroSrc = lang === "nl" ? "/photos/talent-behouden-hero-nl.avif" : "/photos/talent-behouden-hero-en.avif";
 
   return (
     <>

@@ -199,7 +199,7 @@ export const marketingInnovatie = {
       },
       {
         type: "image" as const,
-        src: "/photos/marketing-banner1-nl.png",
+        src: "/photos/marketing-banner1-nl.avif",
         alt: "Banner marketing online en offline, Nederlandse versie",
       },
       {
@@ -218,7 +218,7 @@ export const marketingInnovatie = {
       },
       {
         type: "image" as const,
-        src: "/photos/marketing-banner2-nl.png",
+        src: "/photos/marketing-banner2-nl.avif",
         alt: "Banner marketing op maat, Nederlandse versie",
       },
       {
@@ -278,7 +278,7 @@ export const marketingInnovatie = {
       },
       {
         type: "image" as const,
-        src: "/photos/marketing-banner1-en.png",
+        src: "/photos/marketing-banner1-en.avif",
         alt: "Marketing online and offline banner, English version",
       },
       {
@@ -297,7 +297,7 @@ export const marketingInnovatie = {
       },
       {
         type: "image" as const,
-        src: "/photos/marketing-banner2-en.png",
+        src: "/photos/marketing-banner2-en.avif",
         alt: "Tailored marketing banner, English version",
       },
       {

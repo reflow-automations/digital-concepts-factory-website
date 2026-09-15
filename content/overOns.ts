@@ -243,7 +243,7 @@ export const overOnsVisie = {
       },
       {
         type: "image" as const,
-        src: "/photos/over-ons-banner2-nl.png",
+        src: "/photos/over-ons-banner2-nl.avif",
         alt: "Banner visie en principes, Nederlandse versie",
       },
       {
@@ -309,7 +309,7 @@ export const overOnsVisie = {
       },
       {
         type: "image" as const,
-        src: "/photos/over-ons-banner2-en.png",
+        src: "/photos/over-ons-banner2-en.avif",
         alt: "Vision and principles banner, English version",
       },
       {

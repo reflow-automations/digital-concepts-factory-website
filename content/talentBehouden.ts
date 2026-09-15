@@ -293,7 +293,7 @@ export const talentBehoudenBereken = {
       heading: "Sleep de schuifregelaars, de cijfers passen zich direct aan",
       source: "Berekening volgens Gallup-vuistregels (40%/80%/200% van bruto jaarsalaris). Modaal NL: €48.000 (CPB 2026).",
     },
-    bannerSrc: "/photos/talent-behouden-bereken-banner-nl.png",
+    bannerSrc: "/photos/talent-behouden-bereken-banner-nl.avif",
     bannerAlt: "Banner kosten vervanging medewerker, Nederlandse versie",
     conclusion: {
       eyebrow: "Conclusie",
@@ -329,7 +329,7 @@ export const talentBehoudenBereken = {
       heading: "Drag the sliders, the figures update instantly",
       source: "Calculated using Gallup rules of thumb (40%/80%/200% of gross annual salary). Average NL income: €48,000 (CPB 2026).",
     },
-    bannerSrc: "/photos/talent-behouden-bereken-banner-en.png",
+    bannerSrc: "/photos/talent-behouden-bereken-banner-en.avif",
     bannerAlt: "Cost of replacing an employee banner, English version",
     conclusion: {
       eyebrow: "Conclusion",
@@ -471,7 +471,7 @@ export const talentBehoudenArbeidsvoorwaarden = {
     sections: [
       {
         type: "image" as const,
-        src: "/photos/talent-behouden-av-banner-nl.png",
+        src: "/photos/talent-behouden-av-banner-nl.avif",
         alt: "Banner standaard arbeidsvoorwaarden voorbij, Nederlandse versie",
       },
       {
@@ -542,7 +542,7 @@ export const talentBehoudenArbeidsvoorwaarden = {
     sections: [
       {
         type: "image" as const,
-        src: "/photos/talent-behouden-av-banner-en.png",
+        src: "/photos/talent-behouden-av-banner-en.avif",
         alt: "Standard employee benefits banner, English version",
       },
       {
@@ -617,7 +617,7 @@ export const talentBehoudenVervangingskosten = {
     sections: [
       {
         type: "image" as const,
-        src: "/photos/talent-behouden-vk-banner-nl.png",
+        src: "/photos/talent-behouden-vk-banner-nl.avif",
         alt: "Banner vervangingskosten, Nederlandse versie",
       },
       {
@@ -683,7 +683,7 @@ export const talentBehoudenVervangingskosten = {
     sections: [
       {
         type: "image" as const,
-        src: "/photos/talent-behouden-vk-banner-en.png",
+        src: "/photos/talent-behouden-vk-banner-en.avif",
         alt: "Replacement costs banner, English version",
       },
       {
