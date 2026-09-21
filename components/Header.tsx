@@ -75,7 +75,7 @@ export default function Header() {
                   </svg>
                 </button>
                 {openSubmenu === item.href && (
-                  <div className="absolute left-0 top-full mt-4 min-w-72 border border-mist bg-paper p-2 shadow-[0_18px_40px_-20px_rgba(45,31,20,0.35)]">
+                  <div className="absolute left-0 top-full min-w-72 border-t-2 border-t-cobalt border-x border-b border-mist bg-paper p-2 shadow-[0_18px_40px_-20px_rgba(45,31,20,0.35)]">
                     <p className="px-3 pt-2 pb-1 font-mono text-[10px] uppercase tracking-[0.12em] text-cobalt">
                       {lang === "nl" ? "Verdieping ziekteverzuim" : "Explore sick leave"}
                     </p>
