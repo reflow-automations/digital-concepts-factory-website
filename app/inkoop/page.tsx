@@ -152,7 +152,7 @@ export default function InkoopPage() {
       </section>
 
       {/* SUBPAGES CARDS */}
-      <section className="py-28 lg:py-36">
+      <section className="pt-28 pb-6 lg:pt-36 lg:pb-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <Reveal>
             <ChapterMark
@@ -192,7 +192,7 @@ export default function InkoopPage() {
       </section>
 
       {/* SECONDARY IMAGE */}
-      <section className="py-20">
+      <section className="pt-6 pb-20 lg:pt-8 lg:pb-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
           <Reveal>
             <div
@@ -210,7 +210,7 @@ export default function InkoopPage() {
               />
             </div>
           </Reveal>
-          <div className="mt-10 max-w-3xl lg:ml-auto">
+          <div className="mt-8 max-w-3xl">
             <Reveal delay={100}>
               <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted mb-6">
                 {t.secondarySection.eyebrow}
