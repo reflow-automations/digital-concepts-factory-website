@@ -119,7 +119,7 @@ export default function InkoopPage() {
               </p>
             </Reveal>
 
-            <Reveal delay={140} className="lg:col-span-5 lg:pl-10 lg:border-l lg:border-paper/15">
+            <Reveal delay={140} className="lg:col-span-4 lg:pl-10 lg:border-l lg:border-paper/15">
               <ul className="space-y-5">
                 {t.benefits.map((b) => (
                   <li
