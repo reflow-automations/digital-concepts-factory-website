@@ -57,7 +57,7 @@ export const home = {
       chapter: "De cijfers",
       heading: "Innovatie die rekent",
       headingAccent: "rekent",
-      calcLink: "Bereken uw besparingspotentieel",
+      calcLink: "Bereken uw besparing op personeelsbehoud",
       sickLeaveCalcLink: "Bereken uw besparing op ziekteverzuim",
       items: [
         {
@@ -192,7 +192,7 @@ export const home = {
       chapter: "The numbers",
       heading: "Innovation that delivers measurable value",
       headingAccent: "measurable value",
-      calcLink: "Calculate your potential savings",
+      calcLink: "Calculate your savings on staff retention",
       sickLeaveCalcLink: "Calculate your sick leave savings",
       items: [
         {

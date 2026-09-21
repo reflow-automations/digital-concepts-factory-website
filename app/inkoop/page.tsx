@@ -20,7 +20,7 @@ export default function InkoopPage() {
   const ctaLong = usePick(cta.long);
   const faq = usePick(inkoopFaq);
   const lang = useLang();
-  const secondarySrc = lang === "nl" ? "/photos/inkoop-secondary-nl.avif" : "/photos/inkoop-secondary-en.avif";
+  const secondarySrc = lang === "nl" ? "/photos/inkoop-secondary-r5-nl.avif" : "/photos/inkoop-secondary-r5-en.avif";
   const heroSrc = lang === "nl" ? "/photos/inkoop-hero-nl.avif" : "/photos/inkoop-hero-en.avif";
 
   return (
@@ -107,7 +107,7 @@ export default function InkoopPage() {
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <Reveal className="lg:col-span-7">
+            <Reveal className="lg:col-span-8">
               <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-paper/45 mb-8">
                 {t.bigNumber.eyebrow}
               </p>
@@ -207,7 +207,7 @@ export default function InkoopPage() {
                 />
               </div>
             </Reveal>
-            <div className="lg:col-span-5 lg:pl-6">
+            <div className="lg:col-span-4 lg:pl-6">
               <Reveal delay={100}>
                 <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted mb-6">
                   {t.secondarySection.eyebrow}

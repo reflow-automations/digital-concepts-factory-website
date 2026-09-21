@@ -26,7 +26,7 @@ export default function ZiekteverzuimPage() {
   const lang = useLang();
   const gevolgenSrc = lang === "nl" ? "/photos/ziekteverzuim-gevolgen-banner-nl.avif" : "/photos/ziekteverzuim-gevolgen-banner-en.avif";
   const innovatieSrc = lang === "nl" ? "/photos/ziekteverzuim-innovatie-banner-nl.avif" : "/photos/ziekteverzuim-innovatie-banner-en.avif";
-  const heroSrc = lang === "nl" ? "/photos/ziekteverzuim-hero-nl.avif" : "/photos/ziekteverzuim-hero-en.avif";
+  const heroSrc = lang === "nl" ? "/photos/ziekteverzuim-hero-nl.avif" : "/photos/ziekteverzuim-hero-r5-en.avif";
 
   return (
     <>

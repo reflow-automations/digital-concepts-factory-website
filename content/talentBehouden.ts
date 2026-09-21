@@ -672,7 +672,7 @@ export const talentBehoudenVervangingskosten = {
     parentHref: "/talent-behouden",
     label: "What do replacement costs consist of?",
     h1: "One departure, ten types of costs",
-    h1Accent: "ten types of cost",
+    h1Accent: "ten types of costs",
     intro: {
       eyebrow: "The hidden price tag",
       headline: "Replacing an employee often costs far more than organisations realise",

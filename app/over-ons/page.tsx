@@ -17,8 +17,8 @@ export default function OverOnsPage() {
   const t = usePick(overOns);
   const ctaLong = usePick(cta.long);
   const lang = useLang();
-  const banner1Src = lang === "nl" ? "/photos/over-ons-banner1-nl.avif" : "/photos/over-ons-banner1-en.avif";
-  const heroSrc = lang === "nl" ? "/photos/over-ons-hero-nl.avif" : "/photos/over-ons-hero-en.avif";
+  const banner1Src = lang === "nl" ? "/photos/over-ons-banner1-r5-nl.avif" : "/photos/over-ons-banner1-r5-en.avif";
+  const heroSrc = lang === "nl" ? "/photos/over-ons-hero-r5-nl.avif" : "/photos/over-ons-hero-en.avif";
 
   return (
     <>
