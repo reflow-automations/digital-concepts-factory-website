@@ -194,35 +194,37 @@ export default function InkoopPage() {
       {/* SECONDARY IMAGE */}
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <Reveal className="lg:col-span-7">
-              <div className="photo-treatment relative overflow-hidden bg-ink" style={{ aspectRatio: photoAspect(secondarySrc) }}>
-                <Image
-                  key={lang}
-                  src={secondarySrc}
-                  alt={t.secondarySection.imageAlt}
-                  fill
-                  className="object-cover"
-                  quality={90}
-                />
-              </div>
-            </Reveal>
-            <div className="lg:col-span-4 lg:pl-6">
-              <Reveal delay={100}>
-                <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted mb-6">
-                  {t.secondarySection.eyebrow}
-                </p>
-                <h3 className="display-section text-[clamp(1.5rem,2vw,2rem)] text-ink mb-6">
-                  {t.secondarySection.heading}
-                </h3>
-                <p className="text-text text-[15px] leading-[1.65] mb-6">
-                  {t.secondarySection.body}
-                </p>
-                <CTA href="/contact" variant="underline">
-                  {t.secondarySection.cta}
-                </CTA>
-              </Reveal>
+          <Reveal>
+            <div
+              className="photo-treatment relative overflow-hidden rounded-3xl bg-ink shadow-[0_28px_60px_-20px_rgba(45,31,20,0.28)]"
+              style={{ aspectRatio: photoAspect(secondarySrc) }}
+            >
+              <Image
+                key={lang}
+                src={secondarySrc}
+                alt={t.secondarySection.imageAlt}
+                fill
+                className="object-cover"
+                sizes="100vw"
+                quality={90}
+              />
             </div>
+          </Reveal>
+          <div className="mt-10 max-w-3xl lg:ml-auto">
+            <Reveal delay={100}>
+              <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted mb-6">
+                {t.secondarySection.eyebrow}
+              </p>
+              <h3 className="display-section text-[clamp(1.5rem,2vw,2rem)] text-ink mb-6">
+                {t.secondarySection.heading}
+              </h3>
+              <p className="text-text text-[15px] leading-[1.65] mb-6">
+                {t.secondarySection.body}
+              </p>
+              <CTA href="/contact" variant="underline">
+                {t.secondarySection.cta}
+              </CTA>
+            </Reveal>
           </div>
         </div>
       </section>
