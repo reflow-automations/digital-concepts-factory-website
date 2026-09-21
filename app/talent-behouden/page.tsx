@@ -45,6 +45,9 @@ export default function TalentBehoudenPage() {
                 className="italic font-light text-cobalt"
               />
             </h1>
+            <CTA href="#bereken" className="mt-7 rounded-full">
+              {t.hero.calculatorLink}
+            </CTA>
           </Reveal>
         </div>
       </section>

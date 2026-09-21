@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLang } from "@/lib/i18n/provider";
+import { parseLocaleNumber } from "@/lib/sickLeave";
 
 type Functietype = "frontline" | "professional" | "manager";
 
@@ -61,13 +62,37 @@ const fmtEUR = (n: number, lang: "nl" | "en") => {
   return "€ " + Math.round(n).toLocaleString("nl-NL", { maximumFractionDigits: 0 });
 };
 
+const SALARY_MIN = 30_000;
+const SALARY_MAX = 150_000;
+const LEAVERS_MIN = 1;
+const LEAVERS_MAX = 50;
+
+function formatInputNumber(n: number, lang: "nl" | "en") {
+  return new Intl.NumberFormat(lang === "nl" ? "nl-NL" : "en-GB", {
+    maximumFractionDigits: 0,
+  }).format(n);
+}
+
 export default function Calculator() {
   const lang = useLang();
   const L = LABELS[lang];
+  const locale = lang === "nl" ? "nl-NL" : "en-GB";
 
   const [salary, setSalary] = useState(48000);
   const [functie, setFunctie] = useState<Functietype>("professional");
   const [vertrekkers, setVertrekkers] = useState(5);
+  const [salaryDraft, setSalaryDraft] = useState(formatInputNumber(salary, lang));
+  const [leaversDraft, setLeaversDraft] = useState(formatInputNumber(vertrekkers, lang));
+
+  // Keep a slider change and its editable number in sync. The draft stays visible
+  // while typing so an incomplete or out-of-range value never corrupts the result.
+  useEffect(() => setSalaryDraft(formatInputNumber(salary, lang)), [salary, lang]);
+  useEffect(() => setLeaversDraft(formatInputNumber(vertrekkers, lang)), [vertrekkers, lang]);
+
+  const salaryInput = parseLocaleNumber(salaryDraft, locale);
+  const leaversInput = parseLocaleNumber(leaversDraft, locale);
+  const salaryValid = Number.isInteger(salaryInput) && salaryInput >= SALARY_MIN && salaryInput <= SALARY_MAX;
+  const leaversValid = Number.isInteger(leaversInput) && leaversInput >= LEAVERS_MIN && leaversInput <= LEAVERS_MAX;
 
   const pct = useMemo(
     () => L.roles.find((o) => o.value === functie)?.pct ?? 0.8,
@@ -84,7 +109,7 @@ export default function Calculator() {
       <div className="lg:col-span-7">
         {/* Salary slider */}
         <div className="mb-10">
-          <div className="flex items-baseline justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
             <label
               htmlFor="salary"
               className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted"
@@ -92,18 +117,39 @@ export default function Calculator() {
               <span className="text-cobalt mr-2">01</span>
               {L.salary}
             </label>
-            <span className="display-numeric text-ink text-[1.5rem]">
-              {fmtEUR(salary, lang)}
-            </span>
+            <div className="inline-flex items-center gap-1 rounded-lg border border-mist bg-paper px-3 py-2 shadow-sm focus-within:border-cobalt focus-within:ring-2 focus-within:ring-cobalt/15">
+              <span className="display-numeric text-ink text-[1.25rem]" aria-hidden>€</span>
+              <input
+                id="salary"
+                type="text"
+                inputMode="numeric"
+                value={salaryDraft}
+                aria-invalid={!salaryValid}
+                aria-label={L.salary}
+                onChange={(e) => {
+                  const raw = e.target.value;
+                  setSalaryDraft(raw);
+                  const next = parseLocaleNumber(raw, locale);
+                  if (Number.isInteger(next) && next >= SALARY_MIN && next <= SALARY_MAX) setSalary(next);
+                }}
+                onBlur={() => {
+                  const next = salaryValid ? salaryInput : salary;
+                  setSalary(next);
+                  setSalaryDraft(formatInputNumber(next, lang));
+                }}
+                className="display-numeric w-28 bg-transparent text-right text-ink text-[1.25rem] outline-none"
+                data-testid="replacement-salary-input"
+              />
+            </div>
           </div>
           <input
-            id="salary"
             type="range"
-            min={30000}
-            max={150000}
-            step={1000}
+            min={SALARY_MIN}
+            max={SALARY_MAX}
+            step={100}
             value={salary}
             onChange={(e) => setSalary(Number(e.target.value))}
+            aria-label={L.salary}
             className="w-full accent-cobalt"
           />
           <div className="flex justify-between mt-2 text-[11px] md:text-[10px] font-mono uppercase tracking-[0.14em] text-muted">
@@ -151,7 +197,7 @@ export default function Calculator() {
 
         {/* Leavers */}
         <div className="mb-10">
-          <div className="flex items-baseline justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
             <label
               htmlFor="vertrekkers"
               className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted"
@@ -159,15 +205,32 @@ export default function Calculator() {
               <span className="text-cobalt mr-2">03</span>
               {L.leaversLabel}
             </label>
-            <span className="display-numeric text-ink text-[1.5rem]">
-              {vertrekkers}
-            </span>
+            <input
+              id="vertrekkers"
+              type="text"
+              inputMode="numeric"
+              value={leaversDraft}
+              aria-invalid={!leaversValid}
+              aria-label={L.leaversLabel}
+              onChange={(e) => {
+                const raw = e.target.value;
+                setLeaversDraft(raw);
+                const next = parseLocaleNumber(raw, locale);
+                if (Number.isInteger(next) && next >= LEAVERS_MIN && next <= LEAVERS_MAX) setVertrekkers(next);
+              }}
+              onBlur={() => {
+                const next = leaversValid ? leaversInput : vertrekkers;
+                setVertrekkers(next);
+                setLeaversDraft(formatInputNumber(next, lang));
+              }}
+              className="display-numeric w-20 rounded-lg border border-mist bg-paper px-3 py-2 text-right text-ink text-[1.25rem] shadow-sm outline-none focus:border-cobalt focus:ring-2 focus:ring-cobalt/15"
+              data-testid="replacement-leavers-input"
+            />
           </div>
           <input
-            id="vertrekkers"
             type="range"
-            min={1}
-            max={50}
+            min={LEAVERS_MIN}
+            max={LEAVERS_MAX}
             step={1}
             value={vertrekkers}
             onChange={(e) => setVertrekkers(Number(e.target.value))}

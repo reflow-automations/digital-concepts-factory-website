@@ -7,6 +7,7 @@ export const talentBehouden = {
       chapter: "Talent behouden",
       h1: "Behouden is de nieuwe succesfactor",
       h1Accent: "nieuwe",
+      calculatorLink: "Open de vervangingskostencalculator",
       imageAlt: "Drie collega's juichend bij een resultaat-dashboard",
     },
     intro: {
@@ -141,6 +142,7 @@ export const talentBehouden = {
       chapter: "Retaining talent",
       h1: "Retention is the new success factor",
       h1Accent: "new",
+      calculatorLink: "Open the replacement cost calculator",
       imageAlt: "Three colleagues celebrating at a results dashboard",
     },
     intro: {
