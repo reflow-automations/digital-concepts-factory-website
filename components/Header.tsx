@@ -12,6 +12,7 @@ export default function Header() {
   const t = ui[lang];
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -46,16 +47,61 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-[13px] tracking-tight text-text hover:text-ink transition-colors link-underline"
-            >
-              {item.label[lang]}
-            </Link>
-          ))}
+        <nav className="hidden lg:flex items-center gap-5 xl:gap-8" aria-label="Hoofdnavigatie">
+          {NAV_ITEMS.map((item) =>
+            item.children ? (
+              <div
+                key={item.href}
+                className="relative flex items-center gap-1"
+                onMouseEnter={() => setOpenSubmenu(item.href)}
+                onMouseLeave={() => setOpenSubmenu(null)}
+              >
+                <Link
+                  href={item.href}
+                  onClick={() => setOpenSubmenu(null)}
+                  className="text-[13px] tracking-tight text-text hover:text-ink transition-colors link-underline"
+                >
+                  {item.label[lang]}
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => setOpenSubmenu((current) => current === item.href ? null : item.href)}
+                  aria-label={`${item.label[lang]} submenu`}
+                  aria-expanded={openSubmenu === item.href}
+                  className="tap-safe tap-safe-sm p-1 text-muted hover:text-ink transition-colors"
+                >
+                  <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden>
+                    <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.25" />
+                  </svg>
+                </button>
+                {openSubmenu === item.href && (
+                  <div className="absolute left-0 top-full mt-4 min-w-72 border border-mist bg-paper p-2 shadow-[0_18px_40px_-20px_rgba(45,31,20,0.35)]">
+                    <p className="px-3 pt-2 pb-1 font-mono text-[10px] uppercase tracking-[0.12em] text-cobalt">
+                      {lang === "nl" ? "Verdieping ziekteverzuim" : "Explore sick leave"}
+                    </p>
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        onClick={() => setOpenSubmenu(null)}
+                        className="block px-3 py-3 text-[13px] leading-snug text-text hover:bg-paper-deep hover:text-ink transition-colors"
+                      >
+                        {child.label[lang]}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-[13px] tracking-tight text-text hover:text-ink transition-colors link-underline"
+              >
+                {item.label[lang]}
+              </Link>
+            ),
+          )}
         </nav>
 
         {/* CTA + language */}
@@ -89,14 +135,29 @@ export default function Header() {
         <div className="lg:hidden border-t border-mist bg-paper">
           <nav className="px-6 py-6 flex flex-col gap-4">
             {NAV_ITEMS.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className="text-[15px] text-text py-2"
-              >
-                {item.label[lang]}
-              </Link>
+              <div key={item.href}>
+                <Link
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="block text-[15px] text-text py-2"
+                >
+                  {item.label[lang]}
+                </Link>
+                {item.children && (
+                  <div className="ml-1 border-l border-cobalt/35 pl-4 py-1 space-y-1">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        onClick={() => setOpen(false)}
+                        className="block py-1.5 text-[14px] text-text/80 hover:text-ink"
+                      >
+                        {child.label[lang]}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
             <Link
               href="/contact"

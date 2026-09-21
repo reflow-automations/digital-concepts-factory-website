@@ -5,7 +5,12 @@ import type { Bilingual } from "@/lib/i18n/config";
  * Page-level content lives co-located with each page in content/.
  */
 
-export type NavItem = { href: string; label: Bilingual<string> };
+export type NavSubItem = { href: string; label: Bilingual<string> };
+export type NavItem = {
+  href: string;
+  label: Bilingual<string>;
+  children?: NavSubItem[];
+};
 
 /** Primary navigation (header + footer "Innovations" column share the 5 pillars). */
 export const NAV_ITEMS: NavItem[] = [
@@ -21,6 +26,16 @@ export const NAV_ITEMS: NavItem[] = [
   {
     href: "/ziekteverzuim",
     label: { nl: "Ziekteverzuim", en: "Sick leave" },
+    children: [
+      {
+        href: "/ziekteverzuim/innovatie",
+        label: { nl: "Innovatie voor ziekteverzuim", en: "Innovation for sick leave" },
+      },
+      {
+        href: "/ziekteverzuim/gevolgen",
+        label: { nl: "Gevolgen van ziekteverzuim", en: "Consequences of sick leave" },
+      },
+    ],
   },
   { href: "/inkoop", label: { nl: "Inkoop", en: "Procurement" } },
   { href: "/marketing", label: { nl: "Marketing", en: "Marketing" } },

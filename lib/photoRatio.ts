@@ -95,6 +95,7 @@ const PHOTO_RATIOS: Record<string, string> = {
   "ziekteverzuim-sub-gevolgen-banner-nl.avif": "1672 / 941",
   "ziekteverzuim-sub-innovatie-banner-en.avif": "1672 / 941",
   "ziekteverzuim-sub-innovatie-banner-nl.avif": "1672 / 941",
+  "ziekteverzuim-sub-innovatie-r5-en.avif": "1672 / 941",
 };
 
 /** Geeft de CSS aspect-ratio van een foto, bijvoorbeeld "1672 / 941".

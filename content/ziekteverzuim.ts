@@ -240,7 +240,7 @@ export const ziekteverzuimInnovatie = {
     sections: [
       {
         type: "image" as const,
-        src: "/photos/ziekteverzuim-sub-innovatie-banner-en.avif",
+        src: "/photos/ziekteverzuim-sub-innovatie-r5-en.avif",
         alt: "Sick leave innovation banner, English version",
       },
       {
