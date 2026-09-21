@@ -47,7 +47,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-5 xl:gap-8" aria-label="Hoofdnavigatie">
+        <nav className="hidden xl:flex items-center gap-4 2xl:gap-5" aria-label="Hoofdnavigatie">
           {NAV_ITEMS.map((item) =>
             item.children ? (
               <div
@@ -105,7 +105,7 @@ export default function Header() {
         </nav>
 
         {/* CTA + language */}
-        <div className="hidden lg:flex items-center gap-5">
+        <div className="hidden xl:flex items-center gap-5">
           <LangToggle />
           <Link
             href="/contact"
@@ -116,7 +116,7 @@ export default function Header() {
         </div>
 
         {/* Mobile language + menu button */}
-        <div className="lg:hidden flex items-center gap-4">
+        <div className="xl:hidden flex items-center gap-4">
           <LangToggle />
           <button
             onClick={() => setOpen((v) => !v)}
@@ -132,7 +132,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-mist bg-paper">
+        <div className="xl:hidden border-t border-mist bg-paper">
           <nav className="px-6 py-6 flex flex-col gap-4">
             {NAV_ITEMS.map((item) => (
               <div key={item.href}>

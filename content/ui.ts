@@ -18,10 +18,22 @@ export const NAV_ITEMS: NavItem[] = [
   {
     href: "/talent-aantrekken",
     label: { nl: "Talent aantrekken", en: "Attracting talent" },
+    children: [
+      { href: "/talent-aantrekken/innovatie", label: { nl: "Innovatief talent aantrekken", en: "Innovative talent attraction" } },
+      { href: "/talent-aantrekken/employer-branding", label: { nl: "Employer Branding", en: "Employer Branding" } },
+      { href: "/talent-aantrekken/waarom-werkgevers", label: { nl: "Van zichtbaarheid naar conversie", en: "From visibility to conversion" } },
+      { href: "/talent-aantrekken/dooh-effectief", label: { nl: "Waarom DOOH effectief is", en: "Why DOOH works" } },
+    ],
   },
   {
     href: "/talent-behouden",
     label: { nl: "Talent behouden", en: "Retaining talent" },
+    children: [
+      { href: "/talent-behouden/innovatie", label: { nl: "Innovatie voor talentbehoud", en: "Innovation for talent retention" } },
+      { href: "/talent-behouden/arbeidsvoorwaarden", label: { nl: "Eén pakket past niet meer", en: "One package no longer fits" } },
+      { href: "/talent-behouden/vervangingskosten", label: { nl: "Vervangingskosten uitgesplitst", en: "Replacement costs broken down" } },
+      { href: "/talent-behouden/bereken", label: { nl: "Bereken uw besparing", en: "Calculate your potential savings" } },
+    ],
   },
   {
     href: "/ziekteverzuim",
@@ -37,9 +49,30 @@ export const NAV_ITEMS: NavItem[] = [
       },
     ],
   },
-  { href: "/inkoop", label: { nl: "Inkoop", en: "Procurement" } },
-  { href: "/marketing", label: { nl: "Marketing", en: "Marketing" } },
-  { href: "/over-ons", label: { nl: "Over ons", en: "About us" } },
+  {
+    href: "/inkoop",
+    label: { nl: "Inkoop", en: "Procurement" },
+    children: [
+      { href: "/inkoop/innovatie", label: { nl: "Innovatie Inkoop", en: "Procurement innovation" } },
+      { href: "/inkoop/aanbesteden", label: { nl: "(Europees) aanbesteden", en: "(European) tendering" } },
+      { href: "/inkoop/contractmanagement", label: { nl: "Contractmanagement", en: "Contract management" } },
+    ],
+  },
+  {
+    href: "/marketing",
+    label: { nl: "Marketing", en: "Marketing" },
+    children: [
+      { href: "/marketing/innovatie", label: { nl: "Innovatie Marketing", en: "Marketing innovation" } },
+    ],
+  },
+  {
+    href: "/over-ons",
+    label: { nl: "Over ons", en: "About us" },
+    children: [
+      { href: "/over-ons/visie", label: { nl: "Visie en kernwaarden", en: "Vision and core values" } },
+      { href: "/over-ons/team", label: { nl: "Het team", en: "The team" } },
+    ],
+  },
 ];
 
 /** The 5 service pillars, used in the footer "Innovations" column. */
