@@ -6,14 +6,17 @@ import ChapterMark from "@/components/ChapterMark";
 import CalEmbed from "@/components/CalEmbed";
 import ReCaptcha from "@/components/ReCaptcha";
 import Accent from "@/components/Accent";
-import { usePick } from "@/lib/i18n/provider";
+import { useLang, usePick } from "@/lib/i18n/provider";
 import { contact } from "@/content/contact";
+import { ui } from "@/content/ui";
 import { trackEvent } from "@/lib/gtag";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
 export default function ContactPage() {
   const t = usePick(contact);
+  const lang = useLang();
+  const office = ui[lang].footer.office;
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -343,11 +346,12 @@ export default function ContactPage() {
                     {t.sidebar.addressLabel}
                   </p>
                   <address className="not-italic text-ink text-[15px] leading-relaxed">
-                    Digital Concepts Factory B.V.
-                    <br />
-                    Rotterdam Centraal
-                    <br />
-                    Rotterdam — Nederland
+                    {office.map((line, i) => (
+                      <span key={line}>
+                        {i > 0 && <br />}
+                        {line}
+                      </span>
+                    ))}
                   </address>
                 </div>
               </Reveal>
