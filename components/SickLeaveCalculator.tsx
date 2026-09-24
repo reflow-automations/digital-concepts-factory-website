@@ -121,7 +121,7 @@ export default function SickLeaveCalculator() {
         <div className="lg:col-span-7">
           <NumericControl label={t.fte} value={fte} onChange={setFte} min={1} max={10000} step={0.1} sliderStep={1} index="01" sliderLabel={t.slider} locale={locale}
             description={t.fteHint} />
-          <NumericControl label={t.absence} value={absence} onChange={setAbsence} min={1} max={12} step={0.1} index="02" sliderLabel={t.slider} locale={locale}
+          <NumericControl label={t.absence} value={absence} onChange={setAbsence} min={1} max={50} step={0.1} index="02" sliderLabel={t.slider} locale={locale}
             hint={<><span data-testid="sick-leave-days" className="text-ink font-medium">{days(result.currentAbsenceDays)}</span> {fill(t.absenceDays, { days: integer(workingDaysPerFte) })}</>} />
           <fieldset aria-describedby="sick-leave-relative">
             <legend className="font-mono text-[12px] uppercase tracking-[0.1em] text-text mb-4"><span className="text-cobalt mr-2">03</span>{t.reduction}</legend>
